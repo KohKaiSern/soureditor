@@ -12,7 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-    "extract": "ts-node src/extractors/*.ts"
+		"extract": "tsx src/extractors/index.ts && npm run format"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
@@ -32,7 +32,7 @@
 		"svelte": "^5.39.5",
 		"svelte-check": "^4.3.2",
 		"tailwindcss": "^4.1.13",
-		"ts-node": "^10.9.2",
+		"tsx": "^4.20.6",
 		"typescript": "^5.9.2",
 		"typescript-eslint": "^8.44.1",
 		"vite": "^7.1.7"
