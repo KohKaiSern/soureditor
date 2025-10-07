@@ -10,39 +10,39 @@ interface item {
 
 const items: Array<item> = [];
 
-const names = readFileSync(
+const NAMES = readFileSync(
 	import.meta.dirname + '/../../sourcrystal/data/items/names.asm',
 	'utf-8'
 ).split('\n');
 
-for (let lineNo = 0; lineNo < names.length; lineNo++) {
-	if (names[lineNo].includes('NUM_ITEMS')) {
+for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
+	if (NAMES[lineNo].includes('NUM_ITEMS')) {
 		break;
 	}
-	if (names[lineNo].includes('li ')) {
-		if (names[lineNo].includes('TERU')) {
+	if (NAMES[lineNo].includes('li ')) {
+		if (NAMES[lineNo].includes('TERU')) {
 			continue;
 		}
 		items.push({
-			id: reduce(names[lineNo].split('"')[1]),
-			name: names[lineNo].split('"')[1],
+			id: reduce(NAMES[lineNo].split('"')[1]),
+			name: NAMES[lineNo].split('"')[1],
 			itemNo: lineNo - 2,
 			category: ''
 		});
 	}
 }
 
-const attributes = readFileSync(
+const ATTRIBUTES = readFileSync(
 	import.meta.dirname + '/../../sourcrystal/data/items/attributes.asm',
 	'utf-8'
 ).split('\n');
 
-for (let lineNo = 0; lineNo < attributes.length; lineNo++) {
-	if (attributes[lineNo].includes(';')) {
-		const id = reduce(attributes[lineNo].slice(2).trim());
+for (let lineNo = 0; lineNo < ATTRIBUTES.length; lineNo++) {
+	if (ATTRIBUTES[lineNo].includes(';')) {
+		const id = reduce(ATTRIBUTES[lineNo].slice(2).trim());
 		const item = items.find((item) => item.id === id);
 		if (item) {
-			item.category = attributes[lineNo + 1].split(',').at(4)!.trim();
+			item.category = ATTRIBUTES[lineNo + 1].split(',').at(4)!.trim();
 		}
 	}
 }
