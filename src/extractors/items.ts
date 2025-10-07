@@ -26,7 +26,7 @@ for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
 		items.push({
 			id: reduce(NAMES[lineNo].split('"')[1]),
 			name: NAMES[lineNo].split('"')[1],
-			itemNo: lineNo - 2,
+			itemNo: lineNo - 1,
 			category: ''
 		});
 	}

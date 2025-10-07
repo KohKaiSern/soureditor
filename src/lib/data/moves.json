@@ -1,0 +1,2261 @@
+[
+	{
+		"id": "pound",
+		"name": "POUND",
+		"moveNo": 1,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "karatechop",
+		"name": "KARATE CHOP",
+		"moveNo": 2,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "doubleslap",
+		"name": "DOUBLESLAP",
+		"moveNo": 3,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "cometpunch",
+		"name": "COMET PUNCH",
+		"moveNo": 4,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "megapunch",
+		"name": "MEGA PUNCH",
+		"moveNo": 5,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "payday",
+		"name": "PAY DAY",
+		"moveNo": 6,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "firepunch",
+		"name": "FIRE PUNCH",
+		"moveNo": 7,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "icepunch",
+		"name": "ICE PUNCH",
+		"moveNo": 8,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thunderpunch",
+		"name": "THUNDERPUNCH",
+		"moveNo": 9,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "scratch",
+		"name": "SCRATCH",
+		"moveNo": 10,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "vicegrip",
+		"name": "VICEGRIP",
+		"moveNo": 11,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "guillotine",
+		"name": "GUILLOTINE",
+		"moveNo": 12,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "razorwind",
+		"name": "RAZOR WIND",
+		"moveNo": 13,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "swordsdance",
+		"name": "SWORDS DANCE",
+		"moveNo": 14,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "cut",
+		"name": "CUT",
+		"moveNo": 15,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "gust",
+		"name": "GUST",
+		"moveNo": 16,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "wingattack",
+		"name": "WING ATTACK",
+		"moveNo": 17,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "whirlwind",
+		"name": "WHIRLWIND",
+		"moveNo": 18,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "fly",
+		"name": "FLY",
+		"moveNo": 19,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bind",
+		"name": "BIND",
+		"moveNo": 20,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "slam",
+		"name": "SLAM",
+		"moveNo": 21,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "vinewhip",
+		"name": "VINE WHIP",
+		"moveNo": 22,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "stomp",
+		"name": "STOMP",
+		"moveNo": 23,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "doublekick",
+		"name": "DOUBLE KICK",
+		"moveNo": 24,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "megakick",
+		"name": "MEGA KICK",
+		"moveNo": 25,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "jumpkick",
+		"name": "JUMP KICK",
+		"moveNo": 26,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rollingkick",
+		"name": "ROLLING KICK",
+		"moveNo": 27,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sandattack",
+		"name": "SAND-ATTACK",
+		"moveNo": 28,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "headbutt",
+		"name": "HEADBUTT",
+		"moveNo": 29,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hornattack",
+		"name": "HORN ATTACK",
+		"moveNo": 30,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "furyattack",
+		"name": "FURY ATTACK",
+		"moveNo": 31,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "horndrill",
+		"name": "HORN DRILL",
+		"moveNo": 32,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "tackle",
+		"name": "TACKLE",
+		"moveNo": 33,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bodyslam",
+		"name": "BODY SLAM",
+		"moveNo": 34,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "wrap",
+		"name": "WRAP",
+		"moveNo": 35,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "takedown",
+		"name": "TAKE DOWN",
+		"moveNo": 36,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thrash",
+		"name": "THRASH",
+		"moveNo": 37,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "doubleedge",
+		"name": "DOUBLE-EDGE",
+		"moveNo": 38,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "tailwhip",
+		"name": "TAIL WHIP",
+		"moveNo": 39,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "poisonsting",
+		"name": "POISON STING",
+		"moveNo": 40,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "twineedle",
+		"name": "TWINEEDLE",
+		"moveNo": 41,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "pinmissile",
+		"name": "PIN MISSILE",
+		"moveNo": 42,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "leer",
+		"name": "LEER",
+		"moveNo": 43,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bite",
+		"name": "BITE",
+		"moveNo": 44,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "growl",
+		"name": "GROWL",
+		"moveNo": 45,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "roar",
+		"name": "ROAR",
+		"moveNo": 46,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sing",
+		"name": "SING",
+		"moveNo": 47,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "supersonic",
+		"name": "SUPERSONIC",
+		"moveNo": 48,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sonicboom",
+		"name": "SONICBOOM",
+		"moveNo": 49,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "disable",
+		"name": "DISABLE",
+		"moveNo": 50,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "acid",
+		"name": "ACID",
+		"moveNo": 51,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "ember",
+		"name": "EMBER",
+		"moveNo": 52,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "flamethrower",
+		"name": "FLAMETHROWER",
+		"moveNo": 53,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "mist",
+		"name": "MIST",
+		"moveNo": 54,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "watergun",
+		"name": "WATER GUN",
+		"moveNo": 55,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hydropump",
+		"name": "HYDRO PUMP",
+		"moveNo": 56,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "surf",
+		"name": "SURF",
+		"moveNo": 57,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "icebeam",
+		"name": "ICE BEAM",
+		"moveNo": 58,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "blizzard",
+		"name": "BLIZZARD",
+		"moveNo": 59,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "psybeam",
+		"name": "PSYBEAM",
+		"moveNo": 60,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bubblebeam",
+		"name": "BUBBLEBEAM",
+		"moveNo": 61,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "aurorabeam",
+		"name": "AURORA BEAM",
+		"moveNo": 62,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hyperbeam",
+		"name": "HYPER BEAM",
+		"moveNo": 63,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "peck",
+		"name": "PECK",
+		"moveNo": 64,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "drillpeck",
+		"name": "DRILL PECK",
+		"moveNo": 65,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "submission",
+		"name": "SUBMISSION",
+		"moveNo": 66,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "lowkick",
+		"name": "LOW KICK",
+		"moveNo": 67,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "counter",
+		"name": "COUNTER",
+		"moveNo": 68,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "seismictoss",
+		"name": "SEISMIC TOSS",
+		"moveNo": 69,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "strength",
+		"name": "STRENGTH",
+		"moveNo": 70,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "absorb",
+		"name": "ABSORB",
+		"moveNo": 71,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "megadrain",
+		"name": "MEGA DRAIN",
+		"moveNo": 72,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "leechseed",
+		"name": "LEECH SEED",
+		"moveNo": 73,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "growth",
+		"name": "GROWTH",
+		"moveNo": 74,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "razorleaf",
+		"name": "RAZOR LEAF",
+		"moveNo": 75,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "solarbeam",
+		"name": "SOLARBEAM",
+		"moveNo": 76,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "poisonpowder",
+		"name": "POISONPOWDER",
+		"moveNo": 77,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "stunspore",
+		"name": "STUN SPORE",
+		"moveNo": 78,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sleeppowder",
+		"name": "SLEEP POWDER",
+		"moveNo": 79,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "petaldance",
+		"name": "PETAL DANCE",
+		"moveNo": 80,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "stringshot",
+		"name": "STRING SHOT",
+		"moveNo": 81,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "dragonrage",
+		"name": "DRAGON RAGE",
+		"moveNo": 82,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "firespin",
+		"name": "FIRE SPIN",
+		"moveNo": 83,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thundershock",
+		"name": "THUNDERSHOCK",
+		"moveNo": 84,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thunderbolt",
+		"name": "THUNDERBOLT",
+		"moveNo": 85,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thunderwave",
+		"name": "THUNDER WAVE",
+		"moveNo": 86,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thunder",
+		"name": "THUNDER",
+		"moveNo": 87,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rockthrow",
+		"name": "ROCK THROW",
+		"moveNo": 88,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "earthquake",
+		"name": "EARTHQUAKE",
+		"moveNo": 89,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "fissure",
+		"name": "FISSURE",
+		"moveNo": 90,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "dig",
+		"name": "DIG",
+		"moveNo": 91,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "toxic",
+		"name": "TOXIC",
+		"moveNo": 92,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "confusion",
+		"name": "CONFUSION",
+		"moveNo": 93,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "psychic",
+		"name": "PSYCHIC",
+		"moveNo": 94,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hypnosis",
+		"name": "HYPNOSIS",
+		"moveNo": 95,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "meditate",
+		"name": "MEDITATE",
+		"moveNo": 96,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "agility",
+		"name": "AGILITY",
+		"moveNo": 97,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "quickattack",
+		"name": "QUICK ATTACK",
+		"moveNo": 98,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rage",
+		"name": "RAGE",
+		"moveNo": 99,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "teleport",
+		"name": "TELEPORT",
+		"moveNo": 100,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "nightshade",
+		"name": "NIGHT SHADE",
+		"moveNo": 101,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "mimic",
+		"name": "MIMIC",
+		"moveNo": 102,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "screech",
+		"name": "SCREECH",
+		"moveNo": 103,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "doubleteam",
+		"name": "DOUBLE TEAM",
+		"moveNo": 104,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "recover",
+		"name": "RECOVER",
+		"moveNo": 105,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "harden",
+		"name": "HARDEN",
+		"moveNo": 106,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "minimize",
+		"name": "MINIMIZE",
+		"moveNo": 107,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "smokescreen",
+		"name": "SMOKESCREEN",
+		"moveNo": 108,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "confuseray",
+		"name": "CONFUSE RAY",
+		"moveNo": 109,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "withdraw",
+		"name": "WITHDRAW",
+		"moveNo": 110,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "defensecurl",
+		"name": "DEFENSE CURL",
+		"moveNo": 111,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "barrier",
+		"name": "BARRIER",
+		"moveNo": 112,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "lightscreen",
+		"name": "LIGHT SCREEN",
+		"moveNo": 113,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "haze",
+		"name": "HAZE",
+		"moveNo": 114,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "reflect",
+		"name": "REFLECT",
+		"moveNo": 115,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "focusenergy",
+		"name": "FOCUS ENERGY",
+		"moveNo": 116,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bide",
+		"name": "BIDE",
+		"moveNo": 117,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "metronome",
+		"name": "METRONOME",
+		"moveNo": 118,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "mirrormove",
+		"name": "MIRROR MOVE",
+		"moveNo": 119,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "selfdestruct",
+		"name": "SELFDESTRUCT",
+		"moveNo": 120,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "eggbomb",
+		"name": "EGG BOMB",
+		"moveNo": 121,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "lick",
+		"name": "LICK",
+		"moveNo": 122,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "smog",
+		"name": "SMOG",
+		"moveNo": 123,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sludge",
+		"name": "SLUDGE",
+		"moveNo": 124,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "boneclub",
+		"name": "BONE CLUB",
+		"moveNo": 125,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "fireblast",
+		"name": "FIRE BLAST",
+		"moveNo": 126,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "waterfall",
+		"name": "WATERFALL",
+		"moveNo": 127,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "clamp",
+		"name": "CLAMP",
+		"moveNo": 128,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "swift",
+		"name": "SWIFT",
+		"moveNo": 129,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "skullbash",
+		"name": "SKULL BASH",
+		"moveNo": 130,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "spikecannon",
+		"name": "SPIKE CANNON",
+		"moveNo": 131,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "constrict",
+		"name": "CONSTRICT",
+		"moveNo": 132,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "amnesia",
+		"name": "AMNESIA",
+		"moveNo": 133,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "kinesis",
+		"name": "KINESIS",
+		"moveNo": 134,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "softboiled",
+		"name": "SOFTBOILED",
+		"moveNo": 135,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hijumpkick",
+		"name": "HI JUMP KICK",
+		"moveNo": 136,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "glare",
+		"name": "GLARE",
+		"moveNo": 137,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "dreameater",
+		"name": "DREAM EATER",
+		"moveNo": 138,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "poisongas",
+		"name": "POISON GAS",
+		"moveNo": 139,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "barrage",
+		"name": "BARRAGE",
+		"moveNo": 140,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "leechlife",
+		"name": "LEECH LIFE",
+		"moveNo": 141,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "lovelykiss",
+		"name": "LOVELY KISS",
+		"moveNo": 142,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "skyattack",
+		"name": "SKY ATTACK",
+		"moveNo": 143,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "transform",
+		"name": "TRANSFORM",
+		"moveNo": 144,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bubble",
+		"name": "BUBBLE",
+		"moveNo": 145,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "dizzypunch",
+		"name": "DIZZY PUNCH",
+		"moveNo": 146,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "spore",
+		"name": "SPORE",
+		"moveNo": 147,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "flash",
+		"name": "FLASH",
+		"moveNo": 148,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "psywave",
+		"name": "PSYWAVE",
+		"moveNo": 149,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "splash",
+		"name": "SPLASH",
+		"moveNo": 150,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "acidarmor",
+		"name": "ACID ARMOR",
+		"moveNo": 151,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "crabhammer",
+		"name": "CRABHAMMER",
+		"moveNo": 152,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "explosion",
+		"name": "EXPLOSION",
+		"moveNo": 153,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "furyswipes",
+		"name": "FURY SWIPES",
+		"moveNo": 154,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bonemerang",
+		"name": "BONEMERANG",
+		"moveNo": 155,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rest",
+		"name": "REST",
+		"moveNo": 156,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rockslide",
+		"name": "ROCK SLIDE",
+		"moveNo": 157,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hyperfang",
+		"name": "HYPER FANG",
+		"moveNo": 158,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sharpen",
+		"name": "SHARPEN",
+		"moveNo": 159,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "conversion",
+		"name": "CONVERSION",
+		"moveNo": 160,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "triattack",
+		"name": "TRI ATTACK",
+		"moveNo": 161,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "superfang",
+		"name": "SUPER FANG",
+		"moveNo": 162,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "slash",
+		"name": "SLASH",
+		"moveNo": 163,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "substitute",
+		"name": "SUBSTITUTE",
+		"moveNo": 164,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "struggle",
+		"name": "STRUGGLE",
+		"moveNo": 165,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sketch",
+		"name": "SKETCH",
+		"moveNo": 166,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "triplekick",
+		"name": "TRIPLE KICK",
+		"moveNo": 167,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "thief",
+		"name": "THIEF",
+		"moveNo": 168,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "spiderweb",
+		"name": "SPIDER WEB",
+		"moveNo": 169,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "mindreader",
+		"name": "MIND READER",
+		"moveNo": 170,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "nightmare",
+		"name": "NIGHTMARE",
+		"moveNo": 171,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "flamewheel",
+		"name": "FLAME WHEEL",
+		"moveNo": 172,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "snore",
+		"name": "SNORE",
+		"moveNo": 173,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "curse",
+		"name": "CURSE",
+		"moveNo": 174,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "flail",
+		"name": "FLAIL",
+		"moveNo": 175,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "conversion2",
+		"name": "CONVERSION2",
+		"moveNo": 176,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "aeroblast",
+		"name": "AEROBLAST",
+		"moveNo": 177,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "cottonspore",
+		"name": "COTTON SPORE",
+		"moveNo": 178,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "reversal",
+		"name": "REVERSAL",
+		"moveNo": 179,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "spite",
+		"name": "SPITE",
+		"moveNo": 180,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "powdersnow",
+		"name": "POWDER SNOW",
+		"moveNo": 181,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "protect",
+		"name": "PROTECT",
+		"moveNo": 182,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "machpunch",
+		"name": "MACH PUNCH",
+		"moveNo": 183,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "scaryface",
+		"name": "SCARY FACE",
+		"moveNo": 184,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "feintattack",
+		"name": "FEINT ATTACK",
+		"moveNo": 185,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sweetkiss",
+		"name": "SWEET KISS",
+		"moveNo": 186,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bellydrum",
+		"name": "BELLY DRUM",
+		"moveNo": 187,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sludgebomb",
+		"name": "SLUDGE BOMB",
+		"moveNo": 188,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "mudslap",
+		"name": "MUD-SLAP",
+		"moveNo": 189,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "octazooka",
+		"name": "OCTAZOOKA",
+		"moveNo": 190,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "spikes",
+		"name": "SPIKES",
+		"moveNo": 191,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "zapcannon",
+		"name": "ZAP CANNON",
+		"moveNo": 192,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "foresight",
+		"name": "FORESIGHT",
+		"moveNo": 193,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "destinybond",
+		"name": "DESTINY BOND",
+		"moveNo": 194,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "perishsong",
+		"name": "PERISH SONG",
+		"moveNo": 195,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "icywind",
+		"name": "ICY WIND",
+		"moveNo": 196,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "detect",
+		"name": "DETECT",
+		"moveNo": 197,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "bonerush",
+		"name": "BONE RUSH",
+		"moveNo": 198,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "lockon",
+		"name": "LOCK-ON",
+		"moveNo": 199,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "outrage",
+		"name": "OUTRAGE",
+		"moveNo": 200,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sandstorm",
+		"name": "SANDSTORM",
+		"moveNo": 201,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "gigadrain",
+		"name": "GIGA DRAIN",
+		"moveNo": 202,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "endure",
+		"name": "ENDURE",
+		"moveNo": 203,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "charm",
+		"name": "CHARM",
+		"moveNo": 204,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rollout",
+		"name": "ROLLOUT",
+		"moveNo": 205,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "falseswipe",
+		"name": "FALSE SWIPE",
+		"moveNo": 206,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "swagger",
+		"name": "SWAGGER",
+		"moveNo": 207,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "milkdrink",
+		"name": "MILK DRINK",
+		"moveNo": 208,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "spark",
+		"name": "SPARK",
+		"moveNo": 209,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "furycutter",
+		"name": "FURY CUTTER",
+		"moveNo": 210,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "steelwing",
+		"name": "STEEL WING",
+		"moveNo": 211,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "meanlook",
+		"name": "MEAN LOOK",
+		"moveNo": 212,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "attract",
+		"name": "ATTRACT",
+		"moveNo": 213,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sleeptalk",
+		"name": "SLEEP TALK",
+		"moveNo": 214,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "healbell",
+		"name": "HEAL BELL",
+		"moveNo": 215,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "return",
+		"name": "RETURN",
+		"moveNo": 216,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "present",
+		"name": "PRESENT",
+		"moveNo": 217,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "frustration",
+		"name": "FRUSTRATION",
+		"moveNo": 218,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "safeguard",
+		"name": "SAFEGUARD",
+		"moveNo": 219,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "painsplit",
+		"name": "PAIN SPLIT",
+		"moveNo": 220,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sacredfire",
+		"name": "SACRED FIRE",
+		"moveNo": 221,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "magnitude",
+		"name": "MAGNITUDE",
+		"moveNo": 222,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "dynamicpunch",
+		"name": "DYNAMICPUNCH",
+		"moveNo": 223,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "megahorn",
+		"name": "MEGAHORN",
+		"moveNo": 224,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "dragonbreath",
+		"name": "DRAGONBREATH",
+		"moveNo": 225,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "batonpass",
+		"name": "BATON PASS",
+		"moveNo": 226,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "encore",
+		"name": "ENCORE",
+		"moveNo": 227,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "pursuit",
+		"name": "PURSUIT",
+		"moveNo": 228,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rapidspin",
+		"name": "RAPID SPIN",
+		"moveNo": 229,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sweetscent",
+		"name": "SWEET SCENT",
+		"moveNo": 230,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "irontail",
+		"name": "IRON TAIL",
+		"moveNo": 231,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "metalclaw",
+		"name": "METAL CLAW",
+		"moveNo": 232,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "vitalthrow",
+		"name": "VITAL THROW",
+		"moveNo": 233,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "morningsun",
+		"name": "MORNING SUN",
+		"moveNo": 234,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "synthesis",
+		"name": "SYNTHESIS",
+		"moveNo": 235,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "moonlight",
+		"name": "MOONLIGHT",
+		"moveNo": 236,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "hiddenpower",
+		"name": "HIDDEN POWER",
+		"moveNo": 237,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "crosschop",
+		"name": "CROSS CHOP",
+		"moveNo": 238,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "twister",
+		"name": "TWISTER",
+		"moveNo": 239,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "raindance",
+		"name": "RAIN DANCE",
+		"moveNo": 240,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "sunnyday",
+		"name": "SUNNY DAY",
+		"moveNo": 241,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "crunch",
+		"name": "CRUNCH",
+		"moveNo": 242,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "mirrorcoat",
+		"name": "MIRROR COAT",
+		"moveNo": 243,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "psychup",
+		"name": "PSYCH UP",
+		"moveNo": 244,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "extremespeed",
+		"name": "EXTREMESPEED",
+		"moveNo": 245,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "ancientpower",
+		"name": "ANCIENTPOWER",
+		"moveNo": 246,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "shadowball",
+		"name": "SHADOW BALL",
+		"moveNo": 247,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "futuresight",
+		"name": "FUTURE SIGHT",
+		"moveNo": 248,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "rocksmash",
+		"name": "ROCK SMASH",
+		"moveNo": 249,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "whirlpool",
+		"name": "WHIRLPOOL",
+		"moveNo": 250,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	},
+	{
+		"id": "beatup",
+		"name": "BEAT UP",
+		"moveNo": 251,
+		"basePower": -1,
+		"accuracy": -1,
+		"powerPoints": -1,
+		"effectChance": -1
+	}
+]
