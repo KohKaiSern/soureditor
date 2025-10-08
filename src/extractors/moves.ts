@@ -45,7 +45,13 @@ const DESCS = readFileSync(
 
 for (let lineNo = 0; lineNo < DESCS.length; lineNo++) {
 	if (DESCS[lineNo].endsWith('Description:')) {
-		const id = reduce(DESCS[lineNo].replace('Description:', ''));
+		let id = reduce(DESCS[lineNo].replace('Description:', ''));
+		if (id === 'psychicm') {
+			id = 'psychic';
+		}
+		if (id === 'faintattack') {
+			id = 'feintattack';
+		}
 		lineNo++;
 		let description = '';
 		while (DESCS[lineNo].includes('"')) {
@@ -74,7 +80,11 @@ const MOVES = readFileSync(
 for (let lineNo = 0; lineNo < MOVES.length; lineNo++) {
 	if (MOVES[lineNo].startsWith('\tmove ')) {
 		const MOVE_DATA = MOVES[lineNo].split(',').map((entry) => entry.trim());
-		const id = reduce(MOVE_DATA.at(0)!.slice(5));
+		let id = MOVE_DATA.at(0)!.slice(5);
+		if (id.endsWith('_M')) {
+			id = id.slice(0, -2);
+		}
+		id = reduce(id);
 		const move = moves.find((move) => move.id === id);
 		if (move) {
 			move.basePower = parseInt(MOVE_DATA.at(2)!);

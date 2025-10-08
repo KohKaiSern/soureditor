@@ -1026,12 +1026,12 @@
 		"id": "psychic",
 		"name": "PSYCHIC",
 		"moveNo": 94,
-		"description": "",
-		"basePower": -1,
-		"type": "",
-		"accuracy": -1,
-		"powerPoints": -1,
-		"effectChance": -1
+		"description": "An attack that may lower SP.DEF.",
+		"basePower": 90,
+		"type": "PSYCHIC",
+		"accuracy": 100,
+		"powerPoints": 10,
+		"effectChance": 10
 	},
 	{
 		"id": "hypnosis",
@@ -2027,7 +2027,7 @@
 		"id": "feintattack",
 		"name": "FEINT ATTACK",
 		"moveNo": 185,
-		"description": "",
+		"description": "An attack that never misses.",
 		"basePower": 60,
 		"type": "DARK",
 		"accuracy": 100,
