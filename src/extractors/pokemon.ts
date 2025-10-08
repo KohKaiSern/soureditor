@@ -60,7 +60,7 @@ for (let filename of BASE_STATS_DIR) {
 			if (MON[9].includes('GENDER_UNKNOWN')) {
 				mon.hasGender = false;
 			}
-			mon.growthRate = MON[15].split(' ').at(1)!.replace('GROWTH_', '');
+			mon.growthRate = reduce(MON[15].split(' ').at(1)!.replace('GROWTH_', ''));
 		}
 	}
 }
