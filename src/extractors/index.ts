@@ -6,12 +6,11 @@ import pokemon from './pokemon';
 import version from './version';
 import growthRateCoefficients from './growthRateCoefficients';
 
-writeFileSync(import.meta.dirname + '/../lib/data/items.json', JSON.stringify(items));
-writeFileSync(import.meta.dirname + '/../lib/data/addresses.json', JSON.stringify(addresses));
-writeFileSync(import.meta.dirname + '/../lib/data/moves.json', JSON.stringify(moves));
-writeFileSync(import.meta.dirname + '/../lib/data/pokemon.json', JSON.stringify(pokemon));
-writeFileSync(import.meta.dirname + '/../lib/data/version.json', JSON.stringify(version));
-writeFileSync(
-	import.meta.dirname + '/../lib/data/growthRateCoefficients.json',
-	JSON.stringify(growthRateCoefficients)
-);
+const PATH = import.meta.dirname + '/../../src/lib/data/';
+
+writeFileSync(PATH + 'items.json', JSON.stringify(items));
+writeFileSync(PATH + 'addresses.json', JSON.stringify(addresses));
+writeFileSync(PATH + 'moves.json', JSON.stringify(moves));
+writeFileSync(PATH + 'pokemon.json', JSON.stringify(pokemon));
+writeFileSync(PATH + 'version.json', JSON.stringify(version));
+writeFileSync(PATH + 'growthRateCoefficients.json', JSON.stringify(growthRateCoefficients));
