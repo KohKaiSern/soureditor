@@ -1,0 +1,2306 @@
+[
+	{
+		"id": "bulbasaur",
+		"name": "BULBASAUR",
+		"dexNo": 1,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ivysaur",
+		"name": "IVYSAUR",
+		"dexNo": 2,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "venusaur",
+		"name": "VENUSAUR",
+		"dexNo": 3,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "charmander",
+		"name": "CHARMANDER",
+		"dexNo": 4,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "charmeleon",
+		"name": "CHARMELEON",
+		"dexNo": 5,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "charizard",
+		"name": "CHARIZARD",
+		"dexNo": 6,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "squirtle",
+		"name": "SQUIRTLE",
+		"dexNo": 7,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "wartortle",
+		"name": "WARTORTLE",
+		"dexNo": 8,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "blastoise",
+		"name": "BLASTOISE",
+		"dexNo": 9,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "caterpie",
+		"name": "CATERPIE",
+		"dexNo": 10,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "metapod",
+		"name": "METAPOD",
+		"dexNo": 11,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "butterfree",
+		"name": "BUTTERFREE",
+		"dexNo": 12,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "weedle",
+		"name": "WEEDLE",
+		"dexNo": 13,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kakuna",
+		"name": "KAKUNA",
+		"dexNo": 14,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "beedrill",
+		"name": "BEEDRILL",
+		"dexNo": 15,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pidgey",
+		"name": "PIDGEY",
+		"dexNo": 16,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pidgeotto",
+		"name": "PIDGEOTTO",
+		"dexNo": 17,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pidgeot",
+		"name": "PIDGEOT",
+		"dexNo": 18,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "rattata",
+		"name": "RATTATA",
+		"dexNo": 19,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "raticate",
+		"name": "RATICATE",
+		"dexNo": 20,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "spearow",
+		"name": "SPEAROW",
+		"dexNo": 21,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "fearow",
+		"name": "FEAROW",
+		"dexNo": 22,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ekans",
+		"name": "EKANS",
+		"dexNo": 23,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "arbok",
+		"name": "ARBOK",
+		"dexNo": 24,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pikachu",
+		"name": "PIKACHU",
+		"dexNo": 25,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "raichu",
+		"name": "RAICHU",
+		"dexNo": 26,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sandshrew",
+		"name": "SANDSHREW",
+		"dexNo": 27,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sandslash",
+		"name": "SANDSLASH",
+		"dexNo": 28,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "nidoranf",
+		"name": "NIDORAN♀",
+		"dexNo": 29,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "nidorina",
+		"name": "NIDORINA",
+		"dexNo": 30,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "nidoqueen",
+		"name": "NIDOQUEEN",
+		"dexNo": 31,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "nidoranm",
+		"name": "NIDORAN♂",
+		"dexNo": 32,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "nidorino",
+		"name": "NIDORINO",
+		"dexNo": 33,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "nidoking",
+		"name": "NIDOKING",
+		"dexNo": 34,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "clefairy",
+		"name": "CLEFAIRY",
+		"dexNo": 35,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "clefable",
+		"name": "CLEFABLE",
+		"dexNo": 36,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "vulpix",
+		"name": "VULPIX",
+		"dexNo": 37,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ninetales",
+		"name": "NINETALES",
+		"dexNo": 38,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "jigglypuff",
+		"name": "JIGGLYPUFF",
+		"dexNo": 39,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "wigglytuff",
+		"name": "WIGGLYTUFF",
+		"dexNo": 40,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "zubat",
+		"name": "ZUBAT",
+		"dexNo": 41,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "golbat",
+		"name": "GOLBAT",
+		"dexNo": 42,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "oddish",
+		"name": "ODDISH",
+		"dexNo": 43,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "gloom",
+		"name": "GLOOM",
+		"dexNo": 44,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "vileplume",
+		"name": "VILEPLUME",
+		"dexNo": 45,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "paras",
+		"name": "PARAS",
+		"dexNo": 46,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "parasect",
+		"name": "PARASECT",
+		"dexNo": 47,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "venonat",
+		"name": "VENONAT",
+		"dexNo": 48,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "venomoth",
+		"name": "VENOMOTH",
+		"dexNo": 49,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "diglett",
+		"name": "DIGLETT",
+		"dexNo": 50,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dugtrio",
+		"name": "DUGTRIO",
+		"dexNo": 51,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "meowth",
+		"name": "MEOWTH",
+		"dexNo": 52,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "persian",
+		"name": "PERSIAN",
+		"dexNo": 53,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "psyduck",
+		"name": "PSYDUCK",
+		"dexNo": 54,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "golduck",
+		"name": "GOLDUCK",
+		"dexNo": 55,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "mankey",
+		"name": "MANKEY",
+		"dexNo": 56,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "primeape",
+		"name": "PRIMEAPE",
+		"dexNo": 57,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "growlithe",
+		"name": "GROWLITHE",
+		"dexNo": 58,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "arcanine",
+		"name": "ARCANINE",
+		"dexNo": 59,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "poliwag",
+		"name": "POLIWAG",
+		"dexNo": 60,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "poliwhirl",
+		"name": "POLIWHIRL",
+		"dexNo": 61,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "poliwrath",
+		"name": "POLIWRATH",
+		"dexNo": 62,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "abra",
+		"name": "ABRA",
+		"dexNo": 63,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kadabra",
+		"name": "KADABRA",
+		"dexNo": 64,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "alakazam",
+		"name": "ALAKAZAM",
+		"dexNo": 65,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "machop",
+		"name": "MACHOP",
+		"dexNo": 66,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "machoke",
+		"name": "MACHOKE",
+		"dexNo": 67,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "machamp",
+		"name": "MACHAMP",
+		"dexNo": 68,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "bellsprout",
+		"name": "BELLSPROUT",
+		"dexNo": 69,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "weepinbell",
+		"name": "WEEPINBELL",
+		"dexNo": 70,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "victreebel",
+		"name": "VICTREEBEL",
+		"dexNo": 71,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "tentacool",
+		"name": "TENTACOOL",
+		"dexNo": 72,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "tentacruel",
+		"name": "TENTACRUEL",
+		"dexNo": 73,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "geodude",
+		"name": "GEODUDE",
+		"dexNo": 74,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "graveler",
+		"name": "GRAVELER",
+		"dexNo": 75,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "golem",
+		"name": "GOLEM",
+		"dexNo": 76,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ponyta",
+		"name": "PONYTA",
+		"dexNo": 77,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "rapidash",
+		"name": "RAPIDASH",
+		"dexNo": 78,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "slowpoke",
+		"name": "SLOWPOKE",
+		"dexNo": 79,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "slowbro",
+		"name": "SLOWBRO",
+		"dexNo": 80,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "magnemite",
+		"name": "MAGNEMITE",
+		"dexNo": 81,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "magneton",
+		"name": "MAGNETON",
+		"dexNo": 82,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "farfetchd",
+		"name": "FARFETCH'D",
+		"dexNo": 83,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "doduo",
+		"name": "DODUO",
+		"dexNo": 84,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dodrio",
+		"name": "DODRIO",
+		"dexNo": 85,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "seel",
+		"name": "SEEL",
+		"dexNo": 86,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dewgong",
+		"name": "DEWGONG",
+		"dexNo": 87,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "grimer",
+		"name": "GRIMER",
+		"dexNo": 88,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "muk",
+		"name": "MUK",
+		"dexNo": 89,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "shellder",
+		"name": "SHELLDER",
+		"dexNo": 90,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "cloyster",
+		"name": "CLOYSTER",
+		"dexNo": 91,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "gastly",
+		"name": "GASTLY",
+		"dexNo": 92,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "haunter",
+		"name": "HAUNTER",
+		"dexNo": 93,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "gengar",
+		"name": "GENGAR",
+		"dexNo": 94,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "onix",
+		"name": "ONIX",
+		"dexNo": 95,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "drowzee",
+		"name": "DROWZEE",
+		"dexNo": 96,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hypno",
+		"name": "HYPNO",
+		"dexNo": 97,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "krabby",
+		"name": "KRABBY",
+		"dexNo": 98,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kingler",
+		"name": "KINGLER",
+		"dexNo": 99,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "voltorb",
+		"name": "VOLTORB",
+		"dexNo": 100,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "electrode",
+		"name": "ELECTRODE",
+		"dexNo": 101,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "exeggcute",
+		"name": "EXEGGCUTE",
+		"dexNo": 102,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "exeggutor",
+		"name": "EXEGGUTOR",
+		"dexNo": 103,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "cubone",
+		"name": "CUBONE",
+		"dexNo": 104,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "marowak",
+		"name": "MAROWAK",
+		"dexNo": 105,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hitmonlee",
+		"name": "HITMONLEE",
+		"dexNo": 106,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hitmonchan",
+		"name": "HITMONCHAN",
+		"dexNo": 107,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "lickitung",
+		"name": "LICKITUNG",
+		"dexNo": 108,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "koffing",
+		"name": "KOFFING",
+		"dexNo": 109,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "weezing",
+		"name": "WEEZING",
+		"dexNo": 110,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "rhyhorn",
+		"name": "RHYHORN",
+		"dexNo": 111,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "rhydon",
+		"name": "RHYDON",
+		"dexNo": 112,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "chansey",
+		"name": "CHANSEY",
+		"dexNo": 113,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "tangela",
+		"name": "TANGELA",
+		"dexNo": 114,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kangaskhan",
+		"name": "KANGASKHAN",
+		"dexNo": 115,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "horsea",
+		"name": "HORSEA",
+		"dexNo": 116,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "seadra",
+		"name": "SEADRA",
+		"dexNo": 117,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "goldeen",
+		"name": "GOLDEEN",
+		"dexNo": 118,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "seaking",
+		"name": "SEAKING",
+		"dexNo": 119,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "staryu",
+		"name": "STARYU",
+		"dexNo": 120,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "starmie",
+		"name": "STARMIE",
+		"dexNo": 121,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "mrmime",
+		"name": "MR.MIME",
+		"dexNo": 122,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "scyther",
+		"name": "SCYTHER",
+		"dexNo": 123,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "jynx",
+		"name": "JYNX",
+		"dexNo": 124,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "electabuzz",
+		"name": "ELECTABUZZ",
+		"dexNo": 125,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "magmar",
+		"name": "MAGMAR",
+		"dexNo": 126,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pinsir",
+		"name": "PINSIR",
+		"dexNo": 127,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "tauros",
+		"name": "TAUROS",
+		"dexNo": 128,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "magikarp",
+		"name": "MAGIKARP",
+		"dexNo": 129,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "gyarados",
+		"name": "GYARADOS",
+		"dexNo": 130,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "lapras",
+		"name": "LAPRAS",
+		"dexNo": 131,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ditto",
+		"name": "DITTO",
+		"dexNo": 132,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "eevee",
+		"name": "EEVEE",
+		"dexNo": 133,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "vaporeon",
+		"name": "VAPOREON",
+		"dexNo": 134,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "jolteon",
+		"name": "JOLTEON",
+		"dexNo": 135,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "flareon",
+		"name": "FLAREON",
+		"dexNo": 136,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "porygon",
+		"name": "PORYGON",
+		"dexNo": 137,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "omanyte",
+		"name": "OMANYTE",
+		"dexNo": 138,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "omastar",
+		"name": "OMASTAR",
+		"dexNo": 139,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kabuto",
+		"name": "KABUTO",
+		"dexNo": 140,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kabutops",
+		"name": "KABUTOPS",
+		"dexNo": 141,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "aerodactyl",
+		"name": "AERODACTYL",
+		"dexNo": 142,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "snorlax",
+		"name": "SNORLAX",
+		"dexNo": 143,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "articuno",
+		"name": "ARTICUNO",
+		"dexNo": 144,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "zapdos",
+		"name": "ZAPDOS",
+		"dexNo": 145,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "moltres",
+		"name": "MOLTRES",
+		"dexNo": 146,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dratini",
+		"name": "DRATINI",
+		"dexNo": 147,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dragonair",
+		"name": "DRAGONAIR",
+		"dexNo": 148,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dragonite",
+		"name": "DRAGONITE",
+		"dexNo": 149,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "mewtwo",
+		"name": "MEWTWO",
+		"dexNo": 150,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "mew",
+		"name": "MEW",
+		"dexNo": 151,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "chikorita",
+		"name": "CHIKORITA",
+		"dexNo": 152,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "bayleef",
+		"name": "BAYLEEF",
+		"dexNo": 153,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "meganium",
+		"name": "MEGANIUM",
+		"dexNo": 154,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "cyndaquil",
+		"name": "CYNDAQUIL",
+		"dexNo": 155,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "quilava",
+		"name": "QUILAVA",
+		"dexNo": 156,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "typhlosion",
+		"name": "TYPHLOSION",
+		"dexNo": 157,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "totodile",
+		"name": "TOTODILE",
+		"dexNo": 158,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "croconaw",
+		"name": "CROCONAW",
+		"dexNo": 159,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "feraligatr",
+		"name": "FERALIGATR",
+		"dexNo": 160,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sentret",
+		"name": "SENTRET",
+		"dexNo": 161,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "furret",
+		"name": "FURRET",
+		"dexNo": 162,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hoothoot",
+		"name": "HOOTHOOT",
+		"dexNo": 163,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "noctowl",
+		"name": "NOCTOWL",
+		"dexNo": 164,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ledyba",
+		"name": "LEDYBA",
+		"dexNo": 165,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ledian",
+		"name": "LEDIAN",
+		"dexNo": 166,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "spinarak",
+		"name": "SPINARAK",
+		"dexNo": 167,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ariados",
+		"name": "ARIADOS",
+		"dexNo": 168,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "crobat",
+		"name": "CROBAT",
+		"dexNo": 169,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "chinchou",
+		"name": "CHINCHOU",
+		"dexNo": 170,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "lanturn",
+		"name": "LANTURN",
+		"dexNo": 171,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pichu",
+		"name": "PICHU",
+		"dexNo": 172,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "cleffa",
+		"name": "CLEFFA",
+		"dexNo": 173,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "igglybuff",
+		"name": "IGGLYBUFF",
+		"dexNo": 174,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "togepi",
+		"name": "TOGEPI",
+		"dexNo": 175,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "togetic",
+		"name": "TOGETIC",
+		"dexNo": 176,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "natu",
+		"name": "NATU",
+		"dexNo": 177,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "xatu",
+		"name": "XATU",
+		"dexNo": 178,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "mareep",
+		"name": "MAREEP",
+		"dexNo": 179,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "flaaffy",
+		"name": "FLAAFFY",
+		"dexNo": 180,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ampharos",
+		"name": "AMPHAROS",
+		"dexNo": 181,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "bellossom",
+		"name": "BELLOSSOM",
+		"dexNo": 182,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "marill",
+		"name": "MARILL",
+		"dexNo": 183,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "azumarill",
+		"name": "AZUMARILL",
+		"dexNo": 184,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sudowoodo",
+		"name": "SUDOWOODO",
+		"dexNo": 185,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "politoed",
+		"name": "POLITOED",
+		"dexNo": 186,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hoppip",
+		"name": "HOPPIP",
+		"dexNo": 187,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "skiploom",
+		"name": "SKIPLOOM",
+		"dexNo": 188,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "jumpluff",
+		"name": "JUMPLUFF",
+		"dexNo": 189,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "aipom",
+		"name": "AIPOM",
+		"dexNo": 190,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sunkern",
+		"name": "SUNKERN",
+		"dexNo": 191,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sunflora",
+		"name": "SUNFLORA",
+		"dexNo": 192,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "yanma",
+		"name": "YANMA",
+		"dexNo": 193,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "wooper",
+		"name": "WOOPER",
+		"dexNo": 194,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "quagsire",
+		"name": "QUAGSIRE",
+		"dexNo": 195,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "espeon",
+		"name": "ESPEON",
+		"dexNo": 196,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "umbreon",
+		"name": "UMBREON",
+		"dexNo": 197,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "murkrow",
+		"name": "MURKROW",
+		"dexNo": 198,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "slowking",
+		"name": "SLOWKING",
+		"dexNo": 199,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "misdreavus",
+		"name": "MISDREAVUS",
+		"dexNo": 200,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "unown",
+		"name": "UNOWN",
+		"dexNo": 201,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "wobbuffet",
+		"name": "WOBBUFFET",
+		"dexNo": 202,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "girafarig",
+		"name": "GIRAFARIG",
+		"dexNo": 203,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pineco",
+		"name": "PINECO",
+		"dexNo": 204,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "forretress",
+		"name": "FORRETRESS",
+		"dexNo": 205,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "dunsparce",
+		"name": "DUNSPARCE",
+		"dexNo": 206,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "gligar",
+		"name": "GLIGAR",
+		"dexNo": 207,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "steelix",
+		"name": "STEELIX",
+		"dexNo": 208,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "snubbull",
+		"name": "SNUBBULL",
+		"dexNo": 209,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "granbull",
+		"name": "GRANBULL",
+		"dexNo": 210,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "qwilfish",
+		"name": "QWILFISH",
+		"dexNo": 211,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "scizor",
+		"name": "SCIZOR",
+		"dexNo": 212,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "shuckle",
+		"name": "SHUCKLE",
+		"dexNo": 213,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "heracross",
+		"name": "HERACROSS",
+		"dexNo": 214,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "sneasel",
+		"name": "SNEASEL",
+		"dexNo": 215,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "teddiursa",
+		"name": "TEDDIURSA",
+		"dexNo": 216,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "ursaring",
+		"name": "URSARING",
+		"dexNo": 217,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "slugma",
+		"name": "SLUGMA",
+		"dexNo": 218,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "magcargo",
+		"name": "MAGCARGO",
+		"dexNo": 219,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "swinub",
+		"name": "SWINUB",
+		"dexNo": 220,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "piloswine",
+		"name": "PILOSWINE",
+		"dexNo": 221,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "corsola",
+		"name": "CORSOLA",
+		"dexNo": 222,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "remoraid",
+		"name": "REMORAID",
+		"dexNo": 223,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "octillery",
+		"name": "OCTILLERY",
+		"dexNo": 224,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "delibird",
+		"name": "DELIBIRD",
+		"dexNo": 225,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "mantine",
+		"name": "MANTINE",
+		"dexNo": 226,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "skarmory",
+		"name": "SKARMORY",
+		"dexNo": 227,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "houndour",
+		"name": "HOUNDOUR",
+		"dexNo": 228,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "houndoom",
+		"name": "HOUNDOOM",
+		"dexNo": 229,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "kingdra",
+		"name": "KINGDRA",
+		"dexNo": 230,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "phanpy",
+		"name": "PHANPY",
+		"dexNo": 231,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "donphan",
+		"name": "DONPHAN",
+		"dexNo": 232,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "porygon2",
+		"name": "PORYGON2",
+		"dexNo": 233,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "stantler",
+		"name": "STANTLER",
+		"dexNo": 234,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "smeargle",
+		"name": "SMEARGLE",
+		"dexNo": 235,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "tyrogue",
+		"name": "TYROGUE",
+		"dexNo": 236,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hitmontop",
+		"name": "HITMONTOP",
+		"dexNo": 237,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "smoochum",
+		"name": "SMOOCHUM",
+		"dexNo": 238,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "elekid",
+		"name": "ELEKID",
+		"dexNo": 239,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "magby",
+		"name": "MAGBY",
+		"dexNo": 240,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "miltank",
+		"name": "MILTANK",
+		"dexNo": 241,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "blissey",
+		"name": "BLISSEY",
+		"dexNo": 242,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "raikou",
+		"name": "RAIKOU",
+		"dexNo": 243,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "entei",
+		"name": "ENTEI",
+		"dexNo": 244,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "suicune",
+		"name": "SUICUNE",
+		"dexNo": 245,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "larvitar",
+		"name": "LARVITAR",
+		"dexNo": 246,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "pupitar",
+		"name": "PUPITAR",
+		"dexNo": 247,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "tyranitar",
+		"name": "TYRANITAR",
+		"dexNo": 248,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "lugia",
+		"name": "LUGIA",
+		"dexNo": 249,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "hooh",
+		"name": "HO-OH",
+		"dexNo": 250,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "celebi",
+		"name": "CELEBI",
+		"dexNo": 251,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "",
+		"name": "?????",
+		"dexNo": 253,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "egg",
+		"name": "EGG",
+		"dexNo": 254,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "",
+		"name": "?????",
+		"dexNo": 256,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "",
+		"name": "?????",
+		"dexNo": 257,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	},
+	{
+		"id": "",
+		"name": "?????",
+		"dexNo": 258,
+		"bsts": [],
+		"types": [],
+		"hasGender": false,
+		"growthRate": ""
+	}
+]
