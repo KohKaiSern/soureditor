@@ -7,6 +7,7 @@ interface move {
 	moveNo: number;
 	description: string;
 	basePower: number;
+	type: string;
 	accuracy: number;
 	powerPoints: number;
 	effectChance: number;
@@ -27,6 +28,7 @@ for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
 			moveNo: lineNo - 1,
 			description: '',
 			basePower: -1,
+			type: '',
 			accuracy: -1,
 			powerPoints: -1,
 			effectChance: -1
@@ -37,7 +39,9 @@ for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
 const DESCS = readFileSync(
 	import.meta.dirname + '/../../sourcrystal/data/moves/descriptions.asm',
 	'utf-8'
-).split('\n');
+)
+	.replaceAll('#MON', 'POKéMON')
+	.split('\n');
 
 for (let lineNo = 0; lineNo < DESCS.length; lineNo++) {
 	if (DESCS[lineNo].endsWith('Description:')) {
@@ -58,6 +62,26 @@ for (let lineNo = 0; lineNo < DESCS.length; lineNo++) {
 		const move = moves.find((move) => move.id === id);
 		if (move) {
 			move.description = description;
+		}
+	}
+}
+
+const MOVES = readFileSync(
+	import.meta.dirname + '/../../sourcrystal/data/moves/moves.asm',
+	'utf-8'
+).split('\n');
+
+for (let lineNo = 0; lineNo < MOVES.length; lineNo++) {
+	if (MOVES[lineNo].startsWith('\tmove ')) {
+		const MOVE_DATA = MOVES[lineNo].split(',').map((entry) => entry.trim());
+		const id = reduce(MOVE_DATA.at(0)!.slice(5));
+		const move = moves.find((move) => move.id === id);
+		if (move) {
+			move.basePower = parseInt(MOVE_DATA.at(2)!);
+			move.type = MOVE_DATA.at(3)!.replace('_TYPE', '');
+			move.accuracy = parseInt(MOVE_DATA.at(4)!);
+			move.powerPoints = parseInt(MOVE_DATA.at(5)!);
+			move.effectChance = parseInt(MOVE_DATA.at(6)!);
 		}
 	}
 }
