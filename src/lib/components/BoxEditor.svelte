@@ -1,5 +1,37 @@
 <script lang="ts">
+	import { Button, P, Card, Heading } from 'flowbite-svelte';
+	import { CaretLeftSolid, CaretRightSolid } from 'flowbite-svelte-icons';
+	import Mon from './Mon.svelte';
+
 	let { mons = $bindable() } = $props();
+	let boxNo = $state(1);
 </script>
 
-<h1>Test</h1>
+<section>
+	<Card class="sticky top-3 z-10 w-fit p-3">
+		<div class="flex flex-nowrap items-center gap-3">
+			<Button
+				color="purple"
+				class="p-2!"
+				onclick={() => {
+					boxNo = boxNo === 1 ? 16 : boxNo - 1;
+				}}><CaretLeftSolid class="size-4" /></Button
+			><P>Box {boxNo}</P><Button
+				color="purple"
+				class="p-2!"
+				onclick={() => {
+					boxNo = boxNo === 16 ? 1 : boxNo + 1;
+				}}><CaretRightSolid class="size-4" /></Button
+			>
+		</div>
+	</Card>
+	<div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+		{#each mons[boxNo - 1] as mon, i}
+			{#if !!mon}
+				<Mon bind:mon={mons[boxNo - 1][i]} />
+			{:else}
+				<Card class="max-w-none p-5"><Heading tag="h5">Empty</Heading></Card>
+			{/if}
+		{/each}
+	</div>
+</section>

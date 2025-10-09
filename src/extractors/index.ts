@@ -5,7 +5,6 @@ import moves from './moves';
 import pokemon from './pokemon';
 import version from './version';
 import growthRateCoefficients from './growthRateCoefficients';
-import gifs from './processPokemon';
 
 const PATH = import.meta.dirname + '/../../src/lib/data/';
 
@@ -15,4 +14,3 @@ writeFileSync(PATH + 'moves.json', JSON.stringify(moves));
 writeFileSync(PATH + 'pokemon.json', JSON.stringify(pokemon));
 writeFileSync(PATH + 'version.json', JSON.stringify(version));
 writeFileSync(PATH + 'growthRateCoefficients.json', JSON.stringify(growthRateCoefficients));
-gifs();
