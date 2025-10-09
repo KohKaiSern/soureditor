@@ -36,12 +36,11 @@ function parsePalette(palPath: string): RGB[] {
 			colors.push({ r, g, b });
 		}
 	}
-	// Ensure exactly 2 colors
 	while (colors.length < 2) colors.push({ r: 0, g: 0, b: 0 });
 	return colors;
 }
 
-/** Parse animation commands (frame, setrepeat, dorepeat, endanim) */
+/** Parse animation commands */
 function parseAnimation(animPath: string): AnimFrame[] {
 	const content = readFileSync(animPath, 'utf-8');
 	const commands: AnimCommand[] = [];
@@ -92,7 +91,7 @@ function parseAnimation(animPath: string): AnimFrame[] {
 	return frames;
 }
 
-/** Load sprite sheet into individual frames */
+/** Load sprite sheet into frames */
 function loadSpriteSheet(pngPath: string): PNG[] {
 	const png = PNG.sync.read(readFileSync(pngPath));
 	const frameHeight = png.width;
@@ -115,45 +114,56 @@ function loadSpriteSheet(pngPath: string): PNG[] {
 	return frames;
 }
 
-/** Apply 2-color palette in GBC convention */
+/** Apply palette using mapping: 0->Palette[1], 1->Black, 2->Transparent, 3->Palette[0] */
 function applyPalette(frame: PNG, palette: RGB[]): PNG {
 	const result = new PNG({ width: frame.width, height: frame.height });
 	for (let y = 0; y < frame.height; y++) {
 		for (let x = 0; x < frame.width; x++) {
 			const idx = (y * frame.width + x) * 4;
-			const pixelIndex = frame.data[idx] & 3; // red channel as 2-bit index
+			const pixelIndex = frame.data[idx] & 3;
 
-			if (pixelIndex === 0) {
-				// Transparent
-				result.data[idx] = 0;
-				result.data[idx + 1] = 0;
-				result.data[idx + 2] = 0;
-				result.data[idx + 3] = 0;
-			} else if (pixelIndex === 1) {
-				// Black
-				result.data[idx] = 0;
-				result.data[idx + 1] = 0;
-				result.data[idx + 2] = 0;
-				result.data[idx + 3] = 255;
-			} else if (pixelIndex === 2) {
-				const color = palette[0];
-				result.data[idx] = color.r;
-				result.data[idx + 1] = color.g;
-				result.data[idx + 2] = color.b;
-				result.data[idx + 3] = 255;
-			} else if (pixelIndex === 3) {
-				const color = palette[1];
-				result.data[idx] = color.r;
-				result.data[idx + 1] = color.g;
-				result.data[idx + 2] = color.b;
-				result.data[idx + 3] = 255;
+			switch (pixelIndex) {
+				case 0: {
+					// Palette[1]
+					const color = palette[1];
+					result.data[idx] = color.r;
+					result.data[idx + 1] = color.g;
+					result.data[idx + 2] = color.b;
+					result.data[idx + 3] = 255;
+					break;
+				}
+				case 1: {
+					// Black
+					result.data[idx] = 0;
+					result.data[idx + 1] = 0;
+					result.data[idx + 2] = 0;
+					result.data[idx + 3] = 255;
+					break;
+				}
+				case 2: {
+					// Transparent
+					result.data[idx] = 0;
+					result.data[idx + 1] = 0;
+					result.data[idx + 2] = 0;
+					result.data[idx + 3] = 0;
+					break;
+				}
+				case 3: {
+					// Palette[0]
+					const color = palette[0];
+					result.data[idx] = color.r;
+					result.data[idx + 1] = color.g;
+					result.data[idx + 2] = color.b;
+					result.data[idx + 3] = 255;
+					break;
+				}
 			}
 		}
 	}
 	return result;
 }
 
-/** Create GIF from frames and animation */
+/** Create GIF */
 function createGIF(frames: PNG[], animSequence: AnimFrame[], outputPath: string): void {
 	const width = frames[0].width;
 	const height = frames[0].height;
@@ -176,7 +186,7 @@ function createGIF(frames: PNG[], animSequence: AnimFrame[], outputPath: string)
 	encoder.finish();
 }
 
-/** Process a single Pokémon folder, optional palette override for Unown letters */
+/** Process Pokémon folder, optional palette override for Unown letters */
 function processPokemon(
 	pokemonFolder: string,
 	outputFolder: string,
@@ -218,12 +228,9 @@ export function gifs(): void {
 		const inputPath = join(INPUT_DIR, name);
 		const outputPath = join(OUTPUT_DIR, name);
 
-		// Special-case Unown letters using parent palette
 		if (name.toLowerCase().startsWith('unown') && name !== 'unown') {
 			processPokemon(inputPath, outputPath, unownNormalPalette!, unownShinyPalette!);
-		}
-		// Skip palette-only folder; normal Pokémon
-		else if (name !== 'unown') {
+		} else if (name !== 'unown') {
 			processPokemon(inputPath, outputPath);
 		}
 	}
