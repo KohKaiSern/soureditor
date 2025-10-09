@@ -23,6 +23,7 @@ interface AnimCommand {
 const INPUT_DIR = join(import.meta.dirname, '../../sourcrystal/gfx/pokemon');
 const OUTPUT_DIR = join(import.meta.dirname, '../lib/sprites');
 
+/** Parse palette: returns exactly 2 colors from .pal file */
 function parsePalette(palPath: string): RGB[] {
 	const content = readFileSync(palPath, 'utf-8');
 	const colors: RGB[] = [];
@@ -35,9 +36,12 @@ function parsePalette(palPath: string): RGB[] {
 			colors.push({ r, g, b });
 		}
 	}
+	// Ensure exactly 2 colors
+	while (colors.length < 2) colors.push({ r: 0, g: 0, b: 0 });
 	return colors;
 }
 
+/** Parse animation commands (frame, setrepeat, dorepeat, endanim) */
 function parseAnimation(animPath: string): AnimFrame[] {
 	const content = readFileSync(animPath, 'utf-8');
 	const commands: AnimCommand[] = [];
@@ -88,6 +92,7 @@ function parseAnimation(animPath: string): AnimFrame[] {
 	return frames;
 }
 
+/** Load sprite sheet into individual frames */
 function loadSpriteSheet(pngPath: string): PNG[] {
 	const png = PNG.sync.read(readFileSync(pngPath));
 	const frameHeight = png.width;
@@ -110,28 +115,45 @@ function loadSpriteSheet(pngPath: string): PNG[] {
 	return frames;
 }
 
+/** Apply 2-color palette in GBC convention */
 function applyPalette(frame: PNG, palette: RGB[]): PNG {
 	const result = new PNG({ width: frame.width, height: frame.height });
 	for (let y = 0; y < frame.height; y++) {
 		for (let x = 0; x < frame.width; x++) {
 			const idx = (y * frame.width + x) * 4;
-			const gray = frame.data[idx];
-			const alpha = frame.data[idx + 3];
-			if (alpha === 0) {
-				result.data.fill(0, idx, idx + 4);
-			} else {
-				const paletteIndex = Math.floor((gray / 255) * (palette.length - 1));
-				const color = palette[Math.min(paletteIndex, palette.length - 1)];
+			const pixelIndex = frame.data[idx] & 3; // red channel as 2-bit index
+
+			if (pixelIndex === 0) {
+				// Transparent
+				result.data[idx] = 0;
+				result.data[idx + 1] = 0;
+				result.data[idx + 2] = 0;
+				result.data[idx + 3] = 0;
+			} else if (pixelIndex === 1) {
+				// Black
+				result.data[idx] = 0;
+				result.data[idx + 1] = 0;
+				result.data[idx + 2] = 0;
+				result.data[idx + 3] = 255;
+			} else if (pixelIndex === 2) {
+				const color = palette[0];
 				result.data[idx] = color.r;
 				result.data[idx + 1] = color.g;
 				result.data[idx + 2] = color.b;
-				result.data[idx + 3] = alpha;
+				result.data[idx + 3] = 255;
+			} else if (pixelIndex === 3) {
+				const color = palette[1];
+				result.data[idx] = color.r;
+				result.data[idx + 1] = color.g;
+				result.data[idx + 2] = color.b;
+				result.data[idx + 3] = 255;
 			}
 		}
 	}
 	return result;
 }
 
+/** Create GIF from frames and animation */
 function createGIF(frames: PNG[], animSequence: AnimFrame[], outputPath: string): void {
 	const width = frames[0].width;
 	const height = frames[0].height;
@@ -154,6 +176,7 @@ function createGIF(frames: PNG[], animSequence: AnimFrame[], outputPath: string)
 	encoder.finish();
 }
 
+/** Process a single Pokémon folder, optional palette override for Unown letters */
 function processPokemon(
 	pokemonFolder: string,
 	outputFolder: string,
@@ -176,12 +199,13 @@ function processPokemon(
 	createGIF(shinyFrames, animSequence, join(outputFolder, 'shiny.gif'));
 }
 
+/** Main GIF generation */
 export function gifs(): void {
 	const pokemonFolders = readdirSync(INPUT_DIR, { withFileTypes: true })
 		.filter((d) => d.isDirectory())
 		.map((d) => d.name);
 
-	// load Unown palettes if present
+	// Load Unown palettes if present
 	let unownNormalPalette: RGB[] | undefined;
 	let unownShinyPalette: RGB[] | undefined;
 	if (pokemonFolders.includes('unown')) {
@@ -194,11 +218,11 @@ export function gifs(): void {
 		const inputPath = join(INPUT_DIR, name);
 		const outputPath = join(OUTPUT_DIR, name);
 
-		// handle Unown letters using parent palettes
+		// Special-case Unown letters using parent palette
 		if (name.toLowerCase().startsWith('unown') && name !== 'unown') {
 			processPokemon(inputPath, outputPath, unownNormalPalette!, unownShinyPalette!);
 		}
-		// skip palette-only folder and process normal Pokémon
+		// Skip palette-only folder; normal Pokémon
 		else if (name !== 'unown') {
 			processPokemon(inputPath, outputPath);
 		}
