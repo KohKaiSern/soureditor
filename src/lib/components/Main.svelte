@@ -3,8 +3,8 @@
 	import { blur } from 'svelte/transition';
 	import { version } from '$data';
 	import { type Mon, type BagSlot } from '$lib/types';
-	import { buf2hex } from '$lib/utils';
-	import { parseSave } from '$lib/components/parsers';
+	import { buf2hex, hex2buf } from '$lib/utils';
+	import { parseSave, reverseParseSave } from '$lib/components/parsers';
 
 	let file: Array<File> = $state([]);
 	let toastMsg = $state('');
@@ -30,7 +30,16 @@
 		}, 3000);
 	};
 
-	const downloadSave = () => {};
+	const downloadSave = async () => {
+		if (!file) return;
+		const fileHex = buf2hex(await file[0].arrayBuffer());
+		const buffer = hex2buf(reverseParseSave(fileHex, mons, bag));
+		const link = URL.createObjectURL(new Blob([buffer]));
+		const a = document.createElement('a');
+		a.href = link;
+		a.download = `${file[0].name.slice(0, -4)}_EDITED${file[0].name.slice(-4)}`;
+		a.click();
+	};
 
 	$inspect(mons);
 	$inspect(bag);
