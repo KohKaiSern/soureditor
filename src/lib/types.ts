@@ -1,21 +1,20 @@
 export interface Mon {
-  species: string,
-  heldItem: string,
-  moves: Array<string>,
-  exp: number,
-  level: number,
-  statExps: Array<number>,
-  dvs: Array<number>,
-  happiness: number,
+	species: string;
+	heldItem: string;
+	moves: Array<string>;
+	exp: number;
+	level: number;
+	statExps: Array<number>;
+	dvs: Array<number>;
+	happiness: number;
 }
 
 interface Item {
-  name: string,
-  qty: number
+	name: string;
+	qty: number;
 }
 
 export interface BagSlot {
-  count: number,
-  contents: Array<Item>
+	count: number;
+	contents: Array<Item>;
 }
-
