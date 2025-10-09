@@ -91,25 +91,22 @@ function parseAnimation(animPath: string): AnimFrame[] {
 	return frames;
 }
 
-/** Load sprite sheet into frames as 2-bit indices (0-3) */
+/** Load sprite sheet into frames */
 function loadSpriteSheet(pngPath: string): PNG[] {
 	const png = PNG.sync.read(readFileSync(pngPath));
 	const frameHeight = png.width;
 	const frameCount = Math.max(1, Math.floor(png.height / frameHeight));
 	const frames: PNG[] = [];
-
 	for (let i = 0; i < frameCount; i++) {
 		const frame = new PNG({ width: png.width, height: frameHeight });
 		for (let y = 0; y < frameHeight; y++) {
 			for (let x = 0; x < png.width; x++) {
 				const srcIdx = ((i * frameHeight + y) * png.width + x) * 4;
-				const gray = png.data[srcIdx];
-				let index: number;
-				if (gray < 64) index = 0;
-				else if (gray < 128) index = 1;
-				else if (gray < 192) index = 2;
-				else index = 3;
-				frame.data[(y * png.width + x) * 4] = index;
+				const dstIdx = (y * png.width + x) * 4;
+				frame.data[dstIdx] = png.data[srcIdx];
+				frame.data[dstIdx + 1] = png.data[srcIdx + 1];
+				frame.data[dstIdx + 2] = png.data[srcIdx + 2];
+				frame.data[dstIdx + 3] = png.data[srcIdx + 3];
 			}
 		}
 		frames.push(frame);
@@ -117,44 +114,49 @@ function loadSpriteSheet(pngPath: string): PNG[] {
 	return frames;
 }
 
-/** Apply Game Boy Color palette mapping: 0->transparent, 1->black, 2->palette[1], 3->palette[0] */
+/** Apply Game Boy Color palette to sprite */
 function applyPalette(frame: PNG, palette: RGB[]): PNG {
 	const result = new PNG({ width: frame.width, height: frame.height });
+	const fullPalette: RGB[] = [...palette];
+	while (fullPalette.length < 4) fullPalette.push({ r: 0, g: 0, b: 0 });
 
 	for (let y = 0; y < frame.height; y++) {
 		for (let x = 0; x < frame.width; x++) {
 			const idx = (y * frame.width + x) * 4;
-			const pixelIndex = frame.data[idx];
+			const r = frame.data[idx];
+			const g = frame.data[idx + 1];
+			const b = frame.data[idx + 2];
 
-			switch (pixelIndex) {
-				case 0: // Transparent
-					result.data[idx + 0] = 0;
-					result.data[idx + 1] = 0;
-					result.data[idx + 2] = 0;
-					result.data[idx + 3] = 0;
-					break;
-				case 1: // Black
-					result.data[idx + 0] = 0;
-					result.data[idx + 1] = 0;
-					result.data[idx + 2] = 0;
-					result.data[idx + 3] = 255;
-					break;
-				case 2: // Palette[1]
-					result.data[idx + 0] = palette[1].r;
-					result.data[idx + 1] = palette[1].g;
-					result.data[idx + 2] = palette[1].b;
-					result.data[idx + 3] = 255;
-					break;
-				case 3: // Palette[0]
-					result.data[idx + 0] = palette[0].r;
-					result.data[idx + 1] = palette[0].g;
-					result.data[idx + 2] = palette[0].b;
-					result.data[idx + 3] = 255;
-					break;
+			// Convert to grayscale
+			const gray = Math.round(0.299 * r + 0.587 * g + 0.114 * b);
+
+			if (gray >= 240) {
+				// Transparent
+				result.data[idx + 0] = 0;
+				result.data[idx + 1] = 0;
+				result.data[idx + 2] = 0;
+				result.data[idx + 3] = 0;
+			} else if (gray >= 170) {
+				const c = fullPalette[0];
+				result.data[idx + 0] = c.r;
+				result.data[idx + 1] = c.g;
+				result.data[idx + 2] = c.b;
+				result.data[idx + 3] = 255;
+			} else if (gray >= 85) {
+				const c = fullPalette[1];
+				result.data[idx + 0] = c.r;
+				result.data[idx + 1] = c.g;
+				result.data[idx + 2] = c.b;
+				result.data[idx + 3] = 255;
+			} else {
+				const c = fullPalette[2];
+				result.data[idx + 0] = c.r;
+				result.data[idx + 1] = c.g;
+				result.data[idx + 2] = c.b;
+				result.data[idx + 3] = 255;
 			}
 		}
 	}
-
 	return result;
 }
 
@@ -181,7 +183,7 @@ function createGIF(frames: PNG[], animSequence: AnimFrame[], outputPath: string)
 	encoder.finish();
 }
 
-/** Process Pokémon folder, optional palette override for Unown letters */
+/** Process Pokémon folder */
 function processPokemon(
 	pokemonFolder: string,
 	outputFolder: string,
@@ -210,9 +212,9 @@ export function gifs(): void {
 		.filter((d) => d.isDirectory())
 		.map((d) => d.name);
 
-	// Load Unown palettes if present
 	let unownNormalPalette: RGB[] | undefined;
 	let unownShinyPalette: RGB[] | undefined;
+
 	if (pokemonFolders.includes('unown')) {
 		const unownPalPath = join(INPUT_DIR, 'unown');
 		unownNormalPalette = parsePalette(join(unownPalPath, 'normal.pal'));
@@ -223,6 +225,7 @@ export function gifs(): void {
 		const inputPath = join(INPUT_DIR, name);
 		const outputPath = join(OUTPUT_DIR, name);
 
+		// Unown letters use the common Unown palette
 		if (name.toLowerCase().startsWith('unown') && name !== 'unown') {
 			processPokemon(inputPath, outputPath, unownNormalPalette!, unownShinyPalette!);
 		} else if (name !== 'unown') {
