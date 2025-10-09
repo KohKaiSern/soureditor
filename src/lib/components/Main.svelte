@@ -21,7 +21,6 @@
 		try {
 			[mons, bag] = parseSave(fileHex);
 		} catch (error) {
-			console.log(error);
 			toastMsg = `This save file failed to be parsed. Make sure that it's from Sour Crystal v${version}.`;
 		}
 	};
