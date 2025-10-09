@@ -22,7 +22,12 @@
 			[mons, bag] = parseSave(fileHex);
 		} catch (error) {
 			toastMsg = `This save file failed to be parsed. Make sure that it's from Sour Crystal v${version}.`;
+			return;
 		}
+		toastMsg = 'Save Validated!';
+		setTimeout(() => {
+			toastMsg = '';
+		}, 3000);
 	};
 
 	const downloadSave = () => {};
