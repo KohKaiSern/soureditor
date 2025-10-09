@@ -20,9 +20,9 @@ const getFlags = (fileHex: Array<string>): string[][] => {
   for (let box = 0; box < 16; box++) {
     //Grab the three relevant bytes
     let flagArr: string[] | string = [
-      fileHex[parseInt(addresses['sBackupNewBox1'], 16) + 33 * box + 20],
-      fileHex[parseInt(addresses['sBackupNewBox1'], 16) + 33 * box + 21],
-      fileHex[parseInt(addresses['sBackupNewBox1'], 16) + 33 * box + 22]
+      fileHex[parseInt(addresses.sBackupNewBox1, 16) + 33 * box + 20],
+      fileHex[parseInt(addresses.sBackupNewBox1, 16) + 33 * box + 21],
+      fileHex[parseInt(addresses.sBackupNewBox1, 16) + 33 * box + 22]
     ];
     //Convert into binary
     flagArr = flagArr
@@ -54,10 +54,10 @@ export const parseMonAddresses = (fileHex: Array<string>): number[][] => {
         continue
       }
       if (flags[box][i] === '0') {
-        data[box][i] = parseInt(addresses['sNewBoxMons1'], 16) + indexes[box][i] * 47
+        data[box][i] = parseInt(addresses.sNewBoxMons1, 16) + indexes[box][i] * 47
       }
       else {
-        data[box][i] = parseInt(addresses['sNewBoxMons2'], 16) + indexes[box][i] * 47
+        data[box][i] = parseInt(addresses.sNewBoxMons2, 16) + indexes[box][i] * 47
       }
     }
   }
