@@ -1,15 +1,30 @@
 <script lang="ts">
-	import { Heading, Label, Fileupload, Button, Helper, P, List, Li, Toast } from 'flowbite-svelte';
+	import {
+		Heading,
+		Label,
+		Fileupload,
+		Button,
+		Helper,
+		P,
+		List,
+		Li,
+		Toast,
+		RadioButton,
+		ButtonGroup,
+		Hr
+	} from 'flowbite-svelte';
 	import { blur } from 'svelte/transition';
 	import { version } from '$data';
 	import { type Mon, type BagSlot } from '$lib/types';
 	import { buf2hex, hex2buf } from '$lib/utils';
 	import { parseSave, reverseParseSave } from '$lib/components/parsers';
+	import BoxEditor from './BoxEditor.svelte';
 
 	let file: Array<File> = $state([]);
 	let toastMsg = $state('');
 	let mons: Mon[][] = $state([]);
 	let bag: Record<string, BagSlot> = $state({});
+	let selectedEditor = $state('');
 
 	const handleSave = async () => {
 		if (file[0].size > 33000 || file[0].size < 32000) {
@@ -46,7 +61,7 @@
 </script>
 
 {#if toastMsg}
-	<div transition:blur={{ amount: 10 }} class="absolute top-5 right-5">
+	<div transition:blur={{ amount: 10 }} class="absolute right-5 top-5">
 		<Toast>
 			{toastMsg}
 		</Toast>
@@ -81,4 +96,23 @@
 <P>
 	<em class="font-italic">Credits: Rev3lation, SourApple, Emi, FIQ, Darsh</em>
 </P>
-<br />
+{#if file[0]}
+	<ButtonGroup class="mt-6">
+		<RadioButton
+			value="boxes"
+			bind:group={selectedEditor}
+			checkedClass="bg-purple-500 !text-white dark:bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-600"
+		>
+			PC Boxes
+		</RadioButton>
+		<RadioButton
+			value="bag"
+			bind:group={selectedEditor}
+			checkedClass="bg-purple-500 !text-white dark:bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-600"
+		>
+			Bag
+		</RadioButton>
+	</ButtonGroup>
+{/if}
+<Hr />
+{#if selectedEditor === 'boxes'}<BoxEditor bind:mons />{/if}
