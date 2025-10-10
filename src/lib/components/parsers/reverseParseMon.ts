@@ -9,7 +9,7 @@ export const reverseParseMon = (fileHex: string[], address: number, mon: Mon): s
 		.padStart(2, '0');
 
 	//Byte #2: Held Item
-	if (mon.heldItem === 'None') {
+	if (mon.heldItem === 'NONE') {
 		fileHex[address + 1] = '00';
 	} else {
 		fileHex[address + 1] = items
@@ -20,7 +20,7 @@ export const reverseParseMon = (fileHex: string[], address: number, mon: Mon): s
 
 	//Bytes #3-#6: Moves
 	for (let i = 0; i < 4; i++) {
-		if (mon.moves[i] === 'None') {
+		if (mon.moves[i] === 'NONE') {
 			fileHex[address + i + 2] = '00';
 		} else {
 			fileHex[address + i + 2] = moves

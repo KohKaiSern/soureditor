@@ -8,14 +8,14 @@ export const parseMon = (fileHex: string[], address: number): Mon => {
 	//Byte #2: Held Item
 	const heldItem =
 		fileHex[address + 1] === '00'
-			? 'None'
+			? 'NONE'
 			: items.find((item) => item.itemNo === parseInt(fileHex[address + 1], 16))!.name;
 
 	//Bytes #3-#6: Moves
 	const moveset = [];
 	for (let i = 2; i < 6; i++) {
 		moveset.push(
-			fileHex[address + i] === '00' ? 'None' : moves[parseInt(fileHex[address + i], 16) - 1].name
+			fileHex[address + i] === '00' ? 'NONE' : moves[parseInt(fileHex[address + i], 16) - 1].name
 		);
 	}
 
