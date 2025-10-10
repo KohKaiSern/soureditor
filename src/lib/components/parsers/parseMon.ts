@@ -51,6 +51,9 @@ export const parseMon = (fileHex: string[], address: number): Mon => {
 	//Byte #29: Level
 	const level = parseInt(fileHex[address + 28], 16);
 
+	//Byte #30: Alt Species (isEgg)
+	const isEgg = fileHex[address + 29] === 'FD' ? true : false;
+
 	return {
 		species,
 		heldItem,
@@ -59,7 +62,8 @@ export const parseMon = (fileHex: string[], address: number): Mon => {
 		level,
 		statExps,
 		dvs,
-		happiness
+		happiness,
+		isEgg
 	};
 };
 

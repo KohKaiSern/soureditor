@@ -8,6 +8,11 @@ export const reverseParseMon = (fileHex: string[], address: number, mon: Mon): s
 		.dexNo.toString(16)
 		.padStart(2, '0');
 
+	//Byte #30: Alt Species (isEgg)
+	if (!mon.isEgg) {
+		fileHex[address + 29] = fileHex[address];
+	}
+
 	//Byte #2: Held Item
 	if (mon.heldItem === 'NONE') {
 		fileHex[address + 1] = '00';

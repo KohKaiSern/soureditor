@@ -7,6 +7,7 @@ export interface Mon {
 	statExps: Array<number>;
 	dvs: Array<number>;
 	happiness: number;
+	isEgg: boolean;
 }
 
 interface Item {
