@@ -16,6 +16,6 @@ interface Item {
 }
 
 export interface BagSlot {
-	count: number;
+	count?: number;
 	contents: Array<Item>;
 }

@@ -1,5 +1,5 @@
 import { type Mon, type BagSlot } from '$lib/types';
-import { parseMonAddresses, parseMon } from '$lib/components/parsers';
+import { parseMonAddresses, parseMon, parseBag } from '$lib/components/parsers';
 
 export const parseSave = (fileHex: Array<string>): [Mon[][], Record<string, BagSlot>] => {
 	const monAddresses = parseMonAddresses(fileHex);
@@ -16,7 +16,10 @@ export const parseSave = (fileHex: Array<string>): [Mon[][], Record<string, BagS
 			mons[box][i] = parseMon(fileHex, monAddresses[box][i]);
 		}
 	}
-	return [mons, {}];
+
+	const bag: Record<string, BagSlot> = parseBag(fileHex);
+
+	return [mons, bag];
 };
 
 export default parseSave;

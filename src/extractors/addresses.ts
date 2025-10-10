@@ -4,9 +4,9 @@ const SYMBOLS = [
 	'sNewBoxMons1',
 	'sNewBoxMons2',
 	'sBackupNewBox1',
-	'SaveBackupPlayerData',
-	'SaveChecksum',
-	'SaveBackupChecksum'
+	'sBackupPlayerData',
+	'sChecksum',
+	'sBackupChecksum'
 ];
 const addresses: Record<string, string> = {};
 

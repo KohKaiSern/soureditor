@@ -2,7 +2,7 @@
 	"sNewBoxMons1": "4000",
 	"sNewBoxMons2": "6000",
 	"sBackupNewBox1": "2f20",
-	"SaveBackupPlayerData": "4b57",
-	"SaveChecksum": "4b15",
-	"SaveBackupChecksum": "4b8d"
+	"sBackupPlayerData": "1209",
+	"sChecksum": "7e1f4",
+	"sBackupChecksum": "1f0d"
 }
