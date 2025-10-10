@@ -4,7 +4,11 @@
 	let { mon = $bindable() } = $props();
 </script>
 
-<Heading tag="h3">EDIT: {mon.species}</Heading>
+{#if mon.isEgg}
+	<Heading tag="h4">EDIT: EGG ({mon.species})</Heading>
+{:else}
+	<Heading tag="h4">EDIT: {mon.species}</Heading>
+{/if}
 
 <Accordion class="mt-4">
 	<AccordionItem open>

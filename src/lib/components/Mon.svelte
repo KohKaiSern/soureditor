@@ -12,7 +12,11 @@
 
 <Card class="relative max-w-none p-5">
 	<div class="mb-3 flex justify-between gap-3">
-		<Heading tag="h6">{mon.species}</Heading>
+		{#if mon.isEgg}
+			<Heading tag="h6">EGG ({mon.species})</Heading>
+		{:else}
+			<Heading tag="h6">{mon.species}</Heading>
+		{/if}
 		<div class="flex gap-3">
 			{#each pokemon.find((pokemon) => pokemon.name === mon.species)!.types as type}
 				<div
