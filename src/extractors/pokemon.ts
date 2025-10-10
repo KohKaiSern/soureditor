@@ -7,7 +7,7 @@ interface mon {
 	dexNo: number;
 	bsts: Array<number>;
 	types: Array<string>;
-	hasGender: boolean;
+	genderRatio: number | 'NONE';
 	growthRate: string;
 }
 
@@ -29,7 +29,7 @@ for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
 			dexNo: lineNo - 1,
 			bsts: [],
 			types: [],
-			hasGender: true,
+			genderRatio: 'NONE',
 			growthRate: ''
 		});
 	}
@@ -60,7 +60,9 @@ for (let filename of BASE_STATS_DIR) {
 				mon.types = [mon.types[0]];
 			}
 			if (MON[9].includes('GENDER_UNKNOWN')) {
-				mon.hasGender = false;
+			} else {
+				mon.genderRatio =
+					parseInt(MON[9].split('GENDER_F').at(1)!.split(' ').at(0)!.replace('_', '.')) / 100;
 			}
 			mon.growthRate = reduce(MON[15].split(' ').at(1)!.replace('GROWTH_', ''));
 		}

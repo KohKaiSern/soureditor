@@ -37,3 +37,26 @@ const TYPE_COLORS: Record<string, string> = {
 export const getTypeColor = (type: string): string => {
 	return TYPE_COLORS[type];
 };
+
+const HIDDEN_POWER_TYPES = [
+	'FIGHTING',
+	'FLYING',
+	'POISON',
+	'GROUND',
+	'ROCK',
+	'BUG',
+	'GHOST',
+	'STEEL',
+	'FIRE',
+	'WATER',
+	'GRASS',
+	'ELECTRIC',
+	'PSYCHIC',
+	'ICE',
+	'DRAGON',
+	'DARK'
+];
+
+export const getHiddenPowerType = (x: number): string => {
+	return HIDDEN_POWER_TYPES[x];
+};
