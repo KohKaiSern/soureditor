@@ -55,8 +55,10 @@ for (let filename of BASE_STATS_DIR) {
 			mon.types = MON[5]
 				.split(' ')
 				.slice(1, 3)
-				.map((type) => type.replaceAll('_TYPE', ''));
-			mon.types[0] = mon.types.at(0)!.slice(0, -1);
+				.map((type) => type.replaceAll('_TYPE', '').replaceAll(',', ''));
+			if (mon.types[0] === mon.types[1]) {
+				mon.types = [mon.types[0]];
+			}
 			if (MON[9].includes('GENDER_UNKNOWN')) {
 				mon.hasGender = false;
 			}

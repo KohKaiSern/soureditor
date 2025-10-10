@@ -31,7 +31,7 @@
 		"name": "CHARMANDER",
 		"dexNo": 4,
 		"bsts": [39, 52, 43, 65, 60, 50],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -40,7 +40,7 @@
 		"name": "CHARMELEON",
 		"dexNo": 5,
 		"bsts": [58, 64, 58, 80, 80, 65],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -58,7 +58,7 @@
 		"name": "SQUIRTLE",
 		"dexNo": 7,
 		"bsts": [44, 48, 65, 43, 50, 64],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -67,7 +67,7 @@
 		"name": "WARTORTLE",
 		"dexNo": 8,
 		"bsts": [59, 63, 80, 58, 65, 80],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -76,7 +76,7 @@
 		"name": "BLASTOISE",
 		"dexNo": 9,
 		"bsts": [79, 83, 100, 78, 85, 105],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -85,7 +85,7 @@
 		"name": "CATERPIE",
 		"dexNo": 10,
 		"bsts": [45, 30, 35, 45, 20, 20],
-		"types": ["BUG", "BUG"],
+		"types": ["BUG"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -94,7 +94,7 @@
 		"name": "METAPOD",
 		"dexNo": 11,
 		"bsts": [50, 20, 55, 30, 25, 25],
-		"types": ["BUG", "BUG"],
+		"types": ["BUG"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -166,7 +166,7 @@
 		"name": "RATTATA",
 		"dexNo": 19,
 		"bsts": [30, 56, 35, 72, 25, 35],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -175,7 +175,7 @@
 		"name": "RATICATE",
 		"dexNo": 20,
 		"bsts": [55, 81, 60, 97, 50, 70],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -202,7 +202,7 @@
 		"name": "EKANS",
 		"dexNo": 23,
 		"bsts": [35, 60, 44, 55, 40, 54],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -211,7 +211,7 @@
 		"name": "ARBOK",
 		"dexNo": 24,
 		"bsts": [60, 95, 69, 80, 65, 79],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -220,7 +220,7 @@
 		"name": "PIKACHU",
 		"dexNo": 25,
 		"bsts": [35, 55, 40, 90, 50, 50],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -229,7 +229,7 @@
 		"name": "RAICHU",
 		"dexNo": 26,
 		"bsts": [60, 90, 55, 110, 90, 80],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -238,7 +238,7 @@
 		"name": "SANDSHREW",
 		"dexNo": 27,
 		"bsts": [50, 75, 85, 40, 20, 30],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -247,7 +247,7 @@
 		"name": "SANDSLASH",
 		"dexNo": 28,
 		"bsts": [75, 100, 110, 65, 45, 55],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -256,7 +256,7 @@
 		"name": "NIDORAN♀",
 		"dexNo": 29,
 		"bsts": [55, 47, 52, 41, 40, 40],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -265,7 +265,7 @@
 		"name": "NIDORINA",
 		"dexNo": 30,
 		"bsts": [70, 62, 67, 56, 55, 55],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -283,7 +283,7 @@
 		"name": "NIDORAN♂",
 		"dexNo": 32,
 		"bsts": [46, 57, 40, 50, 40, 40],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -292,7 +292,7 @@
 		"name": "NIDORINO",
 		"dexNo": 33,
 		"bsts": [61, 72, 57, 65, 55, 55],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -310,7 +310,7 @@
 		"name": "CLEFAIRY",
 		"dexNo": 35,
 		"bsts": [70, 45, 48, 35, 60, 65],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -319,7 +319,7 @@
 		"name": "CLEFABLE",
 		"dexNo": 36,
 		"bsts": [95, 70, 73, 60, 95, 90],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -328,7 +328,7 @@
 		"name": "VULPIX",
 		"dexNo": 37,
 		"bsts": [38, 41, 40, 65, 50, 65],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -337,7 +337,7 @@
 		"name": "NINETALES",
 		"dexNo": 38,
 		"bsts": [73, 76, 75, 100, 81, 100],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -346,7 +346,7 @@
 		"name": "JIGGLYPUFF",
 		"dexNo": 39,
 		"bsts": [15, 45, 20, 20, 45, 25],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -355,7 +355,7 @@
 		"name": "WIGGLYTUFF",
 		"dexNo": 40,
 		"bsts": [40, 70, 45, 45, 85, 50],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -445,7 +445,7 @@
 		"name": "DIGLETT",
 		"dexNo": 50,
 		"bsts": [10, 55, 25, 95, 35, 45],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -454,7 +454,7 @@
 		"name": "DUGTRIO",
 		"dexNo": 51,
 		"bsts": [35, 100, 50, 120, 50, 70],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -463,7 +463,7 @@
 		"name": "MEOWTH",
 		"dexNo": 52,
 		"bsts": [40, 45, 35, 90, 40, 40],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -472,7 +472,7 @@
 		"name": "PERSIAN",
 		"dexNo": 53,
 		"bsts": [65, 70, 60, 115, 65, 65],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -481,7 +481,7 @@
 		"name": "PSYDUCK",
 		"dexNo": 54,
 		"bsts": [50, 52, 48, 55, 65, 50],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -490,7 +490,7 @@
 		"name": "GOLDUCK",
 		"dexNo": 55,
 		"bsts": [80, 82, 78, 85, 95, 80],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -499,7 +499,7 @@
 		"name": "MANKEY",
 		"dexNo": 56,
 		"bsts": [40, 80, 35, 70, 35, 45],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -508,7 +508,7 @@
 		"name": "PRIMEAPE",
 		"dexNo": 57,
 		"bsts": [65, 105, 60, 95, 60, 70],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -517,7 +517,7 @@
 		"name": "GROWLITHE",
 		"dexNo": 58,
 		"bsts": [55, 70, 45, 60, 70, 50],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -526,7 +526,7 @@
 		"name": "ARCANINE",
 		"dexNo": 59,
 		"bsts": [90, 110, 80, 95, 100, 80],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -535,7 +535,7 @@
 		"name": "POLIWAG",
 		"dexNo": 60,
 		"bsts": [40, 50, 40, 90, 40, 40],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -544,7 +544,7 @@
 		"name": "POLIWHIRL",
 		"dexNo": 61,
 		"bsts": [65, 65, 65, 90, 50, 50],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -562,7 +562,7 @@
 		"name": "ABRA",
 		"dexNo": 63,
 		"bsts": [25, 20, 15, 90, 105, 55],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -571,7 +571,7 @@
 		"name": "KADABRA",
 		"dexNo": 64,
 		"bsts": [40, 35, 30, 105, 120, 70],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -580,7 +580,7 @@
 		"name": "ALAKAZAM",
 		"dexNo": 65,
 		"bsts": [55, 50, 45, 120, 135, 95],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -589,7 +589,7 @@
 		"name": "MACHOP",
 		"dexNo": 66,
 		"bsts": [70, 80, 50, 35, 35, 35],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -598,7 +598,7 @@
 		"name": "MACHOKE",
 		"dexNo": 67,
 		"bsts": [80, 100, 70, 45, 50, 60],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -607,7 +607,7 @@
 		"name": "MACHAMP",
 		"dexNo": 68,
 		"bsts": [90, 130, 80, 55, 65, 85],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -688,7 +688,7 @@
 		"name": "PONYTA",
 		"dexNo": 77,
 		"bsts": [50, 85, 55, 90, 65, 65],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -697,7 +697,7 @@
 		"name": "RAPIDASH",
 		"dexNo": 78,
 		"bsts": [65, 100, 70, 105, 80, 80],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -769,7 +769,7 @@
 		"name": "SEEL",
 		"dexNo": 86,
 		"bsts": [65, 45, 55, 45, 45, 70],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -787,7 +787,7 @@
 		"name": "GRIMER",
 		"dexNo": 88,
 		"bsts": [80, 80, 50, 25, 40, 50],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -796,7 +796,7 @@
 		"name": "MUK",
 		"dexNo": 89,
 		"bsts": [5, 105, 75, 50, 65, 100],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -805,7 +805,7 @@
 		"name": "SHELLDER",
 		"dexNo": 90,
 		"bsts": [30, 65, 100, 40, 45, 25],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -859,7 +859,7 @@
 		"name": "DROWZEE",
 		"dexNo": 96,
 		"bsts": [60, 48, 45, 42, 43, 90],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -868,7 +868,7 @@
 		"name": "HYPNO",
 		"dexNo": 97,
 		"bsts": [85, 73, 70, 67, 73, 115],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -877,7 +877,7 @@
 		"name": "KRABBY",
 		"dexNo": 98,
 		"bsts": [30, 105, 90, 50, 25, 25],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -886,7 +886,7 @@
 		"name": "KINGLER",
 		"dexNo": 99,
 		"bsts": [55, 130, 115, 75, 50, 50],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -895,7 +895,7 @@
 		"name": "VOLTORB",
 		"dexNo": 100,
 		"bsts": [40, 30, 50, 100, 55, 55],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": false,
 		"growthRate": "mediumfast"
 	},
@@ -904,7 +904,7 @@
 		"name": "ELECTRODE",
 		"dexNo": 101,
 		"bsts": [60, 50, 70, 150, 80, 80],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": false,
 		"growthRate": "mediumfast"
 	},
@@ -931,7 +931,7 @@
 		"name": "CUBONE",
 		"dexNo": 104,
 		"bsts": [50, 50, 95, 35, 40, 50],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -940,7 +940,7 @@
 		"name": "MAROWAK",
 		"dexNo": 105,
 		"bsts": [60, 80, 110, 45, 50, 80],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -949,7 +949,7 @@
 		"name": "HITMONLEE",
 		"dexNo": 106,
 		"bsts": [50, 120, 53, 87, 35, 110],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -958,7 +958,7 @@
 		"name": "HITMONCHAN",
 		"dexNo": 107,
 		"bsts": [50, 105, 79, 76, 35, 110],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -967,7 +967,7 @@
 		"name": "LICKITUNG",
 		"dexNo": 108,
 		"bsts": [90, 55, 75, 30, 60, 75],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -976,7 +976,7 @@
 		"name": "KOFFING",
 		"dexNo": 109,
 		"bsts": [40, 65, 95, 35, 60, 45],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -985,7 +985,7 @@
 		"name": "WEEZING",
 		"dexNo": 110,
 		"bsts": [65, 90, 120, 60, 85, 70],
-		"types": ["POISON", "POISON"],
+		"types": ["POISON"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1012,7 +1012,7 @@
 		"name": "CHANSEY",
 		"dexNo": 113,
 		"bsts": [50, 5, 5, 50, 35, 105],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1021,7 +1021,7 @@
 		"name": "TANGELA",
 		"dexNo": 114,
 		"bsts": [65, 55, 115, 60, 100, 40],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1030,7 +1030,7 @@
 		"name": "KANGASKHAN",
 		"dexNo": 115,
 		"bsts": [5, 95, 80, 90, 40, 80],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1039,7 +1039,7 @@
 		"name": "HORSEA",
 		"dexNo": 116,
 		"bsts": [30, 40, 70, 60, 70, 25],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1048,7 +1048,7 @@
 		"name": "SEADRA",
 		"dexNo": 117,
 		"bsts": [55, 65, 95, 85, 95, 45],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1057,7 +1057,7 @@
 		"name": "GOLDEEN",
 		"dexNo": 118,
 		"bsts": [45, 67, 60, 63, 35, 50],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1066,7 +1066,7 @@
 		"name": "SEAKING",
 		"dexNo": 119,
 		"bsts": [80, 92, 65, 68, 65, 80],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1075,7 +1075,7 @@
 		"name": "STARYU",
 		"dexNo": 120,
 		"bsts": [30, 45, 55, 85, 70, 55],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": false,
 		"growthRate": "slow"
 	},
@@ -1093,7 +1093,7 @@
 		"name": "MR.MIME",
 		"dexNo": 122,
 		"bsts": [40, 45, 65, 90, 100, 120],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1120,7 +1120,7 @@
 		"name": "ELECTABUZZ",
 		"dexNo": 125,
 		"bsts": [65, 83, 57, 105, 95, 85],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1129,7 +1129,7 @@
 		"name": "MAGMAR",
 		"dexNo": 126,
 		"bsts": [65, 95, 57, 93, 100, 85],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1138,7 +1138,7 @@
 		"name": "PINSIR",
 		"dexNo": 127,
 		"bsts": [65, 125, 100, 85, 55, 70],
-		"types": ["BUG", "BUG"],
+		"types": ["BUG"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -1147,7 +1147,7 @@
 		"name": "TAUROS",
 		"dexNo": 128,
 		"bsts": [75, 100, 95, 110, 40, 70],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -1156,7 +1156,7 @@
 		"name": "MAGIKARP",
 		"dexNo": 129,
 		"bsts": [20, 10, 55, 80, 15, 20],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -1183,7 +1183,7 @@
 		"name": "DITTO",
 		"dexNo": 132,
 		"bsts": [48, 48, 48, 48, 48, 48],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": false,
 		"growthRate": "mediumfast"
 	},
@@ -1192,7 +1192,7 @@
 		"name": "EEVEE",
 		"dexNo": 133,
 		"bsts": [55, 55, 50, 55, 45, 65],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1201,7 +1201,7 @@
 		"name": "VAPOREON",
 		"dexNo": 134,
 		"bsts": [30, 65, 60, 65, 110, 95],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1210,7 +1210,7 @@
 		"name": "JOLTEON",
 		"dexNo": 135,
 		"bsts": [65, 65, 60, 130, 110, 95],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1219,7 +1219,7 @@
 		"name": "FLAREON",
 		"dexNo": 136,
 		"bsts": [65, 130, 60, 65, 95, 110],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1228,7 +1228,7 @@
 		"name": "PORYGON",
 		"dexNo": 137,
 		"bsts": [65, 60, 70, 40, 85, 75],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": false,
 		"growthRate": "mediumfast"
 	},
@@ -1282,7 +1282,7 @@
 		"name": "SNORLAX",
 		"dexNo": 143,
 		"bsts": [60, 110, 65, 30, 65, 110],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -1318,7 +1318,7 @@
 		"name": "DRATINI",
 		"dexNo": 147,
 		"bsts": [41, 64, 45, 50, 50, 50],
-		"types": ["DRAGON", "DRAGON"],
+		"types": ["DRAGON"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -1327,7 +1327,7 @@
 		"name": "DRAGONAIR",
 		"dexNo": 148,
 		"bsts": [61, 84, 65, 70, 70, 70],
-		"types": ["DRAGON", "DRAGON"],
+		"types": ["DRAGON"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -1345,7 +1345,7 @@
 		"name": "MEWTWO",
 		"dexNo": 150,
 		"bsts": [6, 110, 90, 130, 154, 90],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": false,
 		"growthRate": "slow"
 	},
@@ -1354,7 +1354,7 @@
 		"name": "MEW",
 		"dexNo": 151,
 		"bsts": [0, 100, 100, 100, 100, 100],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": false,
 		"growthRate": "mediumslow"
 	},
@@ -1363,7 +1363,7 @@
 		"name": "CHIKORITA",
 		"dexNo": 152,
 		"bsts": [45, 49, 65, 45, 49, 65],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1372,7 +1372,7 @@
 		"name": "BAYLEEF",
 		"dexNo": 153,
 		"bsts": [60, 62, 80, 60, 63, 80],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1381,7 +1381,7 @@
 		"name": "MEGANIUM",
 		"dexNo": 154,
 		"bsts": [80, 82, 100, 80, 83, 100],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1390,7 +1390,7 @@
 		"name": "CYNDAQUIL",
 		"dexNo": 155,
 		"bsts": [39, 52, 43, 65, 60, 50],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1399,7 +1399,7 @@
 		"name": "QUILAVA",
 		"dexNo": 156,
 		"bsts": [58, 64, 58, 80, 80, 65],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1408,7 +1408,7 @@
 		"name": "TYPHLOSION",
 		"dexNo": 157,
 		"bsts": [78, 84, 78, 100, 109, 85],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1417,7 +1417,7 @@
 		"name": "TOTODILE",
 		"dexNo": 158,
 		"bsts": [50, 65, 64, 43, 44, 48],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1426,7 +1426,7 @@
 		"name": "CROCONAW",
 		"dexNo": 159,
 		"bsts": [65, 80, 80, 58, 59, 63],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1435,7 +1435,7 @@
 		"name": "FERALIGATR",
 		"dexNo": 160,
 		"bsts": [85, 105, 100, 78, 79, 83],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1444,7 +1444,7 @@
 		"name": "SENTRET",
 		"dexNo": 161,
 		"bsts": [35, 46, 34, 20, 35, 45],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1453,7 +1453,7 @@
 		"name": "FURRET",
 		"dexNo": 162,
 		"bsts": [85, 76, 64, 90, 45, 55],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1543,7 +1543,7 @@
 		"name": "PICHU",
 		"dexNo": 172,
 		"bsts": [20, 40, 15, 60, 35, 35],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1552,7 +1552,7 @@
 		"name": "CLEFFA",
 		"dexNo": 173,
 		"bsts": [50, 25, 28, 15, 45, 55],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1561,7 +1561,7 @@
 		"name": "IGGLYBUFF",
 		"dexNo": 174,
 		"bsts": [90, 30, 15, 15, 40, 20],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1570,7 +1570,7 @@
 		"name": "TOGEPI",
 		"dexNo": 175,
 		"bsts": [35, 20, 65, 20, 40, 65],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1606,7 +1606,7 @@
 		"name": "MAREEP",
 		"dexNo": 179,
 		"bsts": [55, 40, 40, 35, 65, 45],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1615,7 +1615,7 @@
 		"name": "FLAAFFY",
 		"dexNo": 180,
 		"bsts": [70, 55, 55, 45, 80, 60],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1624,7 +1624,7 @@
 		"name": "AMPHAROS",
 		"dexNo": 181,
 		"bsts": [90, 75, 85, 55, 115, 90],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1633,7 +1633,7 @@
 		"name": "BELLOSSOM",
 		"dexNo": 182,
 		"bsts": [75, 80, 95, 50, 90, 100],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1642,7 +1642,7 @@
 		"name": "MARILL",
 		"dexNo": 183,
 		"bsts": [70, 20, 50, 40, 20, 50],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1651,7 +1651,7 @@
 		"name": "AZUMARILL",
 		"dexNo": 184,
 		"bsts": [0, 50, 80, 50, 60, 80],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1660,7 +1660,7 @@
 		"name": "SUDOWOODO",
 		"dexNo": 185,
 		"bsts": [70, 100, 115, 30, 30, 65],
-		"types": ["ROCK", "ROCK"],
+		"types": ["ROCK"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1669,7 +1669,7 @@
 		"name": "POLITOED",
 		"dexNo": 186,
 		"bsts": [90, 75, 75, 70, 90, 100],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1705,7 +1705,7 @@
 		"name": "AIPOM",
 		"dexNo": 190,
 		"bsts": [55, 70, 55, 85, 40, 55],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1714,7 +1714,7 @@
 		"name": "SUNKERN",
 		"dexNo": 191,
 		"bsts": [30, 30, 30, 30, 30, 30],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1723,7 +1723,7 @@
 		"name": "SUNFLORA",
 		"dexNo": 192,
 		"bsts": [75, 75, 55, 30, 105, 85],
-		"types": ["GRASS", "GRASS"],
+		"types": ["GRASS"],
 		"hasGender": true,
 		"growthRate": "mediumslow"
 	},
@@ -1759,7 +1759,7 @@
 		"name": "ESPEON",
 		"dexNo": 196,
 		"bsts": [65, 65, 60, 110, 130, 95],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1768,7 +1768,7 @@
 		"name": "UMBREON",
 		"dexNo": 197,
 		"bsts": [95, 65, 110, 65, 60, 130],
-		"types": ["DARK", "DARK"],
+		"types": ["DARK"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1795,7 +1795,7 @@
 		"name": "MISDREAVUS",
 		"dexNo": 200,
 		"bsts": [60, 60, 60, 85, 85, 85],
-		"types": ["GHOST", "GHOST"],
+		"types": ["GHOST"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1804,7 +1804,7 @@
 		"name": "UNOWN",
 		"dexNo": 201,
 		"bsts": [48, 72, 48, 48, 72, 48],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": false,
 		"growthRate": "mediumfast"
 	},
@@ -1813,7 +1813,7 @@
 		"name": "WOBBUFFET",
 		"dexNo": 202,
 		"bsts": [90, 33, 58, 33, 33, 58],
-		"types": ["PSYCHIC", "PSYCHIC"],
+		"types": ["PSYCHIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1831,7 +1831,7 @@
 		"name": "PINECO",
 		"dexNo": 204,
 		"bsts": [50, 65, 90, 15, 35, 35],
-		"types": ["BUG", "BUG"],
+		"types": ["BUG"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1849,7 +1849,7 @@
 		"name": "DUNSPARCE",
 		"dexNo": 206,
 		"bsts": [0, 70, 70, 45, 65, 65],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1876,7 +1876,7 @@
 		"name": "SNUBBULL",
 		"dexNo": 209,
 		"bsts": [60, 80, 50, 30, 40, 40],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1885,7 +1885,7 @@
 		"name": "GRANBULL",
 		"dexNo": 210,
 		"bsts": [90, 120, 75, 45, 60, 60],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -1939,7 +1939,7 @@
 		"name": "TEDDIURSA",
 		"dexNo": 216,
 		"bsts": [60, 80, 50, 40, 50, 50],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1948,7 +1948,7 @@
 		"name": "URSARING",
 		"dexNo": 217,
 		"bsts": [90, 130, 75, 55, 75, 75],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -1957,7 +1957,7 @@
 		"name": "SLUGMA",
 		"dexNo": 218,
 		"bsts": [50, 40, 50, 20, 70, 50],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2002,7 +2002,7 @@
 		"name": "REMORAID",
 		"dexNo": 223,
 		"bsts": [35, 65, 35, 65, 65, 35],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2011,7 +2011,7 @@
 		"name": "OCTILLERY",
 		"dexNo": 224,
 		"bsts": [75, 105, 75, 45, 105, 75],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2074,7 +2074,7 @@
 		"name": "PHANPY",
 		"dexNo": 231,
 		"bsts": [90, 60, 60, 40, 40, 40],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2083,7 +2083,7 @@
 		"name": "DONPHAN",
 		"dexNo": 232,
 		"bsts": [90, 120, 120, 50, 60, 60],
-		"types": ["GROUND", "GROUND"],
+		"types": ["GROUND"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2092,7 +2092,7 @@
 		"name": "PORYGON2",
 		"dexNo": 233,
 		"bsts": [85, 80, 90, 60, 105, 95],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": false,
 		"growthRate": "mediumfast"
 	},
@@ -2101,7 +2101,7 @@
 		"name": "STANTLER",
 		"dexNo": 234,
 		"bsts": [73, 95, 62, 85, 85, 65],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -2110,7 +2110,7 @@
 		"name": "SMEARGLE",
 		"dexNo": 235,
 		"bsts": [55, 20, 35, 75, 20, 45],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -2119,7 +2119,7 @@
 		"name": "TYROGUE",
 		"dexNo": 236,
 		"bsts": [35, 35, 35, 35, 35, 35],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2128,7 +2128,7 @@
 		"name": "HITMONTOP",
 		"dexNo": 237,
 		"bsts": [50, 95, 95, 70, 35, 110],
-		"types": ["FIGHTING", "FIGHTING"],
+		"types": ["FIGHTING"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2146,7 +2146,7 @@
 		"name": "ELEKID",
 		"dexNo": 239,
 		"bsts": [45, 63, 37, 95, 65, 55],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2155,7 +2155,7 @@
 		"name": "MAGBY",
 		"dexNo": 240,
 		"bsts": [45, 75, 37, 83, 70, 55],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": true,
 		"growthRate": "mediumfast"
 	},
@@ -2164,7 +2164,7 @@
 		"name": "MILTANK",
 		"dexNo": 241,
 		"bsts": [95, 80, 105, 100, 40, 70],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "slow"
 	},
@@ -2173,7 +2173,7 @@
 		"name": "BLISSEY",
 		"dexNo": 242,
 		"bsts": [55, 10, 10, 55, 75, 135],
-		"types": ["NORMAL", "NORMAL"],
+		"types": ["NORMAL"],
 		"hasGender": true,
 		"growthRate": "fast"
 	},
@@ -2182,7 +2182,7 @@
 		"name": "RAIKOU",
 		"dexNo": 243,
 		"bsts": [90, 85, 75, 115, 115, 100],
-		"types": ["ELECTRIC", "ELECTRIC"],
+		"types": ["ELECTRIC"],
 		"hasGender": false,
 		"growthRate": "slow"
 	},
@@ -2191,7 +2191,7 @@
 		"name": "ENTEI",
 		"dexNo": 244,
 		"bsts": [15, 115, 85, 100, 90, 75],
-		"types": ["FIRE", "FIRE"],
+		"types": ["FIRE"],
 		"hasGender": false,
 		"growthRate": "slow"
 	},
@@ -2200,7 +2200,7 @@
 		"name": "SUICUNE",
 		"dexNo": 245,
 		"bsts": [0, 75, 115, 85, 90, 115],
-		"types": ["WATER", "WATER"],
+		"types": ["WATER"],
 		"hasGender": false,
 		"growthRate": "slow"
 	},
