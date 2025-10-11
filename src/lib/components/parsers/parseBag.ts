@@ -11,6 +11,9 @@ export const parseBag = (fileHex: string[]): Record<string, BagSlot> => {
 	const bag: Record<string, BagSlot> = {};
 	let address = parseInt(addresses.sBackupPlayerData, 16) + 1047;
 	for (const [slot, capacity] of Object.entries(SLOT_SIZES)) {
+		if (slot === 'berries') {
+			address -= 503;
+		}
 		const count = parseInt(fileHex[address], 16);
 		const contents = [];
 		if (slot === 'keyItems') {
