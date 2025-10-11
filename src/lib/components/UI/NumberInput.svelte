@@ -32,7 +32,7 @@
 			value = enforce(value, min, max);
 			onchange?.();
 		}}
-		class="w-15 [appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+		class="w-15 text-center !ring-0 [appearance:textfield] focus:!border-purple-600 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
 	/>
 	<Button
 		type="button"

@@ -14,7 +14,7 @@
 
 <button
 	onclick={() => (isOpen = !isOpen)}
-	class="inline-flex w-full items-center justify-between rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-white focus:outline-none dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-white"
+	class="inline-flex w-full items-center justify-between rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white ring-0 hover:bg-purple-800 hover:text-gray-400"
 	type="button"
 >
 	{value}
