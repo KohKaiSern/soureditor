@@ -61,7 +61,7 @@
 	<P>Hidden Power Base Power: {hiddenPowerBasePower}</P>
 </div>
 
-<Heading tag="h6" class="mb-3 mt-7">Stat Experience</Heading>
+<Heading tag="h6" class="mt-7 mb-3">Stat Experience</Heading>
 <div class="mt-3 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
 	{#each ['HP', 'Atk', 'Def', 'Speed', 'Special'] as stat, i}
 		<div>
