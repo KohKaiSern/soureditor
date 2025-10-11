@@ -28,7 +28,7 @@ const wToSRAM = (address: string): string => {
 };
 
 for (const entry of SYMBOLS) {
-	const address = ADDRESSES.find((address) => address.includes(entry))!;
+	const address = ADDRESSES.find((address) => address.includes(' ' + entry))!;
 	addresses[entry] = wToSRAM(address.split(' ').at(0)!.replace(':', ''));
 }
 

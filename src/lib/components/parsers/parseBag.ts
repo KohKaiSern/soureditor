@@ -29,22 +29,37 @@ export const parseBag = (fileHex: string[]): Record<string, BagSlot> => {
 		}
 		const count = parseInt(fileHex[address], 16);
 		if (slot === 'keyItems') {
-			for (let i = 0; i < count; i++) {
-				contents.push({
-					name: items.find((item) => item.itemNo === parseInt(fileHex[address + i + 1], 16))!.name,
-					qty: 1
-				});
+			for (let i = 0; i < capacity; i++) {
+				if (i < count) {
+					contents.push({
+						name: items.find((item) => item.itemNo === parseInt(fileHex[address + i + 1], 16))!
+							.name,
+						qty: 1
+					});
+				} else {
+					contents.push({
+						name: '',
+						qty: -1
+					});
+				}
 			}
 			bag[slot] = { count, contents };
 			address += capacity + 2;
 			continue;
 		}
-		for (let i = 0; i < count; i++) {
-			contents.push({
-				name: items.find((item) => item.itemNo === parseInt(fileHex[address + 2 * i + 1], 16))!
-					.name,
-				qty: parseInt(fileHex[address + 2 * (i + 1)], 16)
-			});
+		for (let i = 0; i < capacity; i++) {
+			if (i < count) {
+				contents.push({
+					name: items.find((item) => item.itemNo === parseInt(fileHex[address + 2 * i + 1], 16))!
+						.name,
+					qty: parseInt(fileHex[address + 2 * (i + 1)], 16)
+				});
+			} else {
+				contents.push({
+					name: '',
+					qty: -1
+				});
+			}
 		}
 		bag[slot] = { count, contents };
 		address += capacity * 2 + 2;

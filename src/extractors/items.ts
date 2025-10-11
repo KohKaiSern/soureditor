@@ -6,6 +6,7 @@ interface item {
 	name: string;
 	itemNo: number;
 	category: string;
+	description: string;
 }
 
 const items: Array<item> = [];
@@ -26,7 +27,8 @@ for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
 			id: reduce(NAMES[lineNo].split('"')[1]),
 			name: NAMES[lineNo].split('"')[1],
 			itemNo: itemNo,
-			category: ''
+			category: '',
+			description: ''
 		});
 		itemNo += 1;
 	}
@@ -47,4 +49,31 @@ for (let lineNo = 0; lineNo < ATTRIBUTES.length; lineNo++) {
 	}
 }
 
+const DESCS = readFileSync(
+	import.meta.dirname + '/../../sourcrystal/data/items/descriptions.asm',
+	'utf-8'
+).split('\n');
+
+for (let lineNo = 0; lineNo < DESCS.length; lineNo++) {
+	if (DESCS[lineNo].includes('Desc:')) {
+		const id = reduce(DESCS[lineNo].replace('Desc:', ''));
+		let description = '';
+		lineNo++;
+		while (DESCS[lineNo].includes('"')) {
+			description += DESCS[lineNo].split('"').at(1)!;
+			if (description.endsWith('-')) {
+				description = description.slice(0, -1);
+				lineNo++;
+				continue;
+			}
+			description += ' ';
+			lineNo++;
+		}
+		description = description.slice(0, -2).replaceAll('#', 'POKé');
+		const item = items.find((item) => item.id === id);
+		if (item) {
+			item.description = description;
+		}
+	}
+}
 export default items;

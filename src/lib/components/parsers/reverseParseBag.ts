@@ -25,25 +25,47 @@ export const reverseParseBag = (fileHex: string[], bag: Record<string, BagSlot>)
 		if (slot === 'berries') {
 			address -= 503;
 		}
-		const count = parseInt(fileHex[address], 16);
+		fileHex[address] = bag[slot].count!.toString(16).padStart(2, '0');
 		if (slot === 'keyItems') {
-			for (let i = 0; i < count; i++) {
-				fileHex[address + i + 1] = items
-					.find((item) => item.name === bag.keyItems.contents[i].name)!
-					.itemNo.toString(16)
-					.padStart(2, '0');
+			for (let i = 0; i < capacity; i++) {
+				if (i < bag[slot].count!) {
+					fileHex[address + i + 1] = items
+						.find((item) => item.name === bag.keyItems.contents[i].name)!
+						.itemNo.toString(16)
+						.padStart(2, '0');
+				} else {
+					fileHex[address + i + 1] = 'FF';
+					for (let j = 1; j < capacity - bag[slot].count!; j++) {
+						fileHex[address + i + 1 + j] = '00';
+					}
+					break;
+				}
 			}
 			address += capacity + 2;
+			if (bag[slot].count! === capacity) {
+				fileHex[address - 1] = 'FF';
+			}
 			continue;
 		}
-		for (let i = 0; i < count; i++) {
-			fileHex[address + 2 * i + 1] = items
-				.find((item) => item.name === bag[slot].contents[i].name)!
-				.itemNo.toString(16)
-				.padStart(2, '0');
-			fileHex[address + 2 * (i + 1)] = bag[slot].contents[i].qty.toString(16).padStart(2, '0');
+		for (let i = 0; i < capacity; i++) {
+			if (i < bag[slot].count!) {
+				fileHex[address + 2 * i + 1] = items
+					.find((item) => item.name === bag[slot].contents[i].name)!
+					.itemNo.toString(16)
+					.padStart(2, '0');
+				fileHex[address + 2 * (i + 1)] = bag[slot].contents[i].qty.toString(16).padStart(2, '0');
+			} else {
+				fileHex[address + 2 * i + 1] = 'FF';
+				for (let j = 1; j < capacity - bag[slot].count!; j++) {
+					fileHex[address + 2 * i + 1 + j] = '00';
+				}
+				break;
+			}
 		}
 		address += capacity * 2 + 2;
+		if (bag[slot].count! === capacity) {
+			fileHex[address - 1] = 'FF';
+		}
 	}
 	return fileHex;
 };

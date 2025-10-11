@@ -1,229 +1,1249 @@
 [
-	{ "id": "masterball", "name": "MASTER BALL", "itemNo": 1, "category": "BALL" },
-	{ "id": "ultraball", "name": "ULTRA BALL", "itemNo": 2, "category": "BALL" },
-	{ "id": "brightpowder", "name": "BRIGHTPOWDER", "itemNo": 3, "category": "ITEM" },
-	{ "id": "greatball", "name": "GREAT BALL", "itemNo": 4, "category": "BALL" },
-	{ "id": "pokeball", "name": "POKé BALL", "itemNo": 5, "category": "BALL" },
-	{ "id": "bicycle", "name": "BICYCLE", "itemNo": 7, "category": "KEY_ITEM" },
-	{ "id": "moonstone", "name": "MOON STONE", "itemNo": 8, "category": "ITEM" },
-	{ "id": "antidote", "name": "ANTIDOTE", "itemNo": 9, "category": "ITEM" },
-	{ "id": "burnheal", "name": "BURN HEAL", "itemNo": 10, "category": "ITEM" },
-	{ "id": "iceheal", "name": "ICE HEAL", "itemNo": 11, "category": "ITEM" },
-	{ "id": "awakening", "name": "AWAKENING", "itemNo": 12, "category": "ITEM" },
-	{ "id": "parlyzheal", "name": "PARLYZ HEAL", "itemNo": 13, "category": "ITEM" },
-	{ "id": "fullrestore", "name": "FULL RESTORE", "itemNo": 14, "category": "ITEM" },
-	{ "id": "maxpotion", "name": "MAX POTION", "itemNo": 15, "category": "ITEM" },
-	{ "id": "hyperpotion", "name": "HYPER POTION", "itemNo": 16, "category": "ITEM" },
-	{ "id": "superpotion", "name": "SUPER POTION", "itemNo": 17, "category": "ITEM" },
-	{ "id": "potion", "name": "POTION", "itemNo": 18, "category": "ITEM" },
-	{ "id": "escaperope", "name": "ESCAPE ROPE", "itemNo": 19, "category": "ITEM" },
-	{ "id": "repel", "name": "REPEL", "itemNo": 20, "category": "ITEM" },
-	{ "id": "maxelixer", "name": "MAX ELIXER", "itemNo": 21, "category": "ITEM" },
-	{ "id": "firestone", "name": "FIRE STONE", "itemNo": 22, "category": "ITEM" },
-	{ "id": "thunderstone", "name": "THUNDERSTONE", "itemNo": 23, "category": "ITEM" },
-	{ "id": "waterstone", "name": "WATER STONE", "itemNo": 24, "category": "ITEM" },
-	{ "id": "linkingcord", "name": "LINKING CORD", "itemNo": 25, "category": "ITEM" },
-	{ "id": "hpup", "name": "HP UP", "itemNo": 26, "category": "ITEM" },
-	{ "id": "protein", "name": "PROTEIN", "itemNo": 27, "category": "ITEM" },
-	{ "id": "iron", "name": "IRON", "itemNo": 28, "category": "ITEM" },
-	{ "id": "carbos", "name": "CARBOS", "itemNo": 29, "category": "ITEM" },
-	{ "id": "luckypunch", "name": "LUCKY PUNCH", "itemNo": 30, "category": "ITEM" },
-	{ "id": "calcium", "name": "CALCIUM", "itemNo": 31, "category": "ITEM" },
-	{ "id": "rarecandy", "name": "RARE CANDY", "itemNo": 32, "category": "ITEM" },
-	{ "id": "xaccuracy", "name": "X ACCURACY", "itemNo": 33, "category": "ITEM" },
-	{ "id": "leafstone", "name": "LEAF STONE", "itemNo": 34, "category": "ITEM" },
-	{ "id": "metalpowder", "name": "METAL POWDER", "itemNo": 35, "category": "ITEM" },
-	{ "id": "nugget", "name": "NUGGET", "itemNo": 36, "category": "ITEM" },
-	{ "id": "pokedoll", "name": "POKé DOLL", "itemNo": 37, "category": "ITEM" },
-	{ "id": "fullheal", "name": "FULL HEAL", "itemNo": 38, "category": "ITEM" },
-	{ "id": "revive", "name": "REVIVE", "itemNo": 39, "category": "ITEM" },
-	{ "id": "maxrevive", "name": "MAX REVIVE", "itemNo": 40, "category": "ITEM" },
-	{ "id": "guardspec", "name": "GUARD SPEC.", "itemNo": 41, "category": "ITEM" },
-	{ "id": "superrepel", "name": "SUPER REPEL", "itemNo": 42, "category": "ITEM" },
-	{ "id": "maxrepel", "name": "MAX REPEL", "itemNo": 43, "category": "ITEM" },
-	{ "id": "direhit", "name": "DIRE HIT", "itemNo": 44, "category": "ITEM" },
-	{ "id": "freshwater", "name": "FRESH WATER", "itemNo": 46, "category": "ITEM" },
-	{ "id": "sodapop", "name": "SODA POP", "itemNo": 47, "category": "ITEM" },
-	{ "id": "lemonade", "name": "LEMONADE", "itemNo": 48, "category": "ITEM" },
-	{ "id": "xattack", "name": "X ATTACK", "itemNo": 49, "category": "ITEM" },
-	{ "id": "xdefend", "name": "X DEFEND", "itemNo": 51, "category": "ITEM" },
-	{ "id": "xspeed", "name": "X SPEED", "itemNo": 52, "category": "ITEM" },
-	{ "id": "xspecial", "name": "X SPECIAL", "itemNo": 53, "category": "ITEM" },
-	{ "id": "coincase", "name": "COIN CASE", "itemNo": 54, "category": "KEY_ITEM" },
-	{ "id": "itemfinder", "name": "ITEMFINDER", "itemNo": 55, "category": "KEY_ITEM" },
-	{ "id": "expshare", "name": "EXP.SHARE", "itemNo": 57, "category": "ITEM" },
-	{ "id": "oldrod", "name": "OLD ROD", "itemNo": 58, "category": "KEY_ITEM" },
-	{ "id": "goodrod", "name": "GOOD ROD", "itemNo": 59, "category": "KEY_ITEM" },
-	{ "id": "silverleaf", "name": "SILVER LEAF", "itemNo": 60, "category": "ITEM" },
-	{ "id": "superrod", "name": "SUPER ROD", "itemNo": 61, "category": "KEY_ITEM" },
-	{ "id": "ppup", "name": "PP UP", "itemNo": 62, "category": "ITEM" },
-	{ "id": "ether", "name": "ETHER", "itemNo": 63, "category": "ITEM" },
-	{ "id": "maxether", "name": "MAX ETHER", "itemNo": 64, "category": "ITEM" },
-	{ "id": "elixer", "name": "ELIXER", "itemNo": 65, "category": "ITEM" },
-	{ "id": "redscale", "name": "RED SCALE", "itemNo": 66, "category": "KEY_ITEM" },
-	{ "id": "secretpotion", "name": "SECRETPOTION", "itemNo": 67, "category": "KEY_ITEM" },
-	{ "id": "ssticket", "name": "S.S.TICKET", "itemNo": 68, "category": "KEY_ITEM" },
-	{ "id": "mysteryegg", "name": "MYSTERY EGG", "itemNo": 69, "category": "KEY_ITEM" },
-	{ "id": "clearbell", "name": "CLEAR BELL", "itemNo": 70, "category": "KEY_ITEM" },
-	{ "id": "silverwing", "name": "SILVER WING", "itemNo": 71, "category": "KEY_ITEM" },
-	{ "id": "moomoomilk", "name": "MOOMOO MILK", "itemNo": 72, "category": "ITEM" },
-	{ "id": "quickclaw", "name": "QUICK CLAW", "itemNo": 73, "category": "ITEM" },
-	{ "id": "pechaberry", "name": "PECHA BERRY", "itemNo": 74, "category": "BERRIES" },
-	{ "id": "goldleaf", "name": "GOLD LEAF", "itemNo": 75, "category": "ITEM" },
-	{ "id": "softsand", "name": "SOFT SAND", "itemNo": 76, "category": "ITEM" },
-	{ "id": "sharpbeak", "name": "SHARP BEAK", "itemNo": 77, "category": "ITEM" },
-	{ "id": "cheriberry", "name": "CHERI BERRY", "itemNo": 78, "category": "BERRIES" },
-	{ "id": "aspearberry", "name": "ASPEAR BERRY", "itemNo": 79, "category": "BERRIES" },
-	{ "id": "rawstberry", "name": "RAWST BERRY", "itemNo": 80, "category": "BERRIES" },
-	{ "id": "poisonbarb", "name": "POISON BARB", "itemNo": 81, "category": "ITEM" },
-	{ "id": "kingsrock", "name": "KING'S ROCK", "itemNo": 82, "category": "ITEM" },
-	{ "id": "persimberry", "name": "PERSIM BERRY", "itemNo": 83, "category": "BERRIES" },
-	{ "id": "chestoberry", "name": "CHESTO BERRY", "itemNo": 84, "category": "BERRIES" },
-	{ "id": "redapricorn", "name": "RED APRICORN", "itemNo": 85, "category": "BERRIES" },
-	{ "id": "tinymushroom", "name": "TINYMUSHROOM", "itemNo": 86, "category": "ITEM" },
-	{ "id": "bigmushroom", "name": "BIG MUSHROOM", "itemNo": 87, "category": "ITEM" },
-	{ "id": "silverpowder", "name": "SILVERPOWDER", "itemNo": 88, "category": "ITEM" },
-	{ "id": "bluapricorn", "name": "BLU APRICORN", "itemNo": 89, "category": "BERRIES" },
-	{ "id": "helixfossil", "name": "HELIX FOSSIL", "itemNo": 90, "category": "KEY_ITEM" },
-	{ "id": "amuletcoin", "name": "AMULET COIN", "itemNo": 91, "category": "ITEM" },
-	{ "id": "ylwapricorn", "name": "YLW APRICORN", "itemNo": 92, "category": "BERRIES" },
-	{ "id": "grnapricorn", "name": "GRN APRICORN", "itemNo": 93, "category": "BERRIES" },
-	{ "id": "cleansetag", "name": "CLEANSE TAG", "itemNo": 94, "category": "ITEM" },
-	{ "id": "mysticwater", "name": "MYSTIC WATER", "itemNo": 95, "category": "ITEM" },
-	{ "id": "twistedspoon", "name": "TWISTEDSPOON", "itemNo": 96, "category": "ITEM" },
-	{ "id": "whtapricorn", "name": "WHT APRICORN", "itemNo": 97, "category": "BERRIES" },
-	{ "id": "blackbelt", "name": "BLACKBELT", "itemNo": 98, "category": "ITEM" },
-	{ "id": "blkapricorn", "name": "BLK APRICORN", "itemNo": 99, "category": "BERRIES" },
-	{ "id": "domefossil", "name": "DOME FOSSIL", "itemNo": 100, "category": "KEY_ITEM" },
-	{ "id": "pnkapricorn", "name": "PNK APRICORN", "itemNo": 101, "category": "BERRIES" },
-	{ "id": "blackglasses", "name": "BLACKGLASSES", "itemNo": 102, "category": "ITEM" },
-	{ "id": "slowpoketail", "name": "SLOWPOKETAIL", "itemNo": 103, "category": "ITEM" },
-	{ "id": "silkscarf", "name": "SILK SCARF", "itemNo": 104, "category": "ITEM" },
-	{ "id": "stick", "name": "STICK", "itemNo": 105, "category": "ITEM" },
-	{ "id": "smokeball", "name": "SMOKE BALL", "itemNo": 106, "category": "ITEM" },
-	{ "id": "nevermeltice", "name": "NEVERMELTICE", "itemNo": 107, "category": "ITEM" },
-	{ "id": "magnet", "name": "MAGNET", "itemNo": 108, "category": "ITEM" },
-	{ "id": "lumberry", "name": "LUM BERRY", "itemNo": 109, "category": "BERRIES" },
-	{ "id": "pearl", "name": "PEARL", "itemNo": 110, "category": "ITEM" },
-	{ "id": "bigpearl", "name": "BIG PEARL", "itemNo": 111, "category": "ITEM" },
-	{ "id": "everstone", "name": "EVERSTONE", "itemNo": 112, "category": "ITEM" },
-	{ "id": "spelltag", "name": "SPELL TAG", "itemNo": 113, "category": "ITEM" },
-	{ "id": "ragecandybar", "name": "RAGECANDYBAR", "itemNo": 114, "category": "ITEM" },
-	{ "id": "gsball", "name": "GS BALL", "itemNo": 115, "category": "KEY_ITEM" },
-	{ "id": "bluecard", "name": "BLUE CARD", "itemNo": 116, "category": "KEY_ITEM" },
-	{ "id": "miracleseed", "name": "MIRACLE SEED", "itemNo": 117, "category": "ITEM" },
-	{ "id": "thickclub", "name": "THICK CLUB", "itemNo": 118, "category": "ITEM" },
-	{ "id": "focusband", "name": "FOCUS BAND", "itemNo": 119, "category": "ITEM" },
-	{ "id": "oldamber", "name": "OLD AMBER", "itemNo": 120, "category": "KEY_ITEM" },
-	{ "id": "energypowder", "name": "ENERGYPOWDER", "itemNo": 121, "category": "ITEM" },
-	{ "id": "energyroot", "name": "ENERGY ROOT", "itemNo": 122, "category": "ITEM" },
-	{ "id": "healpowder", "name": "HEAL POWDER", "itemNo": 123, "category": "ITEM" },
-	{ "id": "revivalherb", "name": "REVIVAL HERB", "itemNo": 124, "category": "ITEM" },
-	{ "id": "hardstone", "name": "HARD STONE", "itemNo": 125, "category": "ITEM" },
-	{ "id": "luckyegg", "name": "LUCKY EGG", "itemNo": 126, "category": "ITEM" },
-	{ "id": "cardkey", "name": "CARD KEY", "itemNo": 127, "category": "KEY_ITEM" },
-	{ "id": "machinepart", "name": "MACHINE PART", "itemNo": 128, "category": "KEY_ITEM" },
-	{ "id": "eggticket", "name": "EGG TICKET", "itemNo": 129, "category": "KEY_ITEM" },
-	{ "id": "lostitem", "name": "LOST ITEM", "itemNo": 130, "category": "KEY_ITEM" },
-	{ "id": "stardust", "name": "STARDUST", "itemNo": 131, "category": "ITEM" },
-	{ "id": "starpiece", "name": "STAR PIECE", "itemNo": 132, "category": "ITEM" },
-	{ "id": "basementkey", "name": "BASEMENT KEY", "itemNo": 133, "category": "KEY_ITEM" },
-	{ "id": "pass", "name": "PASS", "itemNo": 134, "category": "KEY_ITEM" },
-	{ "id": "safariball", "name": "SAFARI BALL", "itemNo": 135, "category": "BALL" },
-	{ "id": "charcoal", "name": "CHARCOAL", "itemNo": 138, "category": "ITEM" },
-	{ "id": "berryjuice", "name": "BERRY JUICE", "itemNo": 139, "category": "ITEM" },
-	{ "id": "scopelens", "name": "SCOPE LENS", "itemNo": 140, "category": "ITEM" },
-	{ "id": "metalcoat", "name": "METAL COAT", "itemNo": 143, "category": "ITEM" },
-	{ "id": "dragonfang", "name": "DRAGON FANG", "itemNo": 144, "category": "ITEM" },
-	{ "id": "leftovers", "name": "LEFTOVERS", "itemNo": 146, "category": "ITEM" },
-	{ "id": "leppaberry", "name": "LEPPA BERRY", "itemNo": 150, "category": "BERRIES" },
-	{ "id": "dragonscale", "name": "DRAGON SCALE", "itemNo": 151, "category": "ITEM" },
-	{ "id": "berserkgene", "name": "BERSERK GENE", "itemNo": 152, "category": "ITEM" },
-	{ "id": "sacredash", "name": "SACRED ASH", "itemNo": 156, "category": "ITEM" },
-	{ "id": "heavyball", "name": "HEAVY BALL", "itemNo": 157, "category": "BALL" },
-	{ "id": "flowermail", "name": "FLOWER MAIL", "itemNo": 158, "category": "ITEM" },
-	{ "id": "levelball", "name": "LEVEL BALL", "itemNo": 159, "category": "BALL" },
-	{ "id": "lureball", "name": "LURE BALL", "itemNo": 160, "category": "BALL" },
-	{ "id": "fastball", "name": "FAST BALL", "itemNo": 161, "category": "BALL" },
-	{ "id": "lightball", "name": "LIGHT BALL", "itemNo": 163, "category": "ITEM" },
-	{ "id": "friendball", "name": "FRIEND BALL", "itemNo": 164, "category": "BALL" },
-	{ "id": "moonball", "name": "MOON BALL", "itemNo": 165, "category": "BALL" },
-	{ "id": "loveball", "name": "LOVE BALL", "itemNo": 166, "category": "BALL" },
-	{ "id": "normalbox", "name": "NORMAL BOX", "itemNo": 167, "category": "ITEM" },
-	{ "id": "gorgeousbox", "name": "GORGEOUS BOX", "itemNo": 168, "category": "ITEM" },
-	{ "id": "sunstone", "name": "SUN STONE", "itemNo": 169, "category": "ITEM" },
-	{ "id": "polkadotbow", "name": "POLKADOT BOW", "itemNo": 170, "category": "ITEM" },
-	{ "id": "upgrade", "name": "UP-GRADE", "itemNo": 172, "category": "ITEM" },
-	{ "id": "oranberry", "name": "ORAN BERRY", "itemNo": 173, "category": "BERRIES" },
-	{ "id": "sitrusberry", "name": "SITRUS BERRY", "itemNo": 174, "category": "BERRIES" },
-	{ "id": "squirtbottle", "name": "SQUIRTBOTTLE", "itemNo": 175, "category": "KEY_ITEM" },
-	{ "id": "parkball", "name": "PARK BALL", "itemNo": 177, "category": "BALL" },
-	{ "id": "rainbowwing", "name": "RAINBOW WING", "itemNo": 178, "category": "KEY_ITEM" },
-	{ "id": "opalshard", "name": "OPAL SHARD", "itemNo": 180, "category": "ITEM" },
-	{ "id": "surfmail", "name": "SURF MAIL", "itemNo": 181, "category": "ITEM" },
-	{ "id": "litebluemail", "name": "LITEBLUEMAIL", "itemNo": 182, "category": "ITEM" },
-	{ "id": "portraitmail", "name": "PORTRAITMAIL", "itemNo": 183, "category": "ITEM" },
-	{ "id": "lovelymail", "name": "LOVELY MAIL", "itemNo": 184, "category": "ITEM" },
-	{ "id": "eonmail", "name": "EON MAIL", "itemNo": 185, "category": "ITEM" },
-	{ "id": "morphmail", "name": "MORPH MAIL", "itemNo": 186, "category": "ITEM" },
-	{ "id": "blueskymail", "name": "BLUESKY MAIL", "itemNo": 187, "category": "ITEM" },
-	{ "id": "musicmail", "name": "MUSIC MAIL", "itemNo": 188, "category": "ITEM" },
-	{ "id": "miragemail", "name": "MIRAGE MAIL", "itemNo": 189, "category": "ITEM" },
-	{ "id": "tm01", "name": "TM01", "itemNo": 191, "category": "TM_HM" },
-	{ "id": "tm02", "name": "TM02", "itemNo": 192, "category": "TM_HM" },
-	{ "id": "tm03", "name": "TM03", "itemNo": 193, "category": "TM_HM" },
-	{ "id": "tm04", "name": "TM04", "itemNo": 194, "category": "TM_HM" },
-	{ "id": "tm05", "name": "TM05", "itemNo": 196, "category": "TM_HM" },
-	{ "id": "tm06", "name": "TM06", "itemNo": 197, "category": "TM_HM" },
-	{ "id": "tm07", "name": "TM07", "itemNo": 198, "category": "TM_HM" },
-	{ "id": "tm08", "name": "TM08", "itemNo": 199, "category": "TM_HM" },
-	{ "id": "tm09", "name": "TM09", "itemNo": 200, "category": "TM_HM" },
-	{ "id": "tm10", "name": "TM10", "itemNo": 201, "category": "TM_HM" },
-	{ "id": "tm11", "name": "TM11", "itemNo": 202, "category": "TM_HM" },
-	{ "id": "tm12", "name": "TM12", "itemNo": 203, "category": "TM_HM" },
-	{ "id": "tm13", "name": "TM13", "itemNo": 204, "category": "TM_HM" },
-	{ "id": "tm14", "name": "TM14", "itemNo": 205, "category": "TM_HM" },
-	{ "id": "tm15", "name": "TM15", "itemNo": 206, "category": "TM_HM" },
-	{ "id": "tm16", "name": "TM16", "itemNo": 207, "category": "TM_HM" },
-	{ "id": "tm17", "name": "TM17", "itemNo": 208, "category": "TM_HM" },
-	{ "id": "tm18", "name": "TM18", "itemNo": 209, "category": "TM_HM" },
-	{ "id": "tm19", "name": "TM19", "itemNo": 210, "category": "TM_HM" },
-	{ "id": "tm20", "name": "TM20", "itemNo": 211, "category": "TM_HM" },
-	{ "id": "tm21", "name": "TM21", "itemNo": 212, "category": "TM_HM" },
-	{ "id": "tm22", "name": "TM22", "itemNo": 213, "category": "TM_HM" },
-	{ "id": "tm23", "name": "TM23", "itemNo": 214, "category": "TM_HM" },
-	{ "id": "tm24", "name": "TM24", "itemNo": 215, "category": "TM_HM" },
-	{ "id": "tm25", "name": "TM25", "itemNo": 216, "category": "TM_HM" },
-	{ "id": "tm26", "name": "TM26", "itemNo": 217, "category": "TM_HM" },
-	{ "id": "tm27", "name": "TM27", "itemNo": 218, "category": "TM_HM" },
-	{ "id": "tm28", "name": "TM28", "itemNo": 219, "category": "TM_HM" },
-	{ "id": "tm29", "name": "TM29", "itemNo": 221, "category": "TM_HM" },
-	{ "id": "tm30", "name": "TM30", "itemNo": 222, "category": "TM_HM" },
-	{ "id": "tm31", "name": "TM31", "itemNo": 223, "category": "TM_HM" },
-	{ "id": "tm32", "name": "TM32", "itemNo": 224, "category": "TM_HM" },
-	{ "id": "tm33", "name": "TM33", "itemNo": 225, "category": "TM_HM" },
-	{ "id": "tm34", "name": "TM34", "itemNo": 226, "category": "TM_HM" },
-	{ "id": "tm35", "name": "TM35", "itemNo": 227, "category": "TM_HM" },
-	{ "id": "tm36", "name": "TM36", "itemNo": 228, "category": "TM_HM" },
-	{ "id": "tm37", "name": "TM37", "itemNo": 229, "category": "TM_HM" },
-	{ "id": "tm38", "name": "TM38", "itemNo": 230, "category": "TM_HM" },
-	{ "id": "tm39", "name": "TM39", "itemNo": 231, "category": "TM_HM" },
-	{ "id": "tm40", "name": "TM40", "itemNo": 232, "category": "TM_HM" },
-	{ "id": "tm41", "name": "TM41", "itemNo": 233, "category": "TM_HM" },
-	{ "id": "tm42", "name": "TM42", "itemNo": 234, "category": "TM_HM" },
-	{ "id": "tm43", "name": "TM43", "itemNo": 235, "category": "TM_HM" },
-	{ "id": "tm44", "name": "TM44", "itemNo": 236, "category": "TM_HM" },
-	{ "id": "tm45", "name": "TM45", "itemNo": 237, "category": "TM_HM" },
-	{ "id": "tm46", "name": "TM46", "itemNo": 238, "category": "TM_HM" },
-	{ "id": "tm47", "name": "TM47", "itemNo": 239, "category": "TM_HM" },
-	{ "id": "tm48", "name": "TM48", "itemNo": 240, "category": "TM_HM" },
-	{ "id": "tm49", "name": "TM49", "itemNo": 241, "category": "TM_HM" },
-	{ "id": "tm50", "name": "TM50", "itemNo": 242, "category": "TM_HM" },
-	{ "id": "hm01", "name": "HM01", "itemNo": 243, "category": "TM_HM" },
-	{ "id": "hm02", "name": "HM02", "itemNo": 244, "category": "TM_HM" },
-	{ "id": "hm03", "name": "HM03", "itemNo": 245, "category": "TM_HM" },
-	{ "id": "hm04", "name": "HM04", "itemNo": 246, "category": "TM_HM" },
-	{ "id": "hm05", "name": "HM05", "itemNo": 247, "category": "TM_HM" },
-	{ "id": "hm06", "name": "HM06", "itemNo": 248, "category": "TM_HM" },
-	{ "id": "hm07", "name": "HM07", "itemNo": 249, "category": "TM_HM" }
+	{
+		"id": "masterball",
+		"name": "MASTER BALL",
+		"itemNo": 1,
+		"category": "BALL",
+		"description": "The best BALL. It never misses."
+	},
+	{
+		"id": "ultraball",
+		"name": "ULTRA BALL",
+		"itemNo": 2,
+		"category": "BALL",
+		"description": "A BALL with a high rate of success."
+	},
+	{
+		"id": "brightpowder",
+		"name": "BRIGHTPOWDER",
+		"itemNo": 3,
+		"category": "ITEM",
+		"description": "Lowers the foe's accuracy. (HOLD)"
+	},
+	{
+		"id": "greatball",
+		"name": "GREAT BALL",
+		"itemNo": 4,
+		"category": "BALL",
+		"description": "A BALL with a decent success rate."
+	},
+	{
+		"id": "pokeball",
+		"name": "POKé BALL",
+		"itemNo": 5,
+		"category": "BALL",
+		"description": "An item for catching POKéMON."
+	},
+	{
+		"id": "bicycle",
+		"name": "BICYCLE",
+		"itemNo": 7,
+		"category": "KEY_ITEM",
+		"description": "A collapsible bike for fast movement."
+	},
+	{
+		"id": "moonstone",
+		"name": "MOON STONE",
+		"itemNo": 8,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "antidote",
+		"name": "ANTIDOTE",
+		"itemNo": 9,
+		"category": "ITEM",
+		"description": "Cures poisoned POKéMON."
+	},
+	{
+		"id": "burnheal",
+		"name": "BURN HEAL",
+		"itemNo": 10,
+		"category": "ITEM",
+		"description": "Heals burned POKéMON."
+	},
+	{
+		"id": "iceheal",
+		"name": "ICE HEAL",
+		"itemNo": 11,
+		"category": "ITEM",
+		"description": "Defrosts frozen POKéMON."
+	},
+	{
+		"id": "awakening",
+		"name": "AWAKENING",
+		"itemNo": 12,
+		"category": "ITEM",
+		"description": "Awakens sleeping POKéMON."
+	},
+	{
+		"id": "parlyzheal",
+		"name": "PARLYZ HEAL",
+		"itemNo": 13,
+		"category": "ITEM",
+		"description": "Heals paralyzed POKéMON."
+	},
+	{
+		"id": "fullrestore",
+		"name": "FULL RESTORE",
+		"itemNo": 14,
+		"category": "ITEM",
+		"description": "Fully restores HP & status."
+	},
+	{
+		"id": "maxpotion",
+		"name": "MAX POTION",
+		"itemNo": 15,
+		"category": "ITEM",
+		"description": "Fully restores POKéMON HP."
+	},
+	{
+		"id": "hyperpotion",
+		"name": "HYPER POTION",
+		"itemNo": 16,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 200."
+	},
+	{
+		"id": "superpotion",
+		"name": "SUPER POTION",
+		"itemNo": 17,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 50."
+	},
+	{
+		"id": "potion",
+		"name": "POTION",
+		"itemNo": 18,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 20."
+	},
+	{
+		"id": "escaperope",
+		"name": "ESCAPE ROPE",
+		"itemNo": 19,
+		"category": "ITEM",
+		"description": "Use for escaping from caves, etc."
+	},
+	{
+		"id": "repel",
+		"name": "REPEL",
+		"itemNo": 20,
+		"category": "ITEM",
+		"description": "Repels weak POKéMON for 100 steps."
+	},
+	{
+		"id": "maxelixer",
+		"name": "MAX ELIXER",
+		"itemNo": 21,
+		"category": "ITEM",
+		"description": "Fully restores the PP of one POKéMON."
+	},
+	{
+		"id": "firestone",
+		"name": "FIRE STONE",
+		"itemNo": 22,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "thunderstone",
+		"name": "THUNDERSTONE",
+		"itemNo": 23,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "waterstone",
+		"name": "WATER STONE",
+		"itemNo": 24,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "linkingcord",
+		"name": "LINKING CORD",
+		"itemNo": 25,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "hpup",
+		"name": "HP UP",
+		"itemNo": 26,
+		"category": "ITEM",
+		"description": "Raises the HP of one POKéMON."
+	},
+	{
+		"id": "protein",
+		"name": "PROTEIN",
+		"itemNo": 27,
+		"category": "ITEM",
+		"description": "Raises ATTACK of one POKéMON."
+	},
+	{
+		"id": "iron",
+		"name": "IRON",
+		"itemNo": 28,
+		"category": "ITEM",
+		"description": "Raises DEFENSE of one POKéMON."
+	},
+	{
+		"id": "carbos",
+		"name": "CARBOS",
+		"itemNo": 29,
+		"category": "ITEM",
+		"description": "Raises SPEED of one POKéMON."
+	},
+	{
+		"id": "luckypunch",
+		"name": "LUCKY PUNCH",
+		"itemNo": 30,
+		"category": "ITEM",
+		"description": "Ups critical hit ratio of CHANSEY."
+	},
+	{
+		"id": "calcium",
+		"name": "CALCIUM",
+		"itemNo": 31,
+		"category": "ITEM",
+		"description": "Ups SPECIAL stats of one POKéMON."
+	},
+	{
+		"id": "rarecandy",
+		"name": "RARE CANDY",
+		"itemNo": 32,
+		"category": "ITEM",
+		"description": "Raises level of a POKéMON by one."
+	},
+	{
+		"id": "xaccuracy",
+		"name": "X ACCURACY",
+		"itemNo": 33,
+		"category": "ITEM",
+		"description": "Raises accuracy. (1 BTL)"
+	},
+	{
+		"id": "leafstone",
+		"name": "LEAF STONE",
+		"itemNo": 34,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "metalpowder",
+		"name": "METAL POWDER",
+		"itemNo": 35,
+		"category": "ITEM",
+		"description": "Raises DEFENSE of DITTO. (HOLD)"
+	},
+	{
+		"id": "nugget",
+		"name": "NUGGET",
+		"itemNo": 36,
+		"category": "ITEM",
+		"description": "Made of pure gold. Sell high."
+	},
+	{
+		"id": "pokedoll",
+		"name": "POKé DOLL",
+		"itemNo": 37,
+		"category": "ITEM",
+		"description": "Use to escape from a wild POKéMON."
+	},
+	{
+		"id": "fullheal",
+		"name": "FULL HEAL",
+		"itemNo": 38,
+		"category": "ITEM",
+		"description": "Eliminates all status problems."
+	},
+	{
+		"id": "revive",
+		"name": "REVIVE",
+		"itemNo": 39,
+		"category": "ITEM",
+		"description": "Restores a fainted POKéMON to 1/2 HP."
+	},
+	{
+		"id": "maxrevive",
+		"name": "MAX REVIVE",
+		"itemNo": 40,
+		"category": "ITEM",
+		"description": "Fully restores a fainted POKéMON."
+	},
+	{
+		"id": "guardspec",
+		"name": "GUARD SPEC.",
+		"itemNo": 41,
+		"category": "ITEM",
+		"description": "Prevents stats reduction. (1 BTL)"
+	},
+	{
+		"id": "superrepel",
+		"name": "SUPER REPEL",
+		"itemNo": 42,
+		"category": "ITEM",
+		"description": "Repels weak POKéMON for 200 steps."
+	},
+	{
+		"id": "maxrepel",
+		"name": "MAX REPEL",
+		"itemNo": 43,
+		"category": "ITEM",
+		"description": "Repels weak POKéMON for 250 steps."
+	},
+	{
+		"id": "direhit",
+		"name": "DIRE HIT",
+		"itemNo": 44,
+		"category": "ITEM",
+		"description": "Ups critical hit ratio. (1 BTL)"
+	},
+	{
+		"id": "freshwater",
+		"name": "FRESH WATER",
+		"itemNo": 46,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 50."
+	},
+	{
+		"id": "sodapop",
+		"name": "SODA POP",
+		"itemNo": 47,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 60."
+	},
+	{
+		"id": "lemonade",
+		"name": "LEMONADE",
+		"itemNo": 48,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 80."
+	},
+	{
+		"id": "xattack",
+		"name": "X ATTACK",
+		"itemNo": 49,
+		"category": "ITEM",
+		"description": "Raises ATTACK. (1 BTL)"
+	},
+	{
+		"id": "xdefend",
+		"name": "X DEFEND",
+		"itemNo": 51,
+		"category": "ITEM",
+		"description": "Raises DEFENSE. (1 BTL)"
+	},
+	{
+		"id": "xspeed",
+		"name": "X SPEED",
+		"itemNo": 52,
+		"category": "ITEM",
+		"description": "Raises SPEED. (1 BTL)"
+	},
+	{
+		"id": "xspecial",
+		"name": "X SPECIAL",
+		"itemNo": 53,
+		"category": "ITEM",
+		"description": "Raises SPECIAL ATTACK. (1 BTL)"
+	},
+	{
+		"id": "coincase",
+		"name": "COIN CASE",
+		"itemNo": 54,
+		"category": "KEY_ITEM",
+		"description": "Holds up to 9,999 game coins."
+	},
+	{
+		"id": "itemfinder",
+		"name": "ITEMFINDER",
+		"itemNo": 55,
+		"category": "KEY_ITEM",
+		"description": "Checks for unseen items in the area."
+	},
+	{
+		"id": "expshare",
+		"name": "EXP.SHARE",
+		"itemNo": 57,
+		"category": "ITEM",
+		"description": "Shares battle EXP. Points. (HOLD)"
+	},
+	{
+		"id": "oldrod",
+		"name": "OLD ROD",
+		"itemNo": 58,
+		"category": "KEY_ITEM",
+		"description": "Use by water to fish for POKéMON."
+	},
+	{
+		"id": "goodrod",
+		"name": "GOOD ROD",
+		"itemNo": 59,
+		"category": "KEY_ITEM",
+		"description": "A good ROD for catching POKéMON."
+	},
+	{
+		"id": "silverleaf",
+		"name": "SILVER LEAF",
+		"itemNo": 60,
+		"category": "ITEM",
+		"description": "A strange, silvercolored leaf."
+	},
+	{
+		"id": "superrod",
+		"name": "SUPER ROD",
+		"itemNo": 61,
+		"category": "KEY_ITEM",
+		"description": "The best ROD for catching POKéMON."
+	},
+	{
+		"id": "ppup",
+		"name": "PP UP",
+		"itemNo": 62,
+		"category": "ITEM",
+		"description": "Raises max PP of a selected move."
+	},
+	{
+		"id": "ether",
+		"name": "ETHER",
+		"itemNo": 63,
+		"category": "ITEM",
+		"description": "Restores PP of one move by 10."
+	},
+	{
+		"id": "maxether",
+		"name": "MAX ETHER",
+		"itemNo": 64,
+		"category": "ITEM",
+		"description": "Fully restores PP of one move."
+	},
+	{
+		"id": "elixer",
+		"name": "ELIXER",
+		"itemNo": 65,
+		"category": "ITEM",
+		"description": "Restores PP of all moves by 10."
+	},
+	{
+		"id": "redscale",
+		"name": "RED SCALE",
+		"itemNo": 66,
+		"category": "KEY_ITEM",
+		"description": "A scale from the red GYARADOS."
+	},
+	{
+		"id": "secretpotion",
+		"name": "SECRETPOTION",
+		"itemNo": 67,
+		"category": "KEY_ITEM",
+		"description": "Fully heals any POKéMON."
+	},
+	{
+		"id": "ssticket",
+		"name": "S.S.TICKET",
+		"itemNo": 68,
+		"category": "KEY_ITEM",
+		"description": "A ticket for the S.S.AQUA."
+	},
+	{
+		"id": "mysteryegg",
+		"name": "MYSTERY EGG",
+		"itemNo": 69,
+		"category": "KEY_ITEM",
+		"description": "An EGG obtained from MR.POKéMON."
+	},
+	{
+		"id": "clearbell",
+		"name": "CLEAR BELL",
+		"itemNo": 70,
+		"category": "KEY_ITEM",
+		"description": "Makes a gentle ringing."
+	},
+	{
+		"id": "silverwing",
+		"name": "SILVER WING",
+		"itemNo": 71,
+		"category": "KEY_ITEM",
+		"description": "A strange, silvercolored feather."
+	},
+	{
+		"id": "moomoomilk",
+		"name": "MOOMOO MILK",
+		"itemNo": 72,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 100."
+	},
+	{
+		"id": "quickclaw",
+		"name": "QUICK CLAW",
+		"itemNo": 73,
+		"category": "ITEM",
+		"description": "Raises 1st strike ratio. (HOLD)"
+	},
+	{
+		"id": "pechaberry",
+		"name": "PECHA BERRY",
+		"itemNo": 74,
+		"category": "BERRIES",
+		"description": "A self-cure for poison. (HOLD)"
+	},
+	{
+		"id": "goldleaf",
+		"name": "GOLD LEAF",
+		"itemNo": 75,
+		"category": "ITEM",
+		"description": "A strange, goldcolored leaf."
+	},
+	{
+		"id": "softsand",
+		"name": "SOFT SAND",
+		"itemNo": 76,
+		"category": "ITEM",
+		"description": "Powers up groundtype moves. (HOLD)"
+	},
+	{
+		"id": "sharpbeak",
+		"name": "SHARP BEAK",
+		"itemNo": 77,
+		"category": "ITEM",
+		"description": "Powers up flyingtype moves. (HOLD)"
+	},
+	{
+		"id": "cheriberry",
+		"name": "CHERI BERRY",
+		"itemNo": 78,
+		"category": "BERRIES",
+		"description": "A self-cure for paralysis. (HOLD)"
+	},
+	{
+		"id": "aspearberry",
+		"name": "ASPEAR BERRY",
+		"itemNo": 79,
+		"category": "BERRIES",
+		"description": "A self-cure for freezing. (HOLD)"
+	},
+	{
+		"id": "rawstberry",
+		"name": "RAWST BERRY",
+		"itemNo": 80,
+		"category": "BERRIES",
+		"description": "A self-heal for a burn. (HOLD)"
+	},
+	{
+		"id": "poisonbarb",
+		"name": "POISON BARB",
+		"itemNo": 81,
+		"category": "ITEM",
+		"description": "Powers up poisontype moves. (HOLD)"
+	},
+	{
+		"id": "kingsrock",
+		"name": "KING'S ROCK",
+		"itemNo": 82,
+		"category": "ITEM",
+		"description": "May make the foe flinch. (HOLD)"
+	},
+	{
+		"id": "persimberry",
+		"name": "PERSIM BERRY",
+		"itemNo": 83,
+		"category": "BERRIES",
+		"description": "A self-cure for confusion. (HOLD)"
+	},
+	{
+		"id": "chestoberry",
+		"name": "CHESTO BERRY",
+		"itemNo": 84,
+		"category": "BERRIES",
+		"description": "A self-awakening for sleep. (HOLD)"
+	},
+	{
+		"id": "redapricorn",
+		"name": "RED APRICORN",
+		"itemNo": 85,
+		"category": "BERRIES",
+		"description": "A red APRICORN."
+	},
+	{
+		"id": "tinymushroom",
+		"name": "TINYMUSHROOM",
+		"itemNo": 86,
+		"category": "ITEM",
+		"description": "An ordinary mushroom. Sell low."
+	},
+	{
+		"id": "bigmushroom",
+		"name": "BIG MUSHROOM",
+		"itemNo": 87,
+		"category": "ITEM",
+		"description": "A rare mushroom. Sell high."
+	},
+	{
+		"id": "silverpowder",
+		"name": "SILVERPOWDER",
+		"itemNo": 88,
+		"category": "ITEM",
+		"description": "Powers up bug-type moves. (HOLD)"
+	},
+	{
+		"id": "bluapricorn",
+		"name": "BLU APRICORN",
+		"itemNo": 89,
+		"category": "BERRIES",
+		"description": "A blue APRICORN."
+	},
+	{
+		"id": "helixfossil",
+		"name": "HELIX FOSSIL",
+		"itemNo": 90,
+		"category": "KEY_ITEM",
+		"description": ""
+	},
+	{
+		"id": "amuletcoin",
+		"name": "AMULET COIN",
+		"itemNo": 91,
+		"category": "ITEM",
+		"description": "Doubles monetary earnings. (HOLD)"
+	},
+	{
+		"id": "ylwapricorn",
+		"name": "YLW APRICORN",
+		"itemNo": 92,
+		"category": "BERRIES",
+		"description": "A yellow APRICORN."
+	},
+	{
+		"id": "grnapricorn",
+		"name": "GRN APRICORN",
+		"itemNo": 93,
+		"category": "BERRIES",
+		"description": "A green APRICORN."
+	},
+	{
+		"id": "cleansetag",
+		"name": "CLEANSE TAG",
+		"itemNo": 94,
+		"category": "ITEM",
+		"description": "Helps repel wild POKéMON. (HOLD)"
+	},
+	{
+		"id": "mysticwater",
+		"name": "MYSTIC WATER",
+		"itemNo": 95,
+		"category": "ITEM",
+		"description": "Powers up watertype moves. (HOLD)"
+	},
+	{
+		"id": "twistedspoon",
+		"name": "TWISTEDSPOON",
+		"itemNo": 96,
+		"category": "ITEM",
+		"description": "Powers up psychictype moves. (HOLD)"
+	},
+	{
+		"id": "whtapricorn",
+		"name": "WHT APRICORN",
+		"itemNo": 97,
+		"category": "BERRIES",
+		"description": "A white APRICORN."
+	},
+	{
+		"id": "blackbelt",
+		"name": "BLACKBELT",
+		"itemNo": 98,
+		"category": "ITEM",
+		"description": "Boosts fightingtype moves. (HOLD)"
+	},
+	{
+		"id": "blkapricorn",
+		"name": "BLK APRICORN",
+		"itemNo": 99,
+		"category": "BERRIES",
+		"description": "A black APRICORN. "
+	},
+	{
+		"id": "domefossil",
+		"name": "DOME FOSSIL",
+		"itemNo": 100,
+		"category": "KEY_ITEM",
+		"description": ""
+	},
+	{
+		"id": "pnkapricorn",
+		"name": "PNK APRICORN",
+		"itemNo": 101,
+		"category": "BERRIES",
+		"description": "A pink APRICORN. "
+	},
+	{
+		"id": "blackglasses",
+		"name": "BLACKGLASSES",
+		"itemNo": 102,
+		"category": "ITEM",
+		"description": "Powers up darktype moves. (HOLD)"
+	},
+	{
+		"id": "slowpoketail",
+		"name": "SLOWPOKETAIL",
+		"itemNo": 103,
+		"category": "ITEM",
+		"description": "Very tasty. Sell high."
+	},
+	{
+		"id": "silkscarf",
+		"name": "SILK SCARF",
+		"itemNo": 104,
+		"category": "ITEM",
+		"description": "Powers up normaltype moves. (HOLD)"
+	},
+	{
+		"id": "stick",
+		"name": "STICK",
+		"itemNo": 105,
+		"category": "ITEM",
+		"description": "An ordinary stick. Sell low."
+	},
+	{
+		"id": "smokeball",
+		"name": "SMOKE BALL",
+		"itemNo": 106,
+		"category": "ITEM",
+		"description": "Escape from wild POKéMON. (HOLD)"
+	},
+	{
+		"id": "nevermeltice",
+		"name": "NEVERMELTICE",
+		"itemNo": 107,
+		"category": "ITEM",
+		"description": "Powers up ice-type moves. (HOLD)"
+	},
+	{
+		"id": "magnet",
+		"name": "MAGNET",
+		"itemNo": 108,
+		"category": "ITEM",
+		"description": "Boosts electrictype moves. (HOLD)"
+	},
+	{
+		"id": "lumberry",
+		"name": "LUM BERRY",
+		"itemNo": 109,
+		"category": "BERRIES",
+		"description": "Cures all status problems. (HOLD)"
+	},
+	{
+		"id": "pearl",
+		"name": "PEARL",
+		"itemNo": 110,
+		"category": "ITEM",
+		"description": "A beautiful pearl. Sell low."
+	},
+	{
+		"id": "bigpearl",
+		"name": "BIG PEARL",
+		"itemNo": 111,
+		"category": "ITEM",
+		"description": "A big, beautiful pearl. Sell high."
+	},
+	{
+		"id": "everstone",
+		"name": "EVERSTONE",
+		"itemNo": 112,
+		"category": "ITEM",
+		"description": "Stops evolution. (HOLD)"
+	},
+	{
+		"id": "spelltag",
+		"name": "SPELL TAG",
+		"itemNo": 113,
+		"category": "ITEM",
+		"description": "Powers up ghosttype moves. (HOLD)"
+	},
+	{
+		"id": "ragecandybar",
+		"name": "RAGECANDYBAR",
+		"itemNo": 114,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 20."
+	},
+	{
+		"id": "gsball",
+		"name": "GS BALL",
+		"itemNo": 115,
+		"category": "KEY_ITEM",
+		"description": "The mysterious BALL."
+	},
+	{
+		"id": "bluecard",
+		"name": "BLUE CARD",
+		"itemNo": 116,
+		"category": "KEY_ITEM",
+		"description": "Card to save points."
+	},
+	{
+		"id": "miracleseed",
+		"name": "MIRACLE SEED",
+		"itemNo": 117,
+		"category": "ITEM",
+		"description": "Powers up grasstype moves. (HOLD)"
+	},
+	{
+		"id": "thickclub",
+		"name": "THICK CLUB",
+		"itemNo": 118,
+		"category": "ITEM",
+		"description": "A bone of some sort. Sell low."
+	},
+	{
+		"id": "focusband",
+		"name": "FOCUS BAND",
+		"itemNo": 119,
+		"category": "ITEM",
+		"description": "May prevent fainting. (HOLD)"
+	},
+	{
+		"id": "oldamber",
+		"name": "OLD AMBER",
+		"itemNo": 120,
+		"category": "KEY_ITEM",
+		"description": "A mysterious POKéMON fossil."
+	},
+	{
+		"id": "energypowder",
+		"name": "ENERGYPOWDER",
+		"itemNo": 121,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 50. Bitter."
+	},
+	{
+		"id": "energyroot",
+		"name": "ENERGY ROOT",
+		"itemNo": 122,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 200. Bitter."
+	},
+	{
+		"id": "healpowder",
+		"name": "HEAL POWDER",
+		"itemNo": 123,
+		"category": "ITEM",
+		"description": "Cures all status problems. Bitter."
+	},
+	{
+		"id": "revivalherb",
+		"name": "REVIVAL HERB",
+		"itemNo": 124,
+		"category": "ITEM",
+		"description": "Revives fainted POKéMON. Bitter."
+	},
+	{
+		"id": "hardstone",
+		"name": "HARD STONE",
+		"itemNo": 125,
+		"category": "ITEM",
+		"description": "Powers up rocktype moves. (HOLD)"
+	},
+	{
+		"id": "luckyegg",
+		"name": "LUCKY EGG",
+		"itemNo": 126,
+		"category": "ITEM",
+		"description": "Earns extra EXP. points. (HOLD)"
+	},
+	{
+		"id": "cardkey",
+		"name": "CARD KEY",
+		"itemNo": 127,
+		"category": "KEY_ITEM",
+		"description": "Opens shutters in the RADIO TOWER."
+	},
+	{
+		"id": "machinepart",
+		"name": "MACHINE PART",
+		"itemNo": 128,
+		"category": "KEY_ITEM",
+		"description": "A machine part for the POWER PLANT."
+	},
+	{
+		"id": "eggticket",
+		"name": "EGG TICKET",
+		"itemNo": 129,
+		"category": "KEY_ITEM",
+		"description": "May use at Goldenrod trade corner."
+	},
+	{
+		"id": "lostitem",
+		"name": "LOST ITEM",
+		"itemNo": 130,
+		"category": "KEY_ITEM",
+		"description": "The POKé DOLL lost by the COPYCAT."
+	},
+	{
+		"id": "stardust",
+		"name": "STARDUST",
+		"itemNo": 131,
+		"category": "ITEM",
+		"description": "Pretty, red sand. Sell high."
+	},
+	{
+		"id": "starpiece",
+		"name": "STAR PIECE",
+		"itemNo": 132,
+		"category": "ITEM",
+		"description": "A hunk of red gem. Sell very high."
+	},
+	{
+		"id": "basementkey",
+		"name": "BASEMENT KEY",
+		"itemNo": 133,
+		"category": "KEY_ITEM",
+		"description": "Opens doors."
+	},
+	{
+		"id": "pass",
+		"name": "PASS",
+		"itemNo": 134,
+		"category": "KEY_ITEM",
+		"description": "A ticket for the MAGNET TRAIN."
+	},
+	{
+		"id": "safariball",
+		"name": "SAFARI BALL",
+		"itemNo": 135,
+		"category": "BALL",
+		"description": "The BALL used in the SAFARI ZONE."
+	},
+	{
+		"id": "charcoal",
+		"name": "CHARCOAL",
+		"itemNo": 138,
+		"category": "ITEM",
+		"description": "Powers up firetype moves. (HOLD)"
+	},
+	{
+		"id": "berryjuice",
+		"name": "BERRY JUICE",
+		"itemNo": 139,
+		"category": "ITEM",
+		"description": "Restores POKéMON HP by 20."
+	},
+	{
+		"id": "scopelens",
+		"name": "SCOPE LENS",
+		"itemNo": 140,
+		"category": "ITEM",
+		"description": "Raises critical hit ratio. (HOLD)"
+	},
+	{
+		"id": "metalcoat",
+		"name": "METAL COAT",
+		"itemNo": 143,
+		"category": "ITEM",
+		"description": "Powers up steeltype moves. (HOLD)"
+	},
+	{
+		"id": "dragonfang",
+		"name": "DRAGON FANG",
+		"itemNo": 144,
+		"category": "ITEM",
+		"description": "Powers up dragontype moves. (HOLD)"
+	},
+	{
+		"id": "leftovers",
+		"name": "LEFTOVERS",
+		"itemNo": 146,
+		"category": "ITEM",
+		"description": "Restores HP during battle. (HOLD)"
+	},
+	{
+		"id": "leppaberry",
+		"name": "LEPPA BERRY",
+		"itemNo": 150,
+		"category": "BERRIES",
+		"description": "A self-restore for PP. (HOLD)"
+	},
+	{
+		"id": "dragonscale",
+		"name": "DRAGON SCALE",
+		"itemNo": 151,
+		"category": "ITEM",
+		"description": "A rare dragon-type item."
+	},
+	{
+		"id": "berserkgene",
+		"name": "BERSERK GENE",
+		"itemNo": 152,
+		"category": "ITEM",
+		"description": "Boosts ATTACK but causes confusion."
+	},
+	{
+		"id": "sacredash",
+		"name": "SACRED ASH",
+		"itemNo": 156,
+		"category": "ITEM",
+		"description": "Fully revives all fainted POKéMON."
+	},
+	{
+		"id": "heavyball",
+		"name": "HEAVY BALL",
+		"itemNo": 157,
+		"category": "BALL",
+		"description": "A BALL for catching heavy POKéMON."
+	},
+	{
+		"id": "flowermail",
+		"name": "FLOWER MAIL",
+		"itemNo": 158,
+		"category": "ITEM",
+		"description": "Flower-print MAIL. (HOLD)"
+	},
+	{
+		"id": "levelball",
+		"name": "LEVEL BALL",
+		"itemNo": 159,
+		"category": "BALL",
+		"description": "A BALL for lowerlevel POKéMON."
+	},
+	{
+		"id": "lureball",
+		"name": "LURE BALL",
+		"itemNo": 160,
+		"category": "BALL",
+		"description": "A BALL for POKéMON hooked by a ROD."
+	},
+	{
+		"id": "fastball",
+		"name": "FAST BALL",
+		"itemNo": 161,
+		"category": "BALL",
+		"description": "A BALL for catching fast POKéMON."
+	},
+	{
+		"id": "lightball",
+		"name": "LIGHT BALL",
+		"itemNo": 163,
+		"category": "ITEM",
+		"description": "An odd, electrical orb. (HOLD)"
+	},
+	{
+		"id": "friendball",
+		"name": "FRIEND BALL",
+		"itemNo": 164,
+		"category": "BALL",
+		"description": "A BALL that makes POKéMON friendly."
+	},
+	{
+		"id": "moonball",
+		"name": "MOON BALL",
+		"itemNo": 165,
+		"category": "BALL",
+		"description": "A BALL for MOON STONE evolvers."
+	},
+	{
+		"id": "loveball",
+		"name": "LOVE BALL",
+		"itemNo": 166,
+		"category": "BALL",
+		"description": "For catching the opposite gender."
+	},
+	{
+		"id": "normalbox",
+		"name": "NORMAL BOX",
+		"itemNo": 167,
+		"category": "ITEM",
+		"description": "Open it and see what's inside."
+	},
+	{
+		"id": "gorgeousbox",
+		"name": "GORGEOUS BOX",
+		"itemNo": 168,
+		"category": "ITEM",
+		"description": "Open it and see what's inside."
+	},
+	{
+		"id": "sunstone",
+		"name": "SUN STONE",
+		"itemNo": 169,
+		"category": "ITEM",
+		"description": "Evolves certain kinds of POKéMON."
+	},
+	{
+		"id": "polkadotbow",
+		"name": "POLKADOT BOW",
+		"itemNo": 170,
+		"category": "ITEM",
+		"description": "Powers up normaltype moves. (HOLD)"
+	},
+	{
+		"id": "upgrade",
+		"name": "UP-GRADE",
+		"itemNo": 172,
+		"category": "ITEM",
+		"description": "A mysterious box made by SILPH CO."
+	},
+	{
+		"id": "oranberry",
+		"name": "ORAN BERRY",
+		"itemNo": 173,
+		"category": "BERRIES",
+		"description": "A self-restore item. (10HP, HOLD)"
+	},
+	{
+		"id": "sitrusberry",
+		"name": "SITRUS BERRY",
+		"itemNo": 174,
+		"category": "BERRIES",
+		"description": "A self-restore item. (HOLD)"
+	},
+	{
+		"id": "squirtbottle",
+		"name": "SQUIRTBOTTLE",
+		"itemNo": 175,
+		"category": "KEY_ITEM",
+		"description": "A bottle used for watering plants."
+	},
+	{
+		"id": "parkball",
+		"name": "PARK BALL",
+		"itemNo": 177,
+		"category": "BALL",
+		"description": "The Bug-Catching Contest BALL."
+	},
+	{
+		"id": "rainbowwing",
+		"name": "RAINBOW WING",
+		"itemNo": 178,
+		"category": "KEY_ITEM",
+		"description": "A mystical feather of rainbow colors."
+	},
+	{
+		"id": "opalshard",
+		"name": "OPAL SHARD",
+		"itemNo": 180,
+		"category": "ITEM",
+		"description": "A beautiful shard. Sell low."
+	},
+	{
+		"id": "surfmail",
+		"name": "SURF MAIL",
+		"itemNo": 181,
+		"category": "ITEM",
+		"description": "LAPRAS-print MAIL. (HOLD)"
+	},
+	{
+		"id": "litebluemail",
+		"name": "LITEBLUEMAIL",
+		"itemNo": 182,
+		"category": "ITEM",
+		"description": "DRATINI-print MAIL. (HOLD)"
+	},
+	{
+		"id": "portraitmail",
+		"name": "PORTRAITMAIL",
+		"itemNo": 183,
+		"category": "ITEM",
+		"description": "MAIL featuring the holder's likeness."
+	},
+	{
+		"id": "lovelymail",
+		"name": "LOVELY MAIL",
+		"itemNo": 184,
+		"category": "ITEM",
+		"description": "Heart-print MAIL. (HOLD)"
+	},
+	{
+		"id": "eonmail",
+		"name": "EON MAIL",
+		"itemNo": 185,
+		"category": "ITEM",
+		"description": "EEVEE-print MAIL. (HOLD)"
+	},
+	{
+		"id": "morphmail",
+		"name": "MORPH MAIL",
+		"itemNo": 186,
+		"category": "ITEM",
+		"description": "DITTO-print MAIL. (HOLD)"
+	},
+	{
+		"id": "blueskymail",
+		"name": "BLUESKY MAIL",
+		"itemNo": 187,
+		"category": "ITEM",
+		"description": "Sky-print MAIL. (HOLD)"
+	},
+	{
+		"id": "musicmail",
+		"name": "MUSIC MAIL",
+		"itemNo": 188,
+		"category": "ITEM",
+		"description": "NATU-print MAIL. (HOLD)"
+	},
+	{
+		"id": "miragemail",
+		"name": "MIRAGE MAIL",
+		"itemNo": 189,
+		"category": "ITEM",
+		"description": "MEW-print MAIL. (HOLD)"
+	},
+	{ "id": "tm01", "name": "TM01", "itemNo": 191, "category": "TM_HM", "description": "" },
+	{ "id": "tm02", "name": "TM02", "itemNo": 192, "category": "TM_HM", "description": "" },
+	{ "id": "tm03", "name": "TM03", "itemNo": 193, "category": "TM_HM", "description": "" },
+	{ "id": "tm04", "name": "TM04", "itemNo": 194, "category": "TM_HM", "description": "" },
+	{ "id": "tm05", "name": "TM05", "itemNo": 196, "category": "TM_HM", "description": "" },
+	{ "id": "tm06", "name": "TM06", "itemNo": 197, "category": "TM_HM", "description": "" },
+	{ "id": "tm07", "name": "TM07", "itemNo": 198, "category": "TM_HM", "description": "" },
+	{ "id": "tm08", "name": "TM08", "itemNo": 199, "category": "TM_HM", "description": "" },
+	{ "id": "tm09", "name": "TM09", "itemNo": 200, "category": "TM_HM", "description": "" },
+	{ "id": "tm10", "name": "TM10", "itemNo": 201, "category": "TM_HM", "description": "" },
+	{ "id": "tm11", "name": "TM11", "itemNo": 202, "category": "TM_HM", "description": "" },
+	{ "id": "tm12", "name": "TM12", "itemNo": 203, "category": "TM_HM", "description": "" },
+	{ "id": "tm13", "name": "TM13", "itemNo": 204, "category": "TM_HM", "description": "" },
+	{ "id": "tm14", "name": "TM14", "itemNo": 205, "category": "TM_HM", "description": "" },
+	{ "id": "tm15", "name": "TM15", "itemNo": 206, "category": "TM_HM", "description": "" },
+	{ "id": "tm16", "name": "TM16", "itemNo": 207, "category": "TM_HM", "description": "" },
+	{ "id": "tm17", "name": "TM17", "itemNo": 208, "category": "TM_HM", "description": "" },
+	{ "id": "tm18", "name": "TM18", "itemNo": 209, "category": "TM_HM", "description": "" },
+	{ "id": "tm19", "name": "TM19", "itemNo": 210, "category": "TM_HM", "description": "" },
+	{ "id": "tm20", "name": "TM20", "itemNo": 211, "category": "TM_HM", "description": "" },
+	{ "id": "tm21", "name": "TM21", "itemNo": 212, "category": "TM_HM", "description": "" },
+	{ "id": "tm22", "name": "TM22", "itemNo": 213, "category": "TM_HM", "description": "" },
+	{ "id": "tm23", "name": "TM23", "itemNo": 214, "category": "TM_HM", "description": "" },
+	{ "id": "tm24", "name": "TM24", "itemNo": 215, "category": "TM_HM", "description": "" },
+	{ "id": "tm25", "name": "TM25", "itemNo": 216, "category": "TM_HM", "description": "" },
+	{ "id": "tm26", "name": "TM26", "itemNo": 217, "category": "TM_HM", "description": "" },
+	{ "id": "tm27", "name": "TM27", "itemNo": 218, "category": "TM_HM", "description": "" },
+	{ "id": "tm28", "name": "TM28", "itemNo": 219, "category": "TM_HM", "description": "" },
+	{ "id": "tm29", "name": "TM29", "itemNo": 221, "category": "TM_HM", "description": "" },
+	{ "id": "tm30", "name": "TM30", "itemNo": 222, "category": "TM_HM", "description": "" },
+	{ "id": "tm31", "name": "TM31", "itemNo": 223, "category": "TM_HM", "description": "" },
+	{ "id": "tm32", "name": "TM32", "itemNo": 224, "category": "TM_HM", "description": "" },
+	{ "id": "tm33", "name": "TM33", "itemNo": 225, "category": "TM_HM", "description": "" },
+	{ "id": "tm34", "name": "TM34", "itemNo": 226, "category": "TM_HM", "description": "" },
+	{ "id": "tm35", "name": "TM35", "itemNo": 227, "category": "TM_HM", "description": "" },
+	{ "id": "tm36", "name": "TM36", "itemNo": 228, "category": "TM_HM", "description": "" },
+	{ "id": "tm37", "name": "TM37", "itemNo": 229, "category": "TM_HM", "description": "" },
+	{ "id": "tm38", "name": "TM38", "itemNo": 230, "category": "TM_HM", "description": "" },
+	{ "id": "tm39", "name": "TM39", "itemNo": 231, "category": "TM_HM", "description": "" },
+	{ "id": "tm40", "name": "TM40", "itemNo": 232, "category": "TM_HM", "description": "" },
+	{ "id": "tm41", "name": "TM41", "itemNo": 233, "category": "TM_HM", "description": "" },
+	{ "id": "tm42", "name": "TM42", "itemNo": 234, "category": "TM_HM", "description": "" },
+	{ "id": "tm43", "name": "TM43", "itemNo": 235, "category": "TM_HM", "description": "" },
+	{ "id": "tm44", "name": "TM44", "itemNo": 236, "category": "TM_HM", "description": "" },
+	{ "id": "tm45", "name": "TM45", "itemNo": 237, "category": "TM_HM", "description": "" },
+	{ "id": "tm46", "name": "TM46", "itemNo": 238, "category": "TM_HM", "description": "" },
+	{ "id": "tm47", "name": "TM47", "itemNo": 239, "category": "TM_HM", "description": "" },
+	{ "id": "tm48", "name": "TM48", "itemNo": 240, "category": "TM_HM", "description": "" },
+	{ "id": "tm49", "name": "TM49", "itemNo": 241, "category": "TM_HM", "description": "" },
+	{ "id": "tm50", "name": "TM50", "itemNo": 242, "category": "TM_HM", "description": "" },
+	{ "id": "hm01", "name": "HM01", "itemNo": 243, "category": "TM_HM", "description": "" },
+	{ "id": "hm02", "name": "HM02", "itemNo": 244, "category": "TM_HM", "description": "" },
+	{ "id": "hm03", "name": "HM03", "itemNo": 245, "category": "TM_HM", "description": "" },
+	{ "id": "hm04", "name": "HM04", "itemNo": 246, "category": "TM_HM", "description": "" },
+	{ "id": "hm05", "name": "HM05", "itemNo": 247, "category": "TM_HM", "description": "" },
+	{ "id": "hm06", "name": "HM06", "itemNo": 248, "category": "TM_HM", "description": "" },
+	{ "id": "hm07", "name": "HM07", "itemNo": 249, "category": "TM_HM", "description": "" }
 ]

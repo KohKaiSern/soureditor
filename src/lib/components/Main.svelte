@@ -19,6 +19,7 @@
 	import { buf2hex, hex2buf } from '$lib/utils';
 	import { parseSave, reverseParseSave } from '$lib/components/parsers';
 	import BoxEditor from './BoxEditor.svelte';
+	import BagEditor from './BagEditor.svelte';
 
 	let file: Array<File> = $state([]);
 	let toastMsg = $state('');
@@ -121,3 +122,4 @@
 {/if}
 <Hr />
 {#if selectedEditor === 'boxes'}<BoxEditor bind:mons />{/if}
+{#if selectedEditor === 'bag'}<BagEditor bind:bag />{/if}
