@@ -14,9 +14,9 @@
 				options={['NONE', ...moves.map((move) => move.name)]}
 			/>
 			{#if mon.moves[i] === 'NONE'}
-				<P italic class="ml-6 mt-5">This move slot is empty.</P>
+				<P italic class="mt-5 ml-6">This move slot is empty.</P>
 			{:else}
-				<div class="ml-6 mt-5 flex items-center gap-3">
+				<div class="mt-5 ml-6 flex items-center gap-3">
 					<div
 						class="flex size-[30px] items-center justify-center rounded-[50%]"
 						style:background-color={getTypeColor(

@@ -8,12 +8,12 @@
 	let gender = $derived.by(() => {
 		const genderRatio = pokemon.find((pokemon) => pokemon.name === mon.species)!.genderRatio;
 		if (genderRatio === 'NONE') {
-			return 'NO GENDER';
+			return 'Genderless';
 		}
 		if (mon.dvs[0] / 15 <= (genderRatio as number)) {
-			return 'FEMALE';
+			return 'Female';
 		} else {
-			return 'MALE';
+			return 'Male';
 		}
 	});
 	let shininess = $derived.by(() => {
@@ -42,23 +42,34 @@
 			<NumberInput bind:value={mon.dvs[i]} min={0} max={15} />
 		</div>
 	{/each}
-	<P>HP Determinant Value: {hpDV}</P>
-	<P>Gender: {gender}</P>
-	<P>Shininess: {shininess}</P>
-	<P class="flex flex-wrap items-center gap-3">
-		Hidden Power Type:
-		<div
-			class="flex size-[30px] items-center justify-center rounded-[50%]"
-			style:background-color={getTypeColor(hiddenPowerType)}
-		>
-			<img
-				class="size-[60%] object-contain"
-				src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${hiddenPowerType.toLowerCase()}.svg`}
-				alt={`${hiddenPowerType} logo`}
-			/>
+	<div>
+		<Label class="!text-gray-400">HP DV</Label>
+		<P class="text-xl">{hpDV}</P>
+	</div>
+	<div>
+		<Label class="!text-gray-400">Gender</Label>
+		<P class="text-lg">{gender}</P>
+	</div>
+	<div>
+		<Label class="!text-gray-400">Shininess</Label>
+		<P class="text-lg">{shininess}</P>
+	</div>
+	<div>
+		<Label class="!text-gray-400">Hidden Power</Label>
+		<div class="mt-2 flex gap-3">
+			<div
+				class="flex size-[30px] items-center justify-center rounded-[50%]"
+				style:background-color={getTypeColor(hiddenPowerType)}
+			>
+				<img
+					class="size-[60%] object-contain"
+					src={`https://raw.githubusercontent.com/duiker101/pokemon-type-svg-icons/5781623f147f1bf850f426cfe1874ba56a9b75ee/icons/${hiddenPowerType.toLowerCase()}.svg`}
+					alt={`${hiddenPowerType} logo`}
+				/>
+			</div>
+			<P class="text-xl">{hiddenPowerBasePower} BP</P>
 		</div>
-	</P>
-	<P>Hidden Power Base Power: {hiddenPowerBasePower}</P>
+	</div>
 </div>
 
 <Heading tag="h6" class="mt-7 mb-3">Stat Experience</Heading>
