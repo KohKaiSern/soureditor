@@ -1,14 +1,5 @@
 <script lang="ts">
-	import {
-		P,
-		Table,
-		TableBody,
-		TableHead,
-		TableBodyCell,
-		TableHeadCell,
-		TableBodyRow,
-		Label
-	} from 'flowbite-svelte';
+	import { P, Table, TableBody, TableBodyCell, TableBodyRow, Label } from 'flowbite-svelte';
 	import { DropdownSearch } from '../UI';
 	import { moves } from '$data';
 	import { getTypeColor } from '$lib/utils';
@@ -23,9 +14,9 @@
 				options={['NONE', ...moves.map((move) => move.name)]}
 			/>
 			{#if mon.moves[i] === 'NONE'}
-				<P italic class="mt-5">This move slot is empty.</P>
+				<P italic class="ml-6 mt-5">This move slot is empty.</P>
 			{:else}
-				<div class="mt-5 flex items-center gap-3">
+				<div class="ml-6 mt-5 flex items-center gap-3">
 					<div
 						class="flex size-[30px] items-center justify-center rounded-[50%]"
 						style:background-color={getTypeColor(
