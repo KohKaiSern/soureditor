@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Heading } from 'flowbite-svelte';
+	import { Heading, P } from 'flowbite-svelte';
 	import { DropdownSearch, NumberInput } from '../UI';
 	import { pokemon, items, growthRateCoefficients } from '$data';
 	let { mon = $bindable() } = $props();
@@ -35,5 +35,10 @@
 	]}
 	bind:value={mon.heldItem}
 />
+{#if mon.heldItem === 'NONE'}
+	<P class="mt-4">This Pokémon has no held item.</P>
+{:else}
+	<P italic class="mt-4">{items.find((item) => item.name === mon.heldItem)!.description}</P>
+{/if}
 <Heading tag="h6" class="mt-3 mb-3">Level</Heading>
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={setExpForLvl} />
