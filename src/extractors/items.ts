@@ -15,20 +15,20 @@ const NAMES = readFileSync(
 	'utf-8'
 ).split('\n');
 
+let itemNo = 1;
 for (let lineNo = 0; lineNo < NAMES.length; lineNo++) {
-	if (NAMES[lineNo].includes('NUM_ITEMS')) {
-		break;
-	}
 	if (NAMES[lineNo].includes('li ')) {
-		if (NAMES[lineNo].includes('TERU')) {
+		if (NAMES[lineNo].includes('TERU') || NAMES[lineNo].includes('?')) {
+			itemNo += 1;
 			continue;
 		}
 		items.push({
 			id: reduce(NAMES[lineNo].split('"')[1]),
 			name: NAMES[lineNo].split('"')[1],
-			itemNo: lineNo - 1,
+			itemNo: itemNo,
 			category: ''
 		});
+		itemNo += 1;
 	}
 }
 
