@@ -72,8 +72,12 @@
 <Heading tag="h1" class="mb-5">Sour Editor</Heading>
 <Label class="mb-2">Upload Save</Label>
 <div class="mb-2 flex gap-3">
-	<Fileupload bind:files={file as any} onchange={handleSave} />
-	<Button color="purple" class="whitespace-nowrap" onclick={downloadSave}>Download Save</Button>
+	<Fileupload bind:files={file as any} onchange={handleSave} accept=".srm,.sav" />
+	<Button
+		color="purple"
+		class="whitespace-nowrap ring-0 hover:bg-purple-600 hover:text-gray-400"
+		onclick={downloadSave}>Download Save</Button
+	>
 </div>
 <Helper>.SAV or .SRM (Max 33kB).</Helper>
 <br />
