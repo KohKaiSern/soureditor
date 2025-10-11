@@ -25,12 +25,15 @@
 
 <Heading tag="h6" class="mb-3">Species</Heading>
 <DropdownSearch options={pokemon.map((pokemon) => pokemon.name)} bind:value={mon.species} />
-<Heading tag="h6" class="mt-3 mb-3">Held Item</Heading>
+<Heading tag="h6" class="mb-3 mt-3">Held Item</Heading>
 <DropdownSearch
-	options={items
-		.filter((item) => item.category != 'KEY_ITEM' && item.category != 'TM_HM')
-		.map((item) => item.name)}
+	options={[
+		'NONE',
+		...items
+			.filter((item) => item.category != 'KEY_ITEM' && item.category != 'TM_HM')
+			.map((item) => item.name)
+	]}
 	bind:value={mon.heldItem}
 />
-<Heading tag="h6" class="mt-3 mb-3">Level</Heading>
+<Heading tag="h6" class="mb-3 mt-3">Level</Heading>
 <NumberInput bind:value={mon.level} min={1} max={100} onchange={setExpForLvl} />
