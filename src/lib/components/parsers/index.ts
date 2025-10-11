@@ -5,4 +5,5 @@ export { default as reverseParseSave } from '$lib/components/parsers/reversePars
 export { default as reverseParseMon } from '$lib/components/parsers/reverseParseMon';
 export { default as checksumNB } from '$lib/components/parsers/checksumNB';
 export { default as parseBag } from '$lib/components/parsers/parseBag';
-export { default as reverseParseBag } from '$lib/components/parsers/reverseParseBag'
+export { default as reverseParseBag } from '$lib/components/parsers/reverseParseBag';
+export { default as checksumPD } from '$lib/components/parsers/checksumPD';

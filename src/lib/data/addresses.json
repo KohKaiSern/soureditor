@@ -4,5 +4,7 @@
 	"sBackupNewBox1": "2f20",
 	"sBackupPlayerData": "1209",
 	"sChecksum": "7e1f4",
-	"sBackupChecksum": "1f0d"
+	"sBackupChecksum": "1f0d",
+	"sBackupGameData": "1209",
+	"sBackupGameDataEnd": "1d83"
 }

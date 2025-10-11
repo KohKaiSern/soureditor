@@ -6,7 +6,9 @@ const SYMBOLS = [
 	'sBackupNewBox1',
 	'sBackupPlayerData',
 	'sChecksum',
-	'sBackupChecksum'
+	'sBackupChecksum',
+	'sBackupGameData',
+	'sBackupGameDataEnd'
 ];
 const addresses: Record<string, string> = {};
 
