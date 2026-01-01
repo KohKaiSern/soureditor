@@ -1,0 +1,537 @@
+[
+  {
+    "id": "LANDMARK_SPECIAL",
+    "index": 0,
+    "name": "SPECIAL"
+  },
+  {
+    "id": "LANDMARK_NEW_BARK_TOWN",
+    "index": 1,
+    "name": "NEW BARK TOWN"
+  },
+  {
+    "id": "LANDMARK_ROUTE_29",
+    "index": 2,
+    "name": "ROUTE 29"
+  },
+  {
+    "id": "LANDMARK_CHERRYGROVE_CITY",
+    "index": 3,
+    "name": "CHERRYGROVE CITY"
+  },
+  {
+    "id": "LANDMARK_ROUTE_30",
+    "index": 4,
+    "name": "ROUTE 30"
+  },
+  {
+    "id": "LANDMARK_ROUTE_31",
+    "index": 5,
+    "name": "ROUTE 31"
+  },
+  {
+    "id": "LANDMARK_VIOLET_CITY",
+    "index": 6,
+    "name": "VIOLET CITY"
+  },
+  {
+    "id": "LANDMARK_SPROUT_TOWER",
+    "index": 7,
+    "name": "SPROUT TOWER"
+  },
+  {
+    "id": "LANDMARK_ROUTE_32",
+    "index": 8,
+    "name": "ROUTE 32"
+  },
+  {
+    "id": "LANDMARK_RUINS_OF_ALPH",
+    "index": 9,
+    "name": "RUINS OF ALPH"
+  },
+  {
+    "id": "LANDMARK_UNION_CAVE",
+    "index": 10,
+    "name": "UNION CAVE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_33",
+    "index": 11,
+    "name": "ROUTE 33"
+  },
+  {
+    "id": "LANDMARK_AZALEA_TOWN",
+    "index": 12,
+    "name": "AZALEA TOWN"
+  },
+  {
+    "id": "LANDMARK_SLOWPOKE_WELL",
+    "index": 13,
+    "name": "SLOWPOKE WELL"
+  },
+  {
+    "id": "LANDMARK_ILEX_FOREST",
+    "index": 14,
+    "name": "ILEX FOREST"
+  },
+  {
+    "id": "LANDMARK_ROUTE_34",
+    "index": 15,
+    "name": "ROUTE 34"
+  },
+  {
+    "id": "LANDMARK_GOLDENROD_CITY",
+    "index": 16,
+    "name": "GOLDENROD CITY"
+  },
+  {
+    "id": "LANDMARK_RADIO_TOWER",
+    "index": 17,
+    "name": "RADIO TOWER"
+  },
+  {
+    "id": "LANDMARK_ROUTE_35",
+    "index": 18,
+    "name": "ROUTE 35"
+  },
+  {
+    "id": "LANDMARK_NATIONAL_PARK",
+    "index": 19,
+    "name": "NATIONAL PARK"
+  },
+  {
+    "id": "LANDMARK_ROUTE_36",
+    "index": 20,
+    "name": "ROUTE 36"
+  },
+  {
+    "id": "LANDMARK_ROUTE_37",
+    "index": 21,
+    "name": "ROUTE 37"
+  },
+  {
+    "id": "LANDMARK_ECRUTEAK_CITY",
+    "index": 22,
+    "name": "ECRUTEAK CITY"
+  },
+  {
+    "id": "LANDMARK_TIN_TOWER",
+    "index": 23,
+    "name": "TIN TOWER"
+  },
+  {
+    "id": "LANDMARK_BURNED_TOWER",
+    "index": 24,
+    "name": "BURNED TOWER"
+  },
+  {
+    "id": "LANDMARK_ROUTE_38",
+    "index": 25,
+    "name": "ROUTE 38"
+  },
+  {
+    "id": "LANDMARK_ROUTE_39",
+    "index": 26,
+    "name": "ROUTE 39"
+  },
+  {
+    "id": "LANDMARK_OLIVINE_CITY",
+    "index": 27,
+    "name": "OLIVINE CITY"
+  },
+  {
+    "id": "LANDMARK_LIGHTHOUSE",
+    "index": 28,
+    "name": "LIGHTHOUSE"
+  },
+  {
+    "id": "LANDMARK_BATTLE_TOWER",
+    "index": 29,
+    "name": "BATTLE TOWER"
+  },
+  {
+    "id": "LANDMARK_ROUTE_40",
+    "index": 30,
+    "name": "ROUTE 40"
+  },
+  {
+    "id": "LANDMARK_WHIRL_ISLANDS",
+    "index": 31,
+    "name": "WHIRL ISLANDS"
+  },
+  {
+    "id": "LANDMARK_ROUTE_41",
+    "index": 32,
+    "name": "ROUTE 41"
+  },
+  {
+    "id": "LANDMARK_CIANWOOD_CITY",
+    "index": 33,
+    "name": "CIANWOOD CITY"
+  },
+  {
+    "id": "LANDMARK_CLIFF_EDGE_GATE",
+    "index": 34,
+    "name": "CLIFF EDGE GATE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_47",
+    "index": 35,
+    "name": "ROUTE 47"
+  },
+  {
+    "id": "LANDMARK_CLIFF_CAVE",
+    "index": 36,
+    "name": "CLIFF CAVE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_48",
+    "index": 37,
+    "name": "ROUTE 48"
+  },
+  {
+    "id": "LANDMARK_SAFARI_ZONE_GATE",
+    "index": 38,
+    "name": "SAFARI ZONE GATE"
+  },
+  {
+    "id": "LANDMARK_SAFARI_ZONE",
+    "index": 39,
+    "name": "SAFARI ZONE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_42",
+    "index": 40,
+    "name": "ROUTE 42"
+  },
+  {
+    "id": "LANDMARK_MT_MORTAR",
+    "index": 41,
+    "name": "MT.MORTAR"
+  },
+  {
+    "id": "LANDMARK_MAHOGANY_TOWN",
+    "index": 42,
+    "name": "MAHOGANY TOWN"
+  },
+  {
+    "id": "LANDMARK_ROUTE_43",
+    "index": 43,
+    "name": "ROUTE 43"
+  },
+  {
+    "id": "LANDMARK_LAKE_OF_RAGE",
+    "index": 44,
+    "name": "LAKE OF RAGE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_44",
+    "index": 45,
+    "name": "ROUTE 44"
+  },
+  {
+    "id": "LANDMARK_ICE_PATH",
+    "index": 46,
+    "name": "ICE PATH"
+  },
+  {
+    "id": "LANDMARK_BLACKTHORN_CITY",
+    "index": 47,
+    "name": "BLACKTHORN CITY"
+  },
+  {
+    "id": "LANDMARK_DRAGONS_DEN",
+    "index": 48,
+    "name": "DRAGON'S DEN"
+  },
+  {
+    "id": "LANDMARK_ROUTE_45",
+    "index": 49,
+    "name": "ROUTE 45"
+  },
+  {
+    "id": "LANDMARK_DARK_CAVE",
+    "index": 50,
+    "name": "DARK CAVE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_46",
+    "index": 51,
+    "name": "ROUTE 46"
+  },
+  {
+    "id": "LANDMARK_SILVER_CAVE",
+    "index": 52,
+    "name": "SILVER CAVE"
+  },
+  {
+    "id": "LANDMARK_PALLET_TOWN",
+    "index": 53,
+    "name": "PALLET TOWN"
+  },
+  {
+    "id": "LANDMARK_ROUTE_1",
+    "index": 54,
+    "name": "ROUTE 1"
+  },
+  {
+    "id": "LANDMARK_VIRIDIAN_CITY",
+    "index": 55,
+    "name": "VIRIDIAN CITY"
+  },
+  {
+    "id": "LANDMARK_ROUTE_2",
+    "index": 56,
+    "name": "ROUTE 2"
+  },
+  {
+    "id": "LANDMARK_VIRIDIAN_FOREST",
+    "index": 57,
+    "name": "VIRIDIAN FOREST"
+  },
+  {
+    "id": "LANDMARK_PEWTER_CITY",
+    "index": 58,
+    "name": "PEWTER CITY"
+  },
+  {
+    "id": "LANDMARK_ROUTE_3",
+    "index": 59,
+    "name": "ROUTE 3"
+  },
+  {
+    "id": "LANDMARK_MT_MOON",
+    "index": 60,
+    "name": "MT.MOON"
+  },
+  {
+    "id": "LANDMARK_ROUTE_4",
+    "index": 61,
+    "name": "ROUTE 4"
+  },
+  {
+    "id": "LANDMARK_CERULEAN_CITY",
+    "index": 62,
+    "name": "CERULEAN CITY"
+  },
+  {
+    "id": "LANDMARK_CERULEAN_CAVE",
+    "index": 63,
+    "name": "CERULEAN CAVE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_24",
+    "index": 64,
+    "name": "ROUTE 24"
+  },
+  {
+    "id": "LANDMARK_ROUTE_25",
+    "index": 65,
+    "name": "ROUTE 25"
+  },
+  {
+    "id": "LANDMARK_ROUTE_5",
+    "index": 66,
+    "name": "ROUTE 5"
+  },
+  {
+    "id": "LANDMARK_UNDERGROUND_PATH",
+    "index": 67,
+    "name": "UNDERGROUND"
+  },
+  {
+    "id": "LANDMARK_ROUTE_6",
+    "index": 68,
+    "name": "ROUTE 6"
+  },
+  {
+    "id": "LANDMARK_VERMILION_CITY",
+    "index": 69,
+    "name": "VERMILION CITY"
+  },
+  {
+    "id": "LANDMARK_DIGLETTS_CAVE",
+    "index": 70,
+    "name": "DIGLETT'S CAVE"
+  },
+  {
+    "id": "LANDMARK_ROUTE_7",
+    "index": 71,
+    "name": "ROUTE 7"
+  },
+  {
+    "id": "LANDMARK_ROUTE_8",
+    "index": 72,
+    "name": "ROUTE 8"
+  },
+  {
+    "id": "LANDMARK_ROUTE_9",
+    "index": 73,
+    "name": "ROUTE 9"
+  },
+  {
+    "id": "LANDMARK_ROCK_TUNNEL",
+    "index": 74,
+    "name": "ROCK TUNNEL"
+  },
+  {
+    "id": "LANDMARK_ROUTE_10",
+    "index": 75,
+    "name": "ROUTE 10"
+  },
+  {
+    "id": "LANDMARK_POWER_PLANT",
+    "index": 76,
+    "name": "POWER PLANT"
+  },
+  {
+    "id": "LANDMARK_LAVENDER_TOWN",
+    "index": 77,
+    "name": "LAVENDER TOWN"
+  },
+  {
+    "id": "LANDMARK_LAV_RADIO_TOWER",
+    "index": 78,
+    "name": "LAV RADIO TOWER"
+  },
+  {
+    "id": "LANDMARK_CELADON_CITY",
+    "index": 79,
+    "name": "CELADON CITY"
+  },
+  {
+    "id": "LANDMARK_SAFFRON_CITY",
+    "index": 80,
+    "name": "SAFFRON CITY"
+  },
+  {
+    "id": "LANDMARK_ROUTE_11",
+    "index": 81,
+    "name": "ROUTE 11"
+  },
+  {
+    "id": "LANDMARK_ROUTE_12",
+    "index": 82,
+    "name": "ROUTE 12"
+  },
+  {
+    "id": "LANDMARK_ROUTE_13",
+    "index": 83,
+    "name": "ROUTE 13"
+  },
+  {
+    "id": "LANDMARK_ROUTE_14",
+    "index": 84,
+    "name": "ROUTE 14"
+  },
+  {
+    "id": "LANDMARK_ROUTE_15",
+    "index": 85,
+    "name": "ROUTE 15"
+  },
+  {
+    "id": "LANDMARK_ROUTE_16",
+    "index": 86,
+    "name": "ROUTE 16"
+  },
+  {
+    "id": "LANDMARK_ROUTE_17",
+    "index": 87,
+    "name": "ROUTE 17"
+  },
+  {
+    "id": "LANDMARK_ROUTE_18",
+    "index": 88,
+    "name": "ROUTE 18"
+  },
+  {
+    "id": "LANDMARK_FUCHSIA_CITY",
+    "index": 89,
+    "name": "FUCHSIA CITY"
+  },
+  {
+    "id": "LANDMARK_ROUTE_19",
+    "index": 90,
+    "name": "ROUTE 19"
+  },
+  {
+    "id": "LANDMARK_ROUTE_20",
+    "index": 91,
+    "name": "ROUTE 20"
+  },
+  {
+    "id": "LANDMARK_SEAFOAM_ISLANDS",
+    "index": 92,
+    "name": "SEAFOAM ISLANDS"
+  },
+  {
+    "id": "LANDMARK_CINNABAR_ISLAND",
+    "index": 93,
+    "name": "CINNABAR ISLAND"
+  },
+  {
+    "id": "LANDMARK_POKEMON_MANSION",
+    "index": 94,
+    "name": "POKéMON MANSION"
+  },
+  {
+    "id": "LANDMARK_ROUTE_21",
+    "index": 95,
+    "name": "ROUTE 21"
+  },
+  {
+    "id": "LANDMARK_ROUTE_22",
+    "index": 96,
+    "name": "ROUTE 22"
+  },
+  {
+    "id": "LANDMARK_VICTORY_ROAD",
+    "index": 97,
+    "name": "VICTORY ROAD"
+  },
+  {
+    "id": "LANDMARK_ROUTE_23",
+    "index": 98,
+    "name": "ROUTE 23"
+  },
+  {
+    "id": "LANDMARK_INDIGO_PLATEAU",
+    "index": 99,
+    "name": "INDIGO PLATEAU"
+  },
+  {
+    "id": "LANDMARK_ROUTE_26",
+    "index": 100,
+    "name": "ROUTE 26"
+  },
+  {
+    "id": "LANDMARK_ROUTE_27",
+    "index": 101,
+    "name": "ROUTE 27"
+  },
+  {
+    "id": "LANDMARK_TOHJO_FALLS",
+    "index": 102,
+    "name": "TOHJO FALLS"
+  },
+  {
+    "id": "LANDMARK_ROUTE_28",
+    "index": 103,
+    "name": "ROUTE 28"
+  },
+  {
+    "id": "LANDMARK_FAST_SHIP",
+    "index": 104,
+    "name": "FAST SHIP"
+  },
+  {
+    "id": "LANDMARK_EVENT",
+    "index": 127,
+    "name": "EVENT"
+  },
+  {
+    "id": "LANDMARK_GIFT",
+    "index": 126,
+    "name": "GIFT"
+  }
+]

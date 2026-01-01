@@ -1,0 +1,122 @@
+[
+  {
+    "id": "THEME_POKEDEX",
+    "index": 0,
+    "name": "POKéDEX"
+  },
+  {
+    "id": "THEME_POKEGEAR_M",
+    "index": 1,
+    "name": "POKéGEAR♂"
+  },
+  {
+    "id": "THEME_POKEGEAR_F",
+    "index": 2,
+    "name": "POKéGEAR♀"
+  },
+  {
+    "id": "THEME_PACK_M",
+    "index": 3,
+    "name": "PACK♂"
+  },
+  {
+    "id": "THEME_PACK_F",
+    "index": 4,
+    "name": "PACK♀"
+  },
+  {
+    "id": "THEME_TRAINER_CARD_M",
+    "index": 5,
+    "name": "TRAINER♂"
+  },
+  {
+    "id": "THEME_TRAINER_CARD_F",
+    "index": 6,
+    "name": "TRAINER♀"
+  },
+  {
+    "id": "THEME_NORMAL",
+    "index": 7,
+    "name": "NORMAL"
+  },
+  {
+    "id": "THEME_FIGHTING",
+    "index": 8,
+    "name": "FIGHTING"
+  },
+  {
+    "id": "THEME_FLYING",
+    "index": 9,
+    "name": "FLYING"
+  },
+  {
+    "id": "THEME_POISON",
+    "index": 10,
+    "name": "POISON"
+  },
+  {
+    "id": "THEME_GROUND",
+    "index": 11,
+    "name": "GROUND"
+  },
+  {
+    "id": "THEME_ROCK",
+    "index": 12,
+    "name": "ROCK"
+  },
+  {
+    "id": "THEME_BUG",
+    "index": 13,
+    "name": "BUG"
+  },
+  {
+    "id": "THEME_GHOST",
+    "index": 14,
+    "name": "GHOST"
+  },
+  {
+    "id": "THEME_STEEL",
+    "index": 15,
+    "name": "STEEL"
+  },
+  {
+    "id": "THEME_FIRE",
+    "index": 16,
+    "name": "FIRE"
+  },
+  {
+    "id": "THEME_WATER",
+    "index": 17,
+    "name": "WATER"
+  },
+  {
+    "id": "THEME_GRASS",
+    "index": 18,
+    "name": "GRASS"
+  },
+  {
+    "id": "THEME_ELECTRIC",
+    "index": 19,
+    "name": "ELECTRIC"
+  },
+  {
+    "id": "THEME_PSYCHIC",
+    "index": 20,
+    "name": "PSYCHIC"
+  },
+  {
+    "id": "THEME_ICE",
+    "index": 21,
+    "name": "ICE"
+  },
+  {
+    "id": "THEME_DRAGON",
+    "index": 22,
+    "name": "DRAGON"
+  },
+  {
+    "id": "THEME_DARK",
+    "index": 23,
+    "name": "DARK"
+  }
+]

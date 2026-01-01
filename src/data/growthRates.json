@@ -1,0 +1,68 @@
+[
+  {
+    "id": "GROWTH_MEDIUM_FAST",
+    "index": 0,
+    "coefficients": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "GROWTH_SLIGHTLY_FAST",
+    "index": 1,
+    "coefficients": [
+      3,
+      4,
+      10,
+      0,
+      30
+    ]
+  },
+  {
+    "id": "GROWTH_SLIGHTLY_SLOW",
+    "index": 2,
+    "coefficients": [
+      3,
+      4,
+      20,
+      0,
+      70
+    ]
+  },
+  {
+    "id": "GROWTH_MEDIUM_SLOW",
+    "index": 3,
+    "coefficients": [
+      6,
+      5,
+      -15,
+      100,
+      140
+    ]
+  },
+  {
+    "id": "GROWTH_FAST",
+    "index": 4,
+    "coefficients": [
+      4,
+      5,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "GROWTH_SLOW",
+    "index": 5,
+    "coefficients": [
+      5,
+      4,
+      0,
+      0,
+      0
+    ]
+  }
+]

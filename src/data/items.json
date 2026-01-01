@@ -1,0 +1,1339 @@
+[
+  {
+    "id": "NO_ITEM",
+    "index": 0,
+    "name": "",
+    "description": "",
+    "category": ""
+  },
+  {
+    "id": "MASTER_BALL",
+    "index": 1,
+    "name": "MASTER BALL",
+    "description": "The best BALL. It never misses.",
+    "category": "BALL"
+  },
+  {
+    "id": "ULTRA_BALL",
+    "index": 2,
+    "name": "ULTRA BALL",
+    "description": "A BALL with a high rate of success.",
+    "category": "BALL"
+  },
+  {
+    "id": "BRIGHTPOWDER",
+    "index": 3,
+    "name": "BRIGHTPOWDER",
+    "description": "Lowers the foe's accuracy. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "GREAT_BALL",
+    "index": 4,
+    "name": "GREAT BALL",
+    "description": "A BALL with a decent success rate.",
+    "category": "BALL"
+  },
+  {
+    "id": "POKE_BALL",
+    "index": 5,
+    "name": "POKé BALL",
+    "description": "An item for catching POKéMON.",
+    "category": "BALL"
+  },
+  {
+    "id": "TOWN_MAP",
+    "index": 6,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "BICYCLE",
+    "index": 7,
+    "name": "BICYCLE",
+    "description": "A collapsible bike for fast movement.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "MOON_STONE",
+    "index": 8,
+    "name": "MOON STONE",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ANTIDOTE",
+    "index": 9,
+    "name": "ANTIDOTE",
+    "description": "Cures poisoned POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "BURN_HEAL",
+    "index": 10,
+    "name": "BURN HEAL",
+    "description": "Heals burned POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ICE_HEAL",
+    "index": 11,
+    "name": "ICE HEAL",
+    "description": "Defrosts frozen POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "AWAKENING",
+    "index": 12,
+    "name": "AWAKENING",
+    "description": "Awakens sleeping POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "PARLYZ_HEAL",
+    "index": 13,
+    "name": "PARLYZ HEAL",
+    "description": "Heals paralyzed POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "FULL_RESTORE",
+    "index": 14,
+    "name": "FULL RESTORE",
+    "description": "Fully restores HP & status.",
+    "category": "ITEM"
+  },
+  {
+    "id": "MAX_POTION",
+    "index": 15,
+    "name": "MAX POTION",
+    "description": "Fully restores POKéMON HP.",
+    "category": "ITEM"
+  },
+  {
+    "id": "HYPER_POTION",
+    "index": 16,
+    "name": "HYPER POTION",
+    "description": "Restores POKéMON HP by 200.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SUPER_POTION",
+    "index": 17,
+    "name": "SUPER POTION",
+    "description": "Restores POKéMON HP by 50.",
+    "category": "ITEM"
+  },
+  {
+    "id": "POTION",
+    "index": 18,
+    "name": "POTION",
+    "description": "Restores POKéMON HP by 20.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ESCAPE_ROPE",
+    "index": 19,
+    "name": "ESCAPE ROPE",
+    "description": "Use for escaping from caves, etc.",
+    "category": "ITEM"
+  },
+  {
+    "id": "REPEL",
+    "index": 20,
+    "name": "REPEL",
+    "description": "Repels weak POKéMON for 100 steps.",
+    "category": "ITEM"
+  },
+  {
+    "id": "MAX_ELIXER",
+    "index": 21,
+    "name": "MAX ELIXER",
+    "description": "Fully restores the PP of one POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "FIRE_STONE",
+    "index": 22,
+    "name": "FIRE STONE",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "THUNDERSTONE",
+    "index": 23,
+    "name": "THUNDERSTONE",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "WATER_STONE",
+    "index": 24,
+    "name": "WATER STONE",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "LINKING_CORD",
+    "index": 25,
+    "name": "LINKING CORD",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "HP_UP",
+    "index": 26,
+    "name": "HP UP",
+    "description": "Raises the HP of one POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "PROTEIN",
+    "index": 27,
+    "name": "PROTEIN",
+    "description": "Raises ATTACK of one POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "IRON",
+    "index": 28,
+    "name": "IRON",
+    "description": "Raises DEFENSE of one POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "CARBOS",
+    "index": 29,
+    "name": "CARBOS",
+    "description": "Raises SPEED of one POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "LUCKY_PUNCH",
+    "index": 30,
+    "name": "LUCKY PUNCH",
+    "description": "Ups critical hit ratio of CHANSEY.",
+    "category": "ITEM"
+  },
+  {
+    "id": "CALCIUM",
+    "index": 31,
+    "name": "CALCIUM",
+    "description": "Ups SPECIAL stats of one POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "RARE_CANDY",
+    "index": 32,
+    "name": "RARE CANDY",
+    "description": "Raises level of a POKéMON by one.",
+    "category": "ITEM"
+  },
+  {
+    "id": "X_ACCURACY",
+    "index": 33,
+    "name": "X ACCURACY",
+    "description": "Raises accuracy. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "LEAF_STONE",
+    "index": 34,
+    "name": "LEAF STONE",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "METAL_POWDER",
+    "index": 35,
+    "name": "METAL POWDER",
+    "description": "Raises DEFENSE of DITTO. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "NUGGET",
+    "index": 36,
+    "name": "NUGGET",
+    "description": "Made of pure gold. Sell high.",
+    "category": "ITEM"
+  },
+  {
+    "id": "POKE_DOLL",
+    "index": 37,
+    "name": "POKé DOLL",
+    "description": "Use to escape from a wild POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "FULL_HEAL",
+    "index": 38,
+    "name": "FULL HEAL",
+    "description": "Eliminates all status problems.",
+    "category": "ITEM"
+  },
+  {
+    "id": "REVIVE",
+    "index": 39,
+    "name": "REVIVE",
+    "description": "Restores a fainted POKéMON to 1/2 HP.",
+    "category": "ITEM"
+  },
+  {
+    "id": "MAX_REVIVE",
+    "index": 40,
+    "name": "MAX REVIVE",
+    "description": "Fully restores a fainted POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "GUARD_SPEC",
+    "index": 41,
+    "name": "GUARD SPEC.",
+    "description": "Prevents stats reduction. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "SUPER_REPEL",
+    "index": 42,
+    "name": "SUPER REPEL",
+    "description": "Repels weak POKéMON for 200 steps.",
+    "category": "ITEM"
+  },
+  {
+    "id": "MAX_REPEL",
+    "index": 43,
+    "name": "MAX REPEL",
+    "description": "Repels weak POKéMON for 250 steps.",
+    "category": "ITEM"
+  },
+  {
+    "id": "DIRE_HIT",
+    "index": 44,
+    "name": "DIRE HIT",
+    "description": "Ups critical hit ratio. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_2D",
+    "index": 45,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "FRESH_WATER",
+    "index": 46,
+    "name": "FRESH WATER",
+    "description": "Restores POKéMON HP by 50.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SODA_POP",
+    "index": 47,
+    "name": "SODA POP",
+    "description": "Restores POKéMON HP by 60.",
+    "category": "ITEM"
+  },
+  {
+    "id": "LEMONADE",
+    "index": 48,
+    "name": "LEMONADE",
+    "description": "Restores POKéMON HP by 80.",
+    "category": "ITEM"
+  },
+  {
+    "id": "X_ATTACK",
+    "index": 49,
+    "name": "X ATTACK",
+    "description": "Raises ATTACK. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_32",
+    "index": 50,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "X_DEFEND",
+    "index": 51,
+    "name": "X DEFEND",
+    "description": "Raises DEFENSE. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "X_SPEED",
+    "index": 52,
+    "name": "X SPEED",
+    "description": "Raises SPEED. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "X_SPECIAL",
+    "index": 53,
+    "name": "X SPECIAL",
+    "description": "Raises SPECIAL ATTACK. (1 BTL)",
+    "category": "ITEM"
+  },
+  {
+    "id": "COIN_CASE",
+    "index": 54,
+    "name": "COIN CASE",
+    "description": "Holds up to 9,999 game coins.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "ITEMFINDER",
+    "index": 55,
+    "name": "ITEMFINDER",
+    "description": "Checks for unseen items in the area.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "POKE_FLUTE",
+    "index": 56,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "EXP_SHARE",
+    "index": 57,
+    "name": "EXP.SHARE",
+    "description": "Shares battle EXP. Points. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "OLD_ROD",
+    "index": 58,
+    "name": "OLD ROD",
+    "description": "Use by water to fish for POKéMON.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "GOOD_ROD",
+    "index": 59,
+    "name": "GOOD ROD",
+    "description": "A good ROD for catching POKéMON.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "SILVER_LEAF",
+    "index": 60,
+    "name": "SILVER LEAF",
+    "description": "A strange, silvercolored leaf.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SUPER_ROD",
+    "index": 61,
+    "name": "SUPER ROD",
+    "description": "The best ROD for catching POKéMON.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "PP_UP",
+    "index": 62,
+    "name": "PP UP",
+    "description": "Raises max PP of a selected move.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ETHER",
+    "index": 63,
+    "name": "ETHER",
+    "description": "Restores PP of one move by 10.",
+    "category": "ITEM"
+  },
+  {
+    "id": "MAX_ETHER",
+    "index": 64,
+    "name": "MAX ETHER",
+    "description": "Fully restores PP of one move.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ELIXER",
+    "index": 65,
+    "name": "ELIXER",
+    "description": "Restores PP of all moves by 10.",
+    "category": "ITEM"
+  },
+  {
+    "id": "RED_SCALE",
+    "index": 66,
+    "name": "RED SCALE",
+    "description": "A scale from the red GYARADOS.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "SECRETPOTION",
+    "index": 67,
+    "name": "SECRETPOTION",
+    "description": "Fully heals any POKéMON.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "S_S_TICKET",
+    "index": 68,
+    "name": "S.S.TICKET",
+    "description": "A ticket for the S.S.AQUA.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "MYSTERY_EGG",
+    "index": 69,
+    "name": "MYSTERY EGG",
+    "description": "An EGG obtained from MR.POKéMON.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "CLEAR_BELL",
+    "index": 70,
+    "name": "CLEAR BELL",
+    "description": "Makes a gentle ringing.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "SILVER_WING",
+    "index": 71,
+    "name": "SILVER WING",
+    "description": "A strange, silvercolored feather.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "MOOMOO_MILK",
+    "index": 72,
+    "name": "MOOMOO MILK",
+    "description": "Restores POKéMON HP by 100.",
+    "category": "ITEM"
+  },
+  {
+    "id": "QUICK_CLAW",
+    "index": 73,
+    "name": "QUICK CLAW",
+    "description": "Raises 1st strike ratio. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "PECHA_BERRY",
+    "index": 74,
+    "name": "PECHA BERRY",
+    "description": "A self-cure for poison. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "GOLD_LEAF",
+    "index": 75,
+    "name": "GOLD LEAF",
+    "description": "A strange, goldcolored leaf.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SOFT_SAND",
+    "index": 76,
+    "name": "SOFT SAND",
+    "description": "Powers up groundtype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "SHARP_BEAK",
+    "index": 77,
+    "name": "SHARP BEAK",
+    "description": "Powers up flyingtype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "CHERI_BERRY",
+    "index": 78,
+    "name": "CHERI BERRY",
+    "description": "A self-cure for paralysis. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "ASPEAR_BERRY",
+    "index": 79,
+    "name": "ASPEAR BERRY",
+    "description": "A self-cure for freezing. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "RAWST_BERRY",
+    "index": 80,
+    "name": "RAWST BERRY",
+    "description": "A self-heal for a burn. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "POISON_BARB",
+    "index": 81,
+    "name": "POISON BARB",
+    "description": "Powers up poisontype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "KINGS_ROCK",
+    "index": 82,
+    "name": "KING'S ROCK",
+    "description": "May make the foe flinch. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "PERSIM_BERRY",
+    "index": 83,
+    "name": "PERSIM BERRY",
+    "description": "A self-cure for confusion. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "CHESTO_BERRY",
+    "index": 84,
+    "name": "CHESTO BERRY",
+    "description": "A self-awakening for sleep. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "RED_APRICORN",
+    "index": 85,
+    "name": "RED APRICORN",
+    "description": "A red APRICORN.",
+    "category": "BERRIES"
+  },
+  {
+    "id": "TINYMUSHROOM",
+    "index": 86,
+    "name": "TINYMUSHROOM",
+    "description": "An ordinary mushroom. Sell low.",
+    "category": "ITEM"
+  },
+  {
+    "id": "BIG_MUSHROOM",
+    "index": 87,
+    "name": "BIG MUSHROOM",
+    "description": "A rare mushroom. Sell high.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SILVERPOWDER",
+    "index": 88,
+    "name": "SILVERPOWDER",
+    "description": "Powers up bug-type moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "BLU_APRICORN",
+    "index": 89,
+    "name": "BLU APRICORN",
+    "description": "A blue APRICORN.",
+    "category": "BERRIES"
+  },
+  {
+    "id": "HELIX_FOSSIL",
+    "index": 90,
+    "name": "HELIX FOSSIL",
+    "description": "A mysterious POKéMON fossil.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "AMULET_COIN",
+    "index": 91,
+    "name": "AMULET COIN",
+    "description": "Doubles monetary earnings. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "YLW_APRICORN",
+    "index": 92,
+    "name": "YLW APRICORN",
+    "description": "A yellow APRICORN.",
+    "category": "BERRIES"
+  },
+  {
+    "id": "GRN_APRICORN",
+    "index": 93,
+    "name": "GRN APRICORN",
+    "description": "A green APRICORN.",
+    "category": "BERRIES"
+  },
+  {
+    "id": "CLEANSE_TAG",
+    "index": 94,
+    "name": "CLEANSE TAG",
+    "description": "Helps repel wild POKéMON. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "MYSTIC_WATER",
+    "index": 95,
+    "name": "MYSTIC WATER",
+    "description": "Powers up watertype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "TWISTEDSPOON",
+    "index": 96,
+    "name": "TWISTEDSPOON",
+    "description": "Powers up psychictype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "WHT_APRICORN",
+    "index": 97,
+    "name": "WHT APRICORN",
+    "description": "A white APRICORN.",
+    "category": "BERRIES"
+  },
+  {
+    "id": "BLACKBELT_I",
+    "index": 98,
+    "name": "BLACKBELT",
+    "description": "Boosts fightingtype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "BLK_APRICORN",
+    "index": 99,
+    "name": "BLK APRICORN",
+    "description": "A black APRICORN. ",
+    "category": "BERRIES"
+  },
+  {
+    "id": "DOME_FOSSIL",
+    "index": 100,
+    "name": "DOME FOSSIL",
+    "description": "A mysterious POKéMON fossil.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "PNK_APRICORN",
+    "index": 101,
+    "name": "PNK APRICORN",
+    "description": "A pink APRICORN. ",
+    "category": "BERRIES"
+  },
+  {
+    "id": "BLACKGLASSES",
+    "index": 102,
+    "name": "BLACKGLASSES",
+    "description": "Powers up darktype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "SLOWPOKETAIL",
+    "index": 103,
+    "name": "SLOWPOKETAIL",
+    "description": "Very tasty. Sell high.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SILK_SCARF",
+    "index": 104,
+    "name": "SILK SCARF",
+    "description": "Powers up normaltype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "STICK",
+    "index": 105,
+    "name": "STICK",
+    "description": "An ordinary stick. Sell low.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SMOKE_BALL",
+    "index": 106,
+    "name": "SMOKE BALL",
+    "description": "Escape from wild POKéMON. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "NEVERMELTICE",
+    "index": 107,
+    "name": "NEVERMELTICE",
+    "description": "Powers up ice-type moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "MAGNET",
+    "index": 108,
+    "name": "MAGNET",
+    "description": "Boosts electrictype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "LUM_BERRY",
+    "index": 109,
+    "name": "LUM BERRY",
+    "description": "Cures all status problems. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "PEARL",
+    "index": 110,
+    "name": "PEARL",
+    "description": "A beautiful pearl. Sell low.",
+    "category": "ITEM"
+  },
+  {
+    "id": "BIG_PEARL",
+    "index": 111,
+    "name": "BIG PEARL",
+    "description": "A big, beautiful pearl. Sell high.",
+    "category": "ITEM"
+  },
+  {
+    "id": "EVERSTONE",
+    "index": 112,
+    "name": "EVERSTONE",
+    "description": "Stops evolution. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "SPELL_TAG",
+    "index": 113,
+    "name": "SPELL TAG",
+    "description": "Powers up ghosttype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "RAGECANDYBAR",
+    "index": 114,
+    "name": "RAGECANDYBAR",
+    "description": "Restores POKéMON HP by 20.",
+    "category": "ITEM"
+  },
+  {
+    "id": "GS_BALL",
+    "index": 115,
+    "name": "GS BALL",
+    "description": "The mysterious BALL.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "BLUE_CARD",
+    "index": 116,
+    "name": "BLUE CARD",
+    "description": "Card to save points.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "MIRACLE_SEED",
+    "index": 117,
+    "name": "MIRACLE SEED",
+    "description": "Powers up grasstype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "THICK_CLUB",
+    "index": 118,
+    "name": "THICK CLUB",
+    "description": "A bone of some sort. Sell low.",
+    "category": "ITEM"
+  },
+  {
+    "id": "FOCUS_BAND",
+    "index": 119,
+    "name": "FOCUS BAND",
+    "description": "May prevent fainting. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "OLD_AMBER",
+    "index": 120,
+    "name": "OLD AMBER",
+    "description": "A mysterious POKéMON fossil.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "ENERGYPOWDER",
+    "index": 121,
+    "name": "ENERGYPOWDER",
+    "description": "Restores POKéMON HP by 50. Bitter.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ENERGY_ROOT",
+    "index": 122,
+    "name": "ENERGY ROOT",
+    "description": "Restores POKéMON HP by 200. Bitter.",
+    "category": "ITEM"
+  },
+  {
+    "id": "HEAL_POWDER",
+    "index": 123,
+    "name": "HEAL POWDER",
+    "description": "Cures all status problems. Bitter.",
+    "category": "ITEM"
+  },
+  {
+    "id": "REVIVAL_HERB",
+    "index": 124,
+    "name": "REVIVAL HERB",
+    "description": "Revives fainted POKéMON. Bitter.",
+    "category": "ITEM"
+  },
+  {
+    "id": "HARD_STONE",
+    "index": 125,
+    "name": "HARD STONE",
+    "description": "Powers up rocktype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "LUCKY_EGG",
+    "index": 126,
+    "name": "LUCKY EGG",
+    "description": "Earns extra EXP. points. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "CARD_KEY",
+    "index": 127,
+    "name": "CARD KEY",
+    "description": "Opens shutters in the RADIO TOWER.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "MACHINE_PART",
+    "index": 128,
+    "name": "MACHINE PART",
+    "description": "A machine part for the POWER PLANT.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "EGG_TICKET",
+    "index": 129,
+    "name": "EGG TICKET",
+    "description": "May use at Goldenrod trade corner.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "LOST_ITEM",
+    "index": 130,
+    "name": "LOST ITEM",
+    "description": "The POKé DOLL lost by the COPYCAT.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "STARDUST",
+    "index": 131,
+    "name": "STARDUST",
+    "description": "Pretty, red sand. Sell high.",
+    "category": "ITEM"
+  },
+  {
+    "id": "STAR_PIECE",
+    "index": 132,
+    "name": "STAR PIECE",
+    "description": "A hunk of red gem. Sell very high.",
+    "category": "ITEM"
+  },
+  {
+    "id": "BASEMENT_KEY",
+    "index": 133,
+    "name": "BASEMENT KEY",
+    "description": "Opens doors.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "PASS",
+    "index": 134,
+    "name": "PASS",
+    "description": "A ticket for the MAGNET TRAIN.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "SAFARI_BALL",
+    "index": 135,
+    "name": "SAFARI BALL",
+    "description": "The BALL used in the SAFARI ZONE.",
+    "category": "BALL"
+  },
+  {
+    "id": "ITEM_88",
+    "index": 136,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_89",
+    "index": 137,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "CHARCOAL",
+    "index": 138,
+    "name": "CHARCOAL",
+    "description": "Powers up firetype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "BERRY_JUICE",
+    "index": 139,
+    "name": "BERRY JUICE",
+    "description": "Restores POKéMON HP by 20.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SCOPE_LENS",
+    "index": 140,
+    "name": "SCOPE LENS",
+    "description": "Raises critical hit ratio. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_8D",
+    "index": 141,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_8E",
+    "index": 142,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "METAL_COAT",
+    "index": 143,
+    "name": "METAL COAT",
+    "description": "Powers up steeltype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "DRAGON_FANG",
+    "index": 144,
+    "name": "DRAGON FANG",
+    "description": "Powers up dragontype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_91",
+    "index": 145,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "LEFTOVERS",
+    "index": 146,
+    "name": "LEFTOVERS",
+    "description": "Restores HP during battle. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_93",
+    "index": 147,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_94",
+    "index": 148,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_95",
+    "index": 149,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "LEPPA_BERRY",
+    "index": 150,
+    "name": "LEPPA BERRY",
+    "description": "A self-restore for PP. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "DRAGON_SCALE",
+    "index": 151,
+    "name": "DRAGON SCALE",
+    "description": "A rare dragon-type item.",
+    "category": "ITEM"
+  },
+  {
+    "id": "BERSERK_GENE",
+    "index": 152,
+    "name": "BERSERK GENE",
+    "description": "Boosts ATTACK but causes confusion.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_99",
+    "index": 153,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_9A",
+    "index": 154,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_9B",
+    "index": 155,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "SACRED_ASH",
+    "index": 156,
+    "name": "SACRED ASH",
+    "description": "Fully revives all fainted POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "HEAVY_BALL",
+    "index": 157,
+    "name": "HEAVY BALL",
+    "description": "A BALL for catching heavy POKéMON.",
+    "category": "BALL"
+  },
+  {
+    "id": "FLOWER_MAIL",
+    "index": 158,
+    "name": "FLOWER MAIL",
+    "description": "Flower-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "LEVEL_BALL",
+    "index": 159,
+    "name": "LEVEL BALL",
+    "description": "A BALL for lowerlevel POKéMON.",
+    "category": "BALL"
+  },
+  {
+    "id": "LURE_BALL",
+    "index": 160,
+    "name": "LURE BALL",
+    "description": "A BALL for POKéMON hooked by a ROD.",
+    "category": "BALL"
+  },
+  {
+    "id": "FAST_BALL",
+    "index": 161,
+    "name": "FAST BALL",
+    "description": "A BALL for catching fast POKéMON.",
+    "category": "BALL"
+  },
+  {
+    "id": "ITEM_A2",
+    "index": 162,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "LIGHT_BALL",
+    "index": 163,
+    "name": "LIGHT BALL",
+    "description": "An odd, electrical orb. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "FRIEND_BALL",
+    "index": 164,
+    "name": "FRIEND BALL",
+    "description": "A BALL that makes POKéMON friendly.",
+    "category": "BALL"
+  },
+  {
+    "id": "MOON_BALL",
+    "index": 165,
+    "name": "MOON BALL",
+    "description": "A BALL for MOON STONE evolvers.",
+    "category": "BALL"
+  },
+  {
+    "id": "LOVE_BALL",
+    "index": 166,
+    "name": "LOVE BALL",
+    "description": "For catching the opposite gender.",
+    "category": "BALL"
+  },
+  {
+    "id": "NORMAL_BOX",
+    "index": 167,
+    "name": "NORMAL BOX",
+    "description": "Open it and see what's inside.",
+    "category": "ITEM"
+  },
+  {
+    "id": "GORGEOUS_BOX",
+    "index": 168,
+    "name": "GORGEOUS BOX",
+    "description": "Open it and see what's inside.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SUN_STONE",
+    "index": 169,
+    "name": "SUN STONE",
+    "description": "Evolves certain kinds of POKéMON.",
+    "category": "ITEM"
+  },
+  {
+    "id": "POLKADOT_BOW",
+    "index": 170,
+    "name": "POLKADOT BOW",
+    "description": "Powers up normaltype moves. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_AB",
+    "index": 171,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "UP_GRADE",
+    "index": 172,
+    "name": "UP-GRADE",
+    "description": "A mysterious box made by SILPH CO.",
+    "category": "ITEM"
+  },
+  {
+    "id": "ORAN_BERRY",
+    "index": 173,
+    "name": "ORAN BERRY",
+    "description": "A self-restore item. (10HP, HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "SITRUS_BERRY",
+    "index": 174,
+    "name": "SITRUS BERRY",
+    "description": "A self-restore item. (HOLD)",
+    "category": "BERRIES"
+  },
+  {
+    "id": "SQUIRTBOTTLE",
+    "index": 175,
+    "name": "SQUIRTBOTTLE",
+    "description": "A bottle used for watering plants.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "ITEM_B0",
+    "index": 176,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "PARK_BALL",
+    "index": 177,
+    "name": "PARK BALL",
+    "description": "The Bug-Catching Contest BALL.",
+    "category": "BALL"
+  },
+  {
+    "id": "RAINBOW_WING",
+    "index": 178,
+    "name": "RAINBOW WING",
+    "description": "A mystical feather of rainbow colors.",
+    "category": "KEY_ITEM"
+  },
+  {
+    "id": "ITEM_B3",
+    "index": 179,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  },
+  {
+    "id": "OPAL_SHARD",
+    "index": 180,
+    "name": "OPAL SHARD",
+    "description": "A beautiful shard. Sell low.",
+    "category": "ITEM"
+  },
+  {
+    "id": "SURF_MAIL",
+    "index": 181,
+    "name": "SURF MAIL",
+    "description": "LAPRAS-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "LITEBLUEMAIL",
+    "index": 182,
+    "name": "LITEBLUEMAIL",
+    "description": "DRATINI-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "PORTRAITMAIL",
+    "index": 183,
+    "name": "PORTRAITMAIL",
+    "description": "MAIL featuring the holder's likeness.",
+    "category": "ITEM"
+  },
+  {
+    "id": "LOVELY_MAIL",
+    "index": 184,
+    "name": "LOVELY MAIL",
+    "description": "Heart-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "EON_MAIL",
+    "index": 185,
+    "name": "EON MAIL",
+    "description": "EEVEE-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "MORPH_MAIL",
+    "index": 186,
+    "name": "MORPH MAIL",
+    "description": "DITTO-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "BLUESKY_MAIL",
+    "index": 187,
+    "name": "BLUESKY MAIL",
+    "description": "Sky-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "MUSIC_MAIL",
+    "index": 188,
+    "name": "MUSIC MAIL",
+    "description": "NATU-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "MIRAGE_MAIL",
+    "index": 189,
+    "name": "MIRAGE MAIL",
+    "description": "MEW-print MAIL. (HOLD)",
+    "category": "ITEM"
+  },
+  {
+    "id": "ITEM_BE",
+    "index": 190,
+    "name": "TERU-SAMA",
+    "description": "?",
+    "category": "ITEM"
+  }
+]
