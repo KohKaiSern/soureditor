@@ -2,7 +2,7 @@
 	import Basics from '$components/mon/basics.svelte';
 	// import Caught from '$components/mon/caught.svelte';
 	// import Misc from '$components/mon/misc.svelte';
-	// import Moves from '$components/mon/moves.svelte';
+	import Moves from '$components/mon/moves.svelte';
 	import Stats from '$components/mon/stats.svelte';
 	import type { Pokemon } from '$extractors/types';
 	import type { BoxMon, PartyMon } from '$parsers/types';
@@ -32,9 +32,9 @@
 		<TabItem title="Stats">
 			<Stats bind:mon {species} />
 		</TabItem>
-		<!-- <TabItem title="Moves"> -->
-		<!-- 	<Moves bind:mon {species} /> -->
-		<!-- </TabItem> -->
+		<TabItem title="Moves">
+			<Moves bind:mon {species} />
+		</TabItem>
 		<!-- <TabItem title="Caught"> -->
 		<!-- 	<Caught bind:mon /> -->
 		<!-- </TabItem> -->
@@ -54,8 +54,8 @@
 		<Basics bind:mon {species} />
 	{:else if editor === 'Stats'}
 		<Stats bind:mon {species} />
-		<!-- {:else if editor === 'Moves'} -->
-		<!-- 	<Moves bind:mon {species} /> -->
+	{:else if editor === 'Moves'}
+		<Moves bind:mon {species} />
 		<!-- {:else if editor === 'Caught'} -->
 		<!-- 	<Caught bind:mon /> -->
 		<!-- {:else if editor === 'Misc'} -->
