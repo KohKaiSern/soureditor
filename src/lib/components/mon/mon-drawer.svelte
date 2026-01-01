@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Basics from '$components/mon/basics.svelte';
-	// import Caught from '$components/mon/caught.svelte';
+	import Caught from '$components/mon/caught.svelte';
 	// import Misc from '$components/mon/misc.svelte';
 	import Moves from '$components/mon/moves.svelte';
 	import Stats from '$components/mon/stats.svelte';
@@ -35,9 +35,9 @@
 		<TabItem title="Moves">
 			<Moves bind:mon {species} />
 		</TabItem>
-		<!-- <TabItem title="Caught"> -->
-		<!-- 	<Caught bind:mon /> -->
-		<!-- </TabItem> -->
+		<TabItem title="Caught">
+			<Caught bind:mon />
+		</TabItem>
 		<!-- <TabItem title="Misc"> -->
 		<!-- 	<Misc bind:mon {species} /> -->
 		<!-- </TabItem> -->
@@ -56,8 +56,8 @@
 		<Stats bind:mon {species} />
 	{:else if editor === 'Moves'}
 		<Moves bind:mon {species} />
-		<!-- {:else if editor === 'Caught'} -->
-		<!-- 	<Caught bind:mon /> -->
+	{:else if editor === 'Caught'}
+		<Caught bind:mon />
 		<!-- {:else if editor === 'Misc'} -->
 		<!-- 	<Misc bind:mon {species} /> -->
 	{/if}
