@@ -53,11 +53,24 @@ export function reverseParsePartyMon(file: Uint8Array, address: number, mon: Par
 const species = (file: Uint8Array, address: number, species: string): Uint8Array =>
   (file[address] = pokemon.find(p => p.name === species)!.index, file)
 
-const heldItem = (file: Uint8Array, address: number, heldItem: string): Uint8Array =>
-  (file[address] = items.find(i => i.name === heldItem)!.index, file)
+const heldItem = (file: Uint8Array, address: number, heldItem: string): Uint8Array => {
+  if (heldItem === 'NONE') {
+    file[address] = 0;
+  } else {
+    file[address] = items.find(i => i.name === heldItem)!.index
+  }
+  return file
+}
 
 const moveset = (file: Uint8Array, address: number, moveset: string[]): Uint8Array =>
-  (file.set(moveset.map(move => moves.find(m => m.name === move)!.index), address), file);
+(file.set(moveset.map(move => {
+  if (move === 'NONE') {
+    return 0;
+  }
+  return moves.find(m => m.name === move)!.index
+}
+), address), file);
+
 
 const OTID = (file: Uint8Array, address: number, OTID: number): Uint8Array =>
   (file = insert(file, address, 2, OTID), file);

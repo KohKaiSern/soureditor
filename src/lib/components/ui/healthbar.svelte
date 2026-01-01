@@ -32,7 +32,7 @@
 		color={HPPercent > 50 ? 'green' : HPPercent > 20 ? 'yellow' : 'red'}
 		progress={HPPercent}
 	/>
-	{#if mon.status.name != 'None'}
+	{#if mon.status.name != 'NONE'}
 		<div style:background-color={statusColor} class="rounded-md pr-2 pl-2">
 			<P class="text-xs !text-gray-50">{status}</P>
 		</div>

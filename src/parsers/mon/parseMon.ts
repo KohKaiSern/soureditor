@@ -64,11 +64,20 @@ export function parsePartyMon(
 const species = (file: Uint8Array, address: number): string =>
   pokemon.find((p) => p.index === file[address])!.name;
 
-const heldItem = (file: Uint8Array, address: number): string =>
-  items.find((i) => i.index === file[address])!.name;
+const heldItem = (file: Uint8Array, address: number): string => {
+  if (file[address] === 0) {
+    return 'NONE'
+  }
+  return items.find((i) => i.index === file[address])!.name;
+}
 
 const moveset = (file: Uint8Array, address: number): string[] =>
-  Array.from({ length: 4 }, (_, i) => moves.find((m) => m.index === file[address + i])!.name);
+  Array.from({ length: 4 }, (_, i) => {
+    if (file[address + i] === 0) {
+      return 'NONE'
+    }
+    return moves.find((m) => m.index === file[address + i])!.name
+  });
 
 const OTID = (file: Uint8Array, address: number): number =>
   retrieve(file, address, 2)

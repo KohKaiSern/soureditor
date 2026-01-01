@@ -1,5 +1,5 @@
 <script lang="ts">
-	// import MonDrawer from '$components/mon/mon-drawer.svelte';
+	import MonDrawer from '$components/mon/mon-drawer.svelte';
 	import pokemon from '$data/pokemon.json';
 	import type { BoxMon, PartyMon } from '$parsers/types';
 	import { ColoredCard, Heal, Healthbar, MonSprite, TypeIcon } from '$ui';
@@ -35,7 +35,7 @@
 	<P>Lv. {mon.level}</P>
 	<P>Held Item: {mon.heldItem}</P>
 	<div class="absolute right-5 bottom-5 flex gap-3">
-		{#if 'currentHP' in mon && !mon.isEgg && (mon.status.name != 'None' || mon.currentHP != mon.stats[0])}
+		{#if 'currentHP' in mon && !mon.isEgg && (mon.status.name != 'NONE' || mon.currentHP != mon.stats[0])}
 			<Heal bind:mon />
 		{/if}
 		<Button
@@ -46,17 +46,17 @@
 		>
 	</div>
 </ColoredCard>
-<!-- <Drawer -->
-<!-- 	bind:open -->
-<!-- 	placement={innerWidth > innerHeight ? 'right' : 'bottom'} -->
-<!-- 	class={innerWidth > innerHeight ? 'h-full w-[75%]' : 'h-[85%] w-full'} -->
-<!-- 	><MonDrawer -->
-<!-- 		bind:mon -->
-<!-- 		{species} -->
-<!-- 		ondelete={() => { -->
-<!-- 			ondelete(); -->
-<!-- 			open = false; -->
-<!-- 		}} -->
-<!-- 	/></Drawer -->
-<!-- > -->
+<Drawer
+	bind:open
+	placement={innerWidth > innerHeight ? 'right' : 'bottom'}
+	class={innerWidth > innerHeight ? 'h-full w-[75%]' : 'h-[85%] w-full'}
+	><MonDrawer
+		bind:mon
+		{species}
+		ondelete={() => {
+			ondelete();
+			open = false;
+		}}
+	/></Drawer
+>
 <svelte:window bind:innerWidth bind:innerHeight />
