@@ -8,7 +8,7 @@ export function isShiny(mon: PartyMon | BoxMon): boolean {
 }
 
 export function hpDV(mon: PartyMon | BoxMon): number {
-  return mon.dvs.reduce((a, b) => (a << 1) | (b & 1))
+  return mon.dvs.reduce((a, b) => (a << 1) | (b & 1), 0)
 }
 
 export function fixStats(mon: PartyMon, species: Pokemon): PartyMon {
