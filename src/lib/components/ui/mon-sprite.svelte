@@ -10,6 +10,11 @@
 		if (mon.isEgg) {
 			path = 'gfx/pokemon/egg/';
 		}
+    if (mon.species === 'UNOWN') {
+      const seed = mon.dvs.reduce((a, b) => (a << 2) | ((b >> 1) & 0b11), 0)
+      const letter = String.fromCharCode(97 + Math.floor(seed / 10))
+      path = `gfx/pokemon/unown_${letter}/`
+    }
 		path += isShiny(mon) ? 'shiny' : 'normal';
 		return `https://raw.githubusercontent.com/KohKaiSern/soureditor/refs/heads/main/src/${path}.gif`;
 	});
