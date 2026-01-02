@@ -1,7 +1,7 @@
 <script lang="ts">
 	import NormalSlot from '$components/bag-slots/normal-slot.svelte';
 	import Extras from '$components/bag-slots/extras.svelte';
-	// import TMsHMs from '$components/bag/tms-hms.svelte';
+	import TMsHMs from '$components/bag-slots/tms-hms.svelte';
 	import items from '$data/items.json';
 	import type { Bag } from '$parsers/types';
 	import { RadioSelect } from '$ui';
@@ -66,9 +66,9 @@
 	/>
 {/if}
 
-<!-- {#if selectedSlot === 'TMsHMs'} -->
-<!-- 	<TMsHMs bind:contents={bag.TMHMs} /> -->
-<!-- {/if} -->
+{#if selectedSlot === 'TMsHMs'}
+	<TMsHMs bind:contents={bag.TMsHMs} />
+{/if}
 
 {#if selectedSlot === 'extras'}
 	<Extras bind:bag />

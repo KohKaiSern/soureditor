@@ -5,11 +5,7 @@
 
 	let { contents = $bindable() }: { contents: Item[] } = $props();
 
-	let group = $state(
-		contents
-			.filter((entry: { name: string; qty: number }) => entry.qty === 1)
-			.map((entry: { name: string; qty: number }) => entry.name)
-	);
+	let group = $state(contents.filter((entry) => entry.qty != 0).map((entry) => entry.name));
 
 	const onchange = (): void => {
 		contents.forEach((entry: { name: string; qty: number }) => {
@@ -24,9 +20,9 @@
 		{onchange}
 		color="purple"
 		classes={{ div: 'w-full p-4' }}
-		choices={contents.map((entry: { name: string; qty: number }) => ({
+		choices={contents.map((entry) => ({
 			value: entry.name,
-			label: entry.name + ' ' + tmhms[entry.name]
+			label: entry.name + ' ' + tmhms[entry.name as keyof typeof tmhms]
 		}))}
 	/>
 </div>
