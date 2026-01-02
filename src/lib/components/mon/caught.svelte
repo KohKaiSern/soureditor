@@ -9,7 +9,7 @@
 </script>
 
 <Heading tag="h5" class="mb-5">Original Trainer</Heading>
-<div class="flex gap-7">
+<div class="flex flex-wrap gap-7">
 	<div class="flex flex-col gap-2">
 		<Label>Nickname</Label>
 		<TextInput bind:value={mon.OTNickname} keyboard={keyboards.name} maxLength={7} />
@@ -36,7 +36,8 @@
 			options={[
 				{ text: 'MORNING', id: 'MORNING' },
 				{ text: 'DAY', id: 'DAY' },
-				{ text: 'NIGHT', id: 'NIGHT' }
+				{ text: 'NIGHT', id: 'NIGHT' },
+				{ text: 'EVENING', id: 'EVENING' }
 			]}
 		/>
 	</div>

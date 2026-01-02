@@ -122,7 +122,7 @@ const pokerus = (
 };
 
 const caughtTime = (file: Uint8Array, address: number): string =>
-  ['MORNING', 'DAY', 'NIGHT'].at(file[address] >> 6)!;
+  ['MORNING', 'DAY', 'NIGHT', 'EVENING'].at(file[address] >> 6)!;
 
 const caughtLevel = (file: Uint8Array, address: number): number => file[address] & 0x3f;
 
