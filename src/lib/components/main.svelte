@@ -7,6 +7,7 @@
 	import Instructions from '$components/instructions.svelte';
 	import Party from '$components/party.svelte';
 	import Boxes from '$components/boxes.svelte';
+	import Bag from '$components/bag.svelte';
 	import { RadioSelect } from '$ui';
 
 	let data: Data | null = $state(null);
@@ -85,6 +86,6 @@
 	<Hr class="my-5" />
 	{#if editor === 'Party'}<Party bind:party={data.party} player={data.player} />{/if}
 	{#if editor === 'Boxes'}<Boxes bind:boxes={data.boxes} player={data.player} />{/if}
-	<!-- {#if editor === 'Bag'}<Bag bind:bag={data.bag} {PF} />{/if} -->
+	{#if editor === 'Bag'}<Bag bind:bag={data.bag} />{/if}
 	<!-- {#if editor === 'Player'}<Player bind:player={data.player} />{/if} -->
 {/if}
