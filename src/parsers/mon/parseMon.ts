@@ -110,13 +110,11 @@ const happiness = (file: Uint8Array, address: number): number => file[address];
 const pokerus = (
   file: Uint8Array,
   address: number
-):
-  | 'NONE'
-  | {
-    strain: number;
-    daysRemaining: number | 'CURED';
-  } => {
-  if (file[address] >> 4 === 0) return 'NONE';
+): {
+  strain: number | 'NONE';
+  daysRemaining?: number | 'CURED';
+} => {
+  if (file[address] >> 4 === 0) return { strain: 'NONE' };
   return {
     strain: file[address] & 0xf0,
     daysRemaining: (file[address] & 0xf) === 0 ? 'CURED' : file[address] & 0xf

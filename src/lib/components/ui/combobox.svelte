@@ -3,8 +3,8 @@
 	import { ChevronDownOutline } from 'flowbite-svelte-icons';
 
 	interface ComboboxProps {
-		value: string;
-		options: string[];
+		value: string | number;
+		options: (string | number)[];
 		onchange?: () => void;
 		class?: string;
 	}
@@ -19,7 +19,9 @@
 	let searchTerm = $state('');
 	let isOpen = $state(false);
 	const filteredOptions = $derived(
-		options.filter((o: string) => o.toLowerCase().includes(searchTerm.toLowerCase()))
+		options.filter((o: string | number) =>
+			o.toString().toLowerCase().includes(searchTerm.toLowerCase())
+		)
 	);
 </script>
 

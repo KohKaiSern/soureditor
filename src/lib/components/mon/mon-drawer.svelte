@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Basics from '$components/mon/basics.svelte';
 	import Caught from '$components/mon/caught.svelte';
-	// import Misc from '$components/mon/misc.svelte';
+	import Misc from '$components/mon/misc.svelte';
 	import Moves from '$components/mon/moves.svelte';
 	import Stats from '$components/mon/stats.svelte';
 	import type { Pokemon } from '$extractors/types';
@@ -38,9 +38,9 @@
 		<TabItem title="Caught">
 			<Caught bind:mon />
 		</TabItem>
-		<!-- <TabItem title="Misc"> -->
-		<!-- 	<Misc bind:mon {species} /> -->
-		<!-- </TabItem> -->
+		<TabItem title="Misc">
+			<Misc bind:mon />
+		</TabItem>
 	</Tabs>
 	<div class="ml-4">
 		<Button color="red" onclick={ondelete}>Delete Pokémon</Button>
@@ -58,8 +58,8 @@
 		<Moves bind:mon {species} />
 	{:else if editor === 'Caught'}
 		<Caught bind:mon />
-		<!-- {:else if editor === 'Misc'} -->
-		<!-- 	<Misc bind:mon {species} /> -->
+	{:else if editor === 'Misc'}
+		<Misc bind:mon />
 	{/if}
 	<div class="mt-7">
 		<Button color="red" onclick={ondelete}>Delete Pokémon</Button>

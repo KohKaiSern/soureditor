@@ -9,10 +9,9 @@ export interface BoxMon {
   PPUPs: number[];
   happiness: number;
   pokerus:
-  | 'NONE'
-  | {
-    strain: number;
-    daysRemaining: number | 'CURED';
+  {
+    strain: number | 'NONE';
+    daysRemaining?: number | 'CURED';
   };
   caughtTime: string;
   caughtLevel: number;

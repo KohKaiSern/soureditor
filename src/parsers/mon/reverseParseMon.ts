@@ -108,14 +108,14 @@ const powerPoints = (file: Uint8Array, address: number, powerPoints: number[]): 
 const happiness = (file: Uint8Array, address: number, happiness: number): Uint8Array =>
   (file[address] = happiness, file)
 
-const pokerus = (file: Uint8Array, address: number, pokerus: 'NONE' | { strain: number, daysRemaining: number | 'CURED' }): Uint8Array => {
-  if (pokerus === 'NONE') {
+const pokerus = (file: Uint8Array, address: number, pokerus: { strain: number | 'NONE', daysRemaining?: number | 'CURED' }): Uint8Array => {
+  if (pokerus.strain === 'NONE') {
     file[address] = 0
   } else {
     if (pokerus.daysRemaining === 'CURED') {
       file[address] = pokerus.strain << 4 | 0
     } else {
-      file[address] = pokerus.strain << 4 | pokerus.daysRemaining
+      file[address] = pokerus.strain << 4 | pokerus.daysRemaining!
     }
   }
   return file
