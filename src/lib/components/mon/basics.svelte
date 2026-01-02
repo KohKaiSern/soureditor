@@ -49,16 +49,28 @@
 {#if 'currentHP' in mon}
 	<Combobox
 		options={['NONE']
-			.concat(items.slice(1).map((item) => item.name))
-			.filter((name) => !name.includes('TERU-SAMA'))}
+			.concat(
+				items
+					.slice(1)
+					.filter((item) => item.category != 'KEY_ITEM')
+					.map((item) => item.name)
+			)
+			.filter((name) => !name.includes('TERU-SAMA'))
+			.filter((name) => name != 'PARK BALL')}
 		bind:value={mon.heldItem}
 	/>
 {:else}
 	<Combobox
 		options={['NONE']
-			.concat(items.map((item) => item.name))
-			.filter((name) => !name.includes('Mail'))
-			.filter((name) => !name.includes('TERU-SAMA'))}
+			.concat(
+				items
+					.slice(1)
+					.filter((item) => item.category != 'KEY_ITEM')
+					.map((item) => item.name)
+			)
+			.filter((name) => !name.includes('MAIL'))
+			.filter((name) => !name.includes('TERU-SAMA'))
+			.filter((name) => name != 'PARK BALL')}
 		bind:value={mon.heldItem}
 	/>
 {/if}
