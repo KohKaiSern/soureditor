@@ -11,7 +11,7 @@
 			path = 'gfx/pokemon/egg/';
 		}
 		path += isShiny(mon) ? 'shiny' : 'normal';
-		return `https://raw.githubusercontent.com/KohKaiSern/soureditornext/refs/heads/main/src/${path}.gif`;
+		return `https://raw.githubusercontent.com/KohKaiSern/soureditor/refs/heads/main/src/${path}.gif`;
 	});
 </script>
 
