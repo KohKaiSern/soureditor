@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Counted from '$components/bag-slots/counted.svelte';
-	// import Extras from '$components/bag/extras.svelte';
+	import NormalSlot from '$components/bag-slots/normal-slot.svelte';
+	import Extras from '$components/bag-slots/extras.svelte';
 	// import TMsHMs from '$components/bag/tms-hms.svelte';
 	import items from '$data/items.json';
 	import type { Bag } from '$parsers/types';
@@ -43,7 +43,7 @@
 </div>
 
 {#if ['items', 'balls', 'berries', 'keyItems'].includes(selectedSlot)}
-	<Counted
+	<NormalSlot
 		bind:contents={bag[selectedSlot]}
 		capacity={{
 			items: 20,
@@ -65,12 +65,11 @@
 			)}
 	/>
 {/if}
-<!---->
+
 <!-- {#if selectedSlot === 'TMsHMs'} -->
 <!-- 	<TMsHMs bind:contents={bag.TMHMs} /> -->
 <!-- {/if} -->
-<!---->
-<!---->
-<!-- {#if selectedSlot === 'extras'} -->
-<!-- 	<Extras bind:bag /> -->
-<!-- {/if} -->
+
+{#if selectedSlot === 'extras'}
+	<Extras bind:bag />
+{/if}
