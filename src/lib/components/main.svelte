@@ -8,6 +8,7 @@
 	import Party from '$components/party.svelte';
 	import Boxes from '$components/boxes.svelte';
 	import Bag from '$components/bag.svelte';
+	import Player from '$components/player.svelte';
 	import { RadioSelect } from '$ui';
 
 	let data: Data | null = $state(null);
@@ -87,5 +88,5 @@
 	{#if editor === 'Party'}<Party bind:party={data.party} player={data.player} />{/if}
 	{#if editor === 'Boxes'}<Boxes bind:boxes={data.boxes} player={data.player} />{/if}
 	{#if editor === 'Bag'}<Bag bind:bag={data.bag} />{/if}
-	<!-- {#if editor === 'Player'}<Player bind:player={data.player} />{/if} -->
+	{#if editor === 'Player'}<Player bind:player={data.player} />{/if}
 {/if}

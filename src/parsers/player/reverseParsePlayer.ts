@@ -7,7 +7,7 @@ function reverseParsePlayer(file: Uint8Array, player: Player): Uint8Array {
   file = writeString(file, addresses.wPlayerName, 7, false, player.name)
   file = writeString(file, addresses.wRivalName, 7, false, player.rivalName)
   file = insert(file, addresses.wMoney, 3, player.money)
-  file[addresses.wPlayerGender] = (player.gender === 'Male' ? 1 : 0)
+  file[addresses.wPlayerGender] = (player.gender === 'MALE' ? 1 : 0)
   return file
 }
 

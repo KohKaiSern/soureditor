@@ -8,7 +8,7 @@ function parsePlayer(file: Uint8Array): Player {
     name: readString(file, addresses.wPlayerName, 7, false),
     rivalName: readString(file, addresses.wRivalName, 7, false),
     money: retrieve(file, addresses.wMoney, 3),
-    gender: file[addresses.wPlayerGender] === 1 ? 'Male' : 'Female'
+    gender: file[addresses.wPlayerGender] === 1 ? 'MALE' : 'FEMALE'
   }
 }
 
