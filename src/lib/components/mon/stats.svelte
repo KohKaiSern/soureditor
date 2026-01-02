@@ -45,7 +45,7 @@
 		if (genderRatio === null) {
 			return 'Genderless';
 		}
-		if (mon.dvs[0] / 15 <= genderRatio) {
+		if (mon.dvs[0] / 15 <= genderRatio / 100) {
 			return 'Female';
 		} else {
 			return 'Male';
