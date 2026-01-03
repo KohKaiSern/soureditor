@@ -70,12 +70,12 @@ export async function applyShinyPalette(
     const b = data[i + 2];
 
     //Leave it alone if it's black or white
-    if (r === 0 && g === 0 && b === 0) {
+    if (colorMatches(r, g, b, [0, 0, 0])) {
       shinyData[i] = 0;
       shinyData[i + 1] = 0;
       shinyData[i + 2] = 0;
     }
-    else if (r === 0xFF && g === 0xFF && b === 0xFF) {
+    else if (colorMatches(r, g, b, [32, 32, 32])) {
       shinyData[i] = 0xFF;
       shinyData[i + 1] = 0xFF;
       shinyData[i + 2] = 0xFF;
