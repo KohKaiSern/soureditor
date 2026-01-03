@@ -38,29 +38,70 @@ export async function writeJSON<T>(name: string, obj: T): Promise<void> {
   writeFile(import.meta.dirname + `/../data/${name}.json`, JSON.stringify(obj, null, 2));
 }
 
-//Applies a palette to a 2-bit-per-pixel PNG.
-export async function applyPalette(
+export async function applyShinyPalette(
   inputPath: string,
   outputPath: string,
-  color1: number[],
-  color2: number[]
+  normalPal1: number[],
+  normalPal2: number[],
+  shinyPal1: number[],
+  shinyPal2: number[]
 ): Promise<void> {
-  const data = await sharp(import.meta.dirname + '/../../sourcrystal/' + inputPath)
-    .greyscale()
-    .raw()
-    .toBuffer();
-  const metadata = await sharp(import.meta.dirname + '/../../sourcrystal/' + inputPath).metadata();
-  const levels = Array.from(new Set(data)).sort((a, b) => a - b);
-  const palette = [[0, 0, 0], color2.map((c) => c * 8), color1.map((c) => c * 8), [255, 255, 255]];
-  const RGBData = Buffer.alloc(data.length * 3);
-  for (let i = 0; i < data.length; i++) {
-    const [r, g, b] = palette[levels.indexOf(data[i])];
-    RGBData[i * 3] = r;
-    RGBData[i * 3 + 1] = g;
-    RGBData[i * 3 + 2] = b;
+  //Retrieve the normal image
+  const image = sharp(import.meta.dirname + '/../../sourcrystal/' + inputPath);
+  const metadata = await image.metadata();
+
+  const data = await image.raw().toBuffer();
+
+  //Create new buffer for the shiny image
+  const channels = metadata.channels || 3;
+  const shinyData = Buffer.alloc(data.length);
+
+  // Helper function to check if colors match within tolerance
+  const colorMatches = (r: number, g: number, b: number, pal: number[], tolerance = 10) => {
+    return Math.abs(r - pal[0] * 8) <= tolerance &&
+      Math.abs(g - pal[1] * 8) <= tolerance &&
+      Math.abs(b - pal[2] * 8) <= tolerance;
+  };
+
+  //For every pixel,
+  for (let i = 0; i < data.length; i += channels) {
+    const r = data[i];
+    const g = data[i + 1];
+    const b = data[i + 2];
+
+    //Leave it alone if it's black or white
+    if (r === 0 && g === 0 && b === 0) {
+      shinyData[i] = 0;
+      shinyData[i + 1] = 0;
+      shinyData[i + 2] = 0;
+    }
+    else if (r === 0xFF && g === 0xFF && b === 0xFF) {
+      shinyData[i] = 0xFF;
+      shinyData[i + 1] = 0xFF;
+      shinyData[i + 2] = 0xFF;
+    }
+    //Otherwise, if it's normalPal1, then replace with shinyPal1.
+    else if (colorMatches(r, g, b, normalPal1)) {
+      shinyData[i] = shinyPal1[0] * 8;
+      shinyData[i + 1] = shinyPal1[1] * 8;
+      shinyData[i + 2] = shinyPal1[2] * 8;
+    }
+    //Otherwise, if it's normalPal2, then replace with shinyPal2.
+    else if (colorMatches(r, g, b, normalPal2)) {
+      shinyData[i] = shinyPal2[0] * 8;
+      shinyData[i + 1] = shinyPal2[1] * 8;
+      shinyData[i + 2] = shinyPal2[2] * 8;
+    }
+
+    //Copy alpha channel if it exists
+    if (channels === 4) {
+      shinyData[i + 3] = data[i + 3];
+    }
   }
-  sharp(RGBData, {
-    raw: { width: metadata.width!, height: metadata.height!, channels: 3 }
+
+  //Construct the new image
+  await sharp(shinyData, {
+    raw: { width: metadata.width!, height: metadata.height!, channels: channels }
   })
     .png()
     .toFile(import.meta.dirname + '/../' + outputPath);

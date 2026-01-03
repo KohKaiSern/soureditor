@@ -1,5 +1,5 @@
-import { mkdir, readdir } from 'fs/promises';
-import { applyPalette, createGIF, parseRead } from './utils';
+import { mkdir, readdir, copyFile } from 'fs/promises';
+import { applyShinyPalette, createGIF, parseRead } from './utils';
 import type { Pokemon } from './types';
 import { extractIDs, extractNames } from './common';
 import growthRates from './growthRates';
@@ -132,12 +132,12 @@ async function extractPNGs(pokemon: Pokemon[]): Promise<void> {
     const PALS = await Promise.all(
       [`${mon.paths.palette}normal.pal`, `${mon.paths.palette}shiny.pal`].map((f) => parseRead(f))
     );
-    let color1 = PALS[0][0].match(/\d+/g)!.map(Number);
-    let color2 = PALS[0][1].match(/\d+/g)!.map(Number);
-    applyPalette(`${mon.paths.sprite}front.png`, `${mon.paths.sprite}normal.png`, color1, color2);
-    color1 = PALS[1][0].match(/\d+/g)!.map(Number);
-    color2 = PALS[1][1].match(/\d+/g)!.map(Number);
-    applyPalette(`${mon.paths.sprite}front.png`, `${mon.paths.sprite}shiny.png`, color1, color2);
+    await copyFile(import.meta.dirname + `/../../sourcrystal/${mon.paths.sprite}front.png`, import.meta.dirname + `/../${mon.paths.sprite}normal.png`)
+    const normalPal1 = PALS[0][0].match(/\d+/g)!.map(Number);
+    const normalPal2 = PALS[0][1].match(/\d+/g)!.map(Number);
+    const shinyPal1 = PALS[1][0].match(/\d+/g)!.map(Number);
+    const shinyPal2 = PALS[1][1].match(/\d+/g)!.map(Number);
+    applyShinyPalette(`${mon.paths.sprite}front.png`, `${mon.paths.sprite}shiny.png`, normalPal1, normalPal2, shinyPal1, shinyPal2);
   }
 }
 
@@ -188,21 +188,18 @@ async function extractUnown(): Promise<void> {
     const PALS = await Promise.all(
       [`gfx/pokemon/unown/normal.pal`, `gfx/pokemon/unown/shiny.pal`].map((f) => parseRead(f))
     );
-    let color1 = PALS[0][0].match(/\d+/g)!.map(Number);
-    let color2 = PALS[0][1].match(/\d+/g)!.map(Number);
-    await applyPalette(
-      `gfx/pokemon/unown_${c}/front.png`,
-      `gfx/pokemon/unown_${c}/normal.png`,
-      color1,
-      color2
-    );
-    color1 = PALS[1][0].match(/\d+/g)!.map(Number);
-    color2 = PALS[1][1].match(/\d+/g)!.map(Number);
-    await applyPalette(
+    await copyFile(import.meta.dirname + `/../../sourcrystal/gfx/pokemon/unown_${c}/front.png`, import.meta.dirname + `/../gfx/pokemon/unown_${c}/normal.png`)
+    const normalPal1 = PALS[0][0].match(/\d+/g)!.map(Number);
+    const normalPal2 = PALS[0][1].match(/\d+/g)!.map(Number);
+    const shinyPal1 = PALS[1][0].match(/\d+/g)!.map(Number);
+    const shinyPal2 = PALS[1][1].match(/\d+/g)!.map(Number);
+    await applyShinyPalette(
       `gfx/pokemon/unown_${c}/front.png`,
       `gfx/pokemon/unown_${c}/shiny.png`,
-      color1,
-      color2
+      normalPal1,
+      normalPal2,
+      shinyPal1,
+      shinyPal2
     );
     setTimeout(() => {
       createGIF(
