@@ -125,6 +125,19 @@ export async function createGIF(
   encoder.createReadStream().pipe(writeStream);
   encoder.start();
 
+  const firstFrame = await sharp(import.meta.dirname + '/../' + spritePath)
+    .extract({
+      left: 0,
+      top: 0,
+      width: frameHeight,
+      height: frameHeight
+    })
+    .ensureAlpha()
+    .raw()
+    .toBuffer();
+  encoder.setDelay(1000);
+  encoder.addFrame(new Uint8ClampedArray(firstFrame));
+
   for (let lineNo = 0; lineNo < animContent.length; lineNo++) {
     const line = animContent[lineNo];
     if (line.startsWith('frame ')) {
