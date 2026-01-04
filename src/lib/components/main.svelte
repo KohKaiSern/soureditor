@@ -28,7 +28,7 @@
 			data = parseSave(new Uint8Array(await files![0].arrayBuffer()));
 		} catch (error) {
 			console.log(error);
-			toastMsg = `Please ensure that your save is from ${version.version} Please report this to Rev3lation.`;
+			toastMsg = `Please ensure that your save is from ${version.version}.`;
 		}
 		toastStatus = true;
 		if (toastMsg === 'Save Validated!') {
