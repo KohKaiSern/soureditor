@@ -175,10 +175,10 @@
     "category": "ITEM"
   },
   {
-    "id": "LINKING_CORD",
+    "id": "ITEM_19",
     "index": 25,
-    "name": "LINKING CORD",
-    "description": "Evolves certain kinds of POKéMON.",
+    "name": "TERU-SAMA",
+    "description": "?",
     "category": "ITEM"
   },
   {
@@ -952,10 +952,10 @@
     "category": "BALL"
   },
   {
-    "id": "ITEM_88",
+    "id": "LINKING_CORD",
     "index": 136,
-    "name": "TERU-SAMA",
-    "description": "?",
+    "name": "LINKING CORD",
+    "description": "Evolves certain kinds of POKéMON.",
     "category": "ITEM"
   },
   {
