@@ -22,6 +22,9 @@ function checksumBoxMon(file: Uint8Array, address: number): Uint8Array {
     // Clear MSB and set it to the corresponding bit from checksum
     file[address + byte] = (file[address + byte] & 0x7F) | (((x >> (45 - byte)) & 1) << 7);
   }
+  //Clear the MSB of byte 47
+  file[address + 46] &= 0x7F
+
   return file;
 }
 
