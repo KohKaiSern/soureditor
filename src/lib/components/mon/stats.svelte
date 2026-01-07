@@ -33,12 +33,6 @@
 	];
 
 	let hiddenPowerType = $derived(typeList[4 * (mon.dvs[0] % 4) + (mon.dvs[1] % 4)]);
-	let hiddenPowerBasePower = $derived.by(() => {
-		const cfs = mon.dvs.map((dv: number) => (dv < 8 ? 0 : 1));
-		return Math.floor(
-			(5 * (cfs[3] + 2 * cfs[2] + 4 * cfs[1] + 8 * cfs[0]) + (mon.dvs[3] % 4)) / 2 + 31
-		);
-	});
 
 	let gender = $derived.by(() => {
 		const genderRatio = pokemon.find((pokemon) => pokemon.name === mon.species)!.genderRatio;
@@ -83,11 +77,8 @@
 		<P class="text-lg">{isShiny(mon) ? 'Shiny' : 'Not Shiny'}</P>
 	</div>
 	<div>
-		<Label class="!text-gray-400">Hidden Power</Label>
-		<div class="mt-2 flex gap-3">
-			<TypeIcon type={hiddenPowerType} />
-			<P class="text-xl">{hiddenPowerBasePower} BP</P>
-		</div>
+		<Label class="mb-1 !text-gray-400">Hidden Power</Label>
+		<TypeIcon type={hiddenPowerType} />
 	</div>
 </div>
 
