@@ -2665,7 +2665,7 @@
     "id": "CRUNCH",
     "index": 242,
     "name": "CRUNCH",
-    "description": "An attack that may lower SP.DEF.",
+    "description": "An attack that may lower DEFENSE.",
     "basePower": 80,
     "type": "DARK",
     "accuracy": 100,

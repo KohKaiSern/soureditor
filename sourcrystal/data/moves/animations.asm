@@ -451,9 +451,9 @@ BattleAnimSub_Return:
 BattleAnim_Confused:
 	anim_1gfx BATTLE_ANIM_GFX_STATUS
 	anim_sound 0, 0, SFX_KINESIS
-	anim_obj BATTLE_ANIM_OBJ_CHICK, 44, 56, $15
-	anim_obj BATTLE_ANIM_OBJ_CHICK, 44, 56, $aa
-	anim_obj BATTLE_ANIM_OBJ_CHICK, 44, 56, $bf
+	anim_obj BATTLE_ANIM_OBJ_CHICK, 44, 64, $15
+	anim_obj BATTLE_ANIM_OBJ_CHICK, 44, 64, $aa
+	anim_obj BATTLE_ANIM_OBJ_CHICK, 44, 64, $bf
 	anim_wait 96
 	anim_ret
 
@@ -507,7 +507,7 @@ BattleAnim_Sap:
 BattleAnim_Frz:
 	anim_setobjpal PAL_BATTLE_OB_BLUE, PAL_BTLCUSTOM_ICE
 	anim_1gfx BATTLE_ANIM_GFX_ICE
-	anim_obj BATTLE_ANIM_OBJ_FROZEN, 44, 110, $0
+	anim_obj BATTLE_ANIM_OBJ_FROZEN, 48, 112, $0
 	anim_sound 0, 0, SFX_SHINE
 	anim_wait 16
 	anim_sound 0, 0, SFX_SHINE
@@ -517,10 +517,10 @@ BattleAnim_Frz:
 BattleAnim_Par:
 	anim_1gfx BATTLE_ANIM_GFX_STATUS
 	anim_call BattleAnimSub_BGCycleOBPalsGrayAndYellow_$2
-	anim_sound 0, 0, SFX_THUNDERSHOCK
+	anim_sound 0, 0, SFX_ZAP_CANNON
 	anim_obj BATTLE_ANIM_OBJ_PARALYZED, 20, 90, $42
 	anim_obj BATTLE_ANIM_OBJ_PARALYZED, 76, 90, $c2
-	anim_wait 128
+	anim_wait 32
 	anim_ret
 
 BattleAnim_InLove:
@@ -935,7 +935,7 @@ BattleAnim_IceBeam:
 	anim_obj BATTLE_ANIM_OBJ_ICE_BEAM, 64, 92, $4
 	anim_wait 4
 	anim_loop 5, .loop
-	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 136, 72, $10
+	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 132, 72, $10
 .loop2
 	anim_sound 6, 2, SFX_SHINE
 	anim_obj BATTLE_ANIM_OBJ_ICE_BEAM, 64, 92, $4
@@ -964,7 +964,7 @@ BattleAnim_Blizzard:
 	anim_loop 3, .loop
 	anim_bgeffect BATTLE_BG_EFFECT_WHITE_HUES, $0, $8, $0
 	anim_wait 32
-	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 136, 72, $10
+	anim_obj BATTLE_ANIM_OBJ_ICE_BUILDUP, 132, 72, $10
 	anim_wait 128
 	anim_sound 0, 1, SFX_SHINE
 	anim_wait 8
@@ -1257,7 +1257,7 @@ BattleAnim_Thunder:
 	anim_ret
 
 BattleAnim_RazorWind:
-	anim_if_param_equal $1, BattleAnim_FocusEnergy
+	anim_if_param_equal $1, .whirlwind
 	anim_1gfx BATTLE_ANIM_GFX_WHIP
 	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $1, $0
 .loop
@@ -1279,6 +1279,17 @@ BattleAnim_RazorWind:
 	anim_wait 4
 	anim_loop 3, .loop
 	anim_wait 24
+	anim_ret
+
+.whirlwind:
+	anim_1gfx BATTLE_ANIM_GFX_WIND
+	anim_bgeffect BATTLE_BG_EFFECT_FADE_MON_TO_LIGHT_REPEATING, $0, BG_EFFECT_USER, $40
+.loop2
+	anim_sound 0, 0, SFX_RAZOR_WIND
+	anim_obj BATTLE_ANIM_OBJ_GUST, 64, 112, $0
+	anim_wait 6
+	anim_loop 9, .loop2
+	anim_wait 56
 	anim_ret
 
 BattleAnim_Sonicboom_JP:

@@ -2488,27 +2488,27 @@
         },
         {
           "name": "TWISTER",
-          "level": 22
+          "level": 21
         },
         {
           "name": "WING ATTACK",
-          "level": 27
+          "level": 25
         },
         {
           "name": "AGILITY",
+          "level": 29
+        },
+        {
+          "name": "RAZOR WIND",
           "level": 33
         },
         {
           "name": "MIRROR MOVE",
-          "level": 39
-        },
-        {
-          "name": "RAZOR WIND",
-          "level": 45
+          "level": 37
         },
         {
           "name": "SKY ATTACK",
-          "level": 49
+          "level": 41
         }
       ],
       "egg": [
@@ -2653,31 +2653,31 @@
         },
         {
           "name": "WHIRLWIND",
-          "level": 19
+          "level": 17
         },
         {
           "name": "TWISTER",
-          "level": 24
+          "level": 22
         },
         {
           "name": "WING ATTACK",
-          "level": 29
+          "level": 28
         },
         {
           "name": "AGILITY",
-          "level": 35
-        },
-        {
-          "name": "MIRROR MOVE",
-          "level": 42
+          "level": 33
         },
         {
           "name": "RAZOR WIND",
-          "level": 48
+          "level": 39
+        },
+        {
+          "name": "MIRROR MOVE",
+          "level": 44
         },
         {
           "name": "SKY ATTACK",
-          "level": 54
+          "level": 50
         }
       ],
       "egg": [],
@@ -2812,31 +2812,31 @@
         },
         {
           "name": "WHIRLWIND",
-          "level": 19
+          "level": 17
         },
         {
           "name": "TWISTER",
-          "level": 24
+          "level": 22
         },
         {
           "name": "WING ATTACK",
-          "level": 29
+          "level": 28
         },
         {
           "name": "AGILITY",
-          "level": 37
-        },
-        {
-          "name": "MIRROR MOVE",
-          "level": 45
+          "level": 33
         },
         {
           "name": "RAZOR WIND",
-          "level": 53
+          "level": 40
+        },
+        {
+          "name": "MIRROR MOVE",
+          "level": 47
         },
         {
           "name": "SKY ATTACK",
-          "level": 61
+          "level": 54
         }
       ],
       "egg": [],
@@ -8917,6 +8917,9 @@
         },
         {
           "name": "SWIFT"
+        },
+        {
+          "name": "DREAM EATER"
         },
         {
           "name": "REST"
@@ -18554,23 +18557,23 @@
           "level": 29
         },
         {
-          "name": "SLAM",
+          "name": "GUILLOTINE",
           "level": 33
         },
         {
-          "name": "SWORDS DANCE",
+          "name": "SLAM",
           "level": 36
         },
         {
-          "name": "CRABHAMMER",
+          "name": "SWORDS DANCE",
           "level": 40
         },
         {
-          "name": "FLAIL",
+          "name": "CRABHAMMER",
           "level": 44
         },
         {
-          "name": "GUILLOTINE",
+          "name": "FLAIL",
           "level": 48
         }
       ],
@@ -18754,23 +18757,23 @@
           "level": 30
         },
         {
-          "name": "SLAM",
+          "name": "GUILLOTINE",
           "level": 36
         },
         {
-          "name": "SWORDS DANCE",
+          "name": "SLAM",
           "level": 41
         },
         {
-          "name": "CRABHAMMER",
+          "name": "SWORDS DANCE",
           "level": 47
         },
         {
-          "name": "FLAIL",
+          "name": "CRABHAMMER",
           "level": 52
         },
         {
-          "name": "GUILLOTINE",
+          "name": "FLAIL",
           "level": 58
         }
       ],
@@ -20362,19 +20365,19 @@
           "level": 28
         },
         {
-          "name": "DETECT",
+          "name": "MEGA PUNCH",
           "level": 32
         },
         {
-          "name": "AGILITY",
+          "name": "DETECT",
           "level": 36
         },
         {
-          "name": "MEGA PUNCH",
+          "name": "AGILITY",
           "level": 40
         },
         {
-          "name": "MIND READER",
+          "name": "DIZZY PUNCH",
           "level": 44
         },
         {
@@ -24603,7 +24606,7 @@
           "level": 34
         },
         {
-          "name": "SWORDS DANCE",
+          "name": "GUILLOTINE",
           "level": 40
         },
         {
@@ -24611,7 +24614,7 @@
           "level": 45
         },
         {
-          "name": "GUILLOTINE",
+          "name": "SWORDS DANCE",
           "level": 51
         }
       ],
@@ -32259,6 +32262,9 @@
           "name": "DIG"
         },
         {
+          "name": "PSYCHIC"
+        },
+        {
           "name": "DOUBLE TEAM"
         },
         {
@@ -32460,6 +32466,9 @@
         },
         {
           "name": "DIG"
+        },
+        {
+          "name": "PSYCHIC"
         },
         {
           "name": "DOUBLE TEAM"

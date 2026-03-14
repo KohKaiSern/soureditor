@@ -232,12 +232,12 @@ PidgeyEvosAttacks:
 	db 9, GUST
 	db 13, QUICK_ATTACK
 	db 17, WHIRLWIND
-	db 22, TWISTER
-	db 27, WING_ATTACK
-	db 33, AGILITY
-	db 39, MIRROR_MOVE
-	db 45, RAZOR_WIND
-	db 49, SKY_ATTACK
+	db 21, TWISTER
+	db 25, WING_ATTACK
+	db 29, AGILITY
+	db 33, RAZOR_WIND
+	db 37, MIRROR_MOVE
+	db 41, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 PidgeottoEvosAttacks:
@@ -247,13 +247,13 @@ PidgeottoEvosAttacks:
 	db 1, SAND_ATTACK
 	db 1, GUST
 	db 13, QUICK_ATTACK
-	db 19, WHIRLWIND
-	db 24, TWISTER
-	db 29, WING_ATTACK
-	db 35, AGILITY
-	db 42, MIRROR_MOVE
-	db 48, RAZOR_WIND
-	db 54, SKY_ATTACK
+	db 17, WHIRLWIND
+	db 22, TWISTER
+	db 28, WING_ATTACK
+	db 33, AGILITY
+	db 39, RAZOR_WIND
+	db 44, MIRROR_MOVE
+	db 50, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
@@ -262,13 +262,13 @@ PidgeotEvosAttacks:
 	db 1, SAND_ATTACK
 	db 1, GUST
 	db 1, QUICK_ATTACK
-	db 19, WHIRLWIND
-	db 24, TWISTER
-	db 29, WING_ATTACK
-	db 37, AGILITY
-	db 45, MIRROR_MOVE
-	db 53, RAZOR_WIND
-	db 61, SKY_ATTACK
+	db 17, WHIRLWIND
+	db 22, TWISTER
+	db 28, WING_ATTACK
+	db 33, AGILITY
+	db 40, RAZOR_WIND
+	db 47, MIRROR_MOVE
+	db 54, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -1459,11 +1459,11 @@ KrabbyEvosAttacks:
 	db 21, METAL_CLAW
 	db 25, STOMP
 	db 29, PROTECT
-	db 33, SLAM
-	db 36, SWORDS_DANCE
-	db 40, CRABHAMMER
-	db 44, FLAIL
-	db 48, GUILLOTINE
+	db 33, GUILLOTINE
+	db 36, SLAM
+	db 40, SWORDS_DANCE
+	db 44, CRABHAMMER
+	db 48, FLAIL
 	db 0 ; no more level-up moves
 
 KinglerEvosAttacks:
@@ -1476,11 +1476,11 @@ KinglerEvosAttacks:
 	db 21, METAL_CLAW
 	db 25, STOMP
 	db 30, PROTECT
-	db 36, SLAM
-	db 41, SWORDS_DANCE
-	db 47, CRABHAMMER
-	db 52, FLAIL
-	db 58, GUILLOTINE
+	db 36, GUILLOTINE
+	db 41, SLAM
+	db 47, SWORDS_DANCE
+	db 52, CRABHAMMER
+	db 58, FLAIL
 	db 0 ; no more level-up moves
 
 VoltorbEvosAttacks:
@@ -1606,10 +1606,10 @@ HitmonchanEvosAttacks:
 	db 28, THUNDERPUNCH
 	db 28, ICE_PUNCH
 	db 28, FIRE_PUNCH
-	db 32, DETECT
-	db 36, AGILITY
-	db 40, MEGA_PUNCH
-	db 44, MIND_READER
+	db 32, MEGA_PUNCH
+	db 36, DETECT
+	db 40, AGILITY
+	db 44, DIZZY_PUNCH
 	db 48, COUNTER
 	db 52, DYNAMICPUNCH
 	db 56, REVERSAL
@@ -1933,9 +1933,9 @@ PinsirEvosAttacks:
 	db 23, REVERSAL
 	db 29, VITAL_THROW
 	db 34, THRASH
-	db 40, SWORDS_DANCE
+	db 40, GUILLOTINE
 	db 45, SUBMISSION
-	db 51, GUILLOTINE
+	db 51, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 TaurosEvosAttacks:

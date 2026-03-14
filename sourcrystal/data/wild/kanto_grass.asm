@@ -1290,4 +1290,60 @@ KantoGrassWildMons:
 	db 40, MAGMAR
 	end_grass_wildmons
 
+	def_grass_wildmons SAFARI_ZONE_KANTO_AREA_1 ; DUMMY
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, NIDORAN_F
+	db 5, NIDORAN_M
+	db 5, NIDORINA
+	db 5, NIDORINO
+	db 5, PARAS
+	db 5, PARASECT
+	db 5, PSYDUCK
+	; day
+	db 5, VENONAT
+	db 5, VENOMOTH
+	db 5, SLOWPOKE
+	db 5, DODUO
+	db 5, EXEGGCUTE
+	db 5, RHYHORN
+	db 5, KANGASKHAN
+	; nite
+	db 5, SCYTHER
+	db 5, PINSIR
+	db 5, TAUROS
+	db 5, QUAGSIRE
+	db 5, MANTINE
+	db 5, REMORAID
+	db 5, AZUMARILL
+	end_grass_wildmons
+
+	def_grass_wildmons SAFARI_ZONE_KANTO_AREA_2 ; DUMMY
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, MURKROW
+	db 5, GIRAFARIG
+	db 5, STANTLER
+	db 5, SKARMORY
+	db 5, HERACROSS
+	db 5, NATU
+	db 5, NATU
+	; day
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	; nite
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	end_grass_wildmons
+
 	db -1 ; end

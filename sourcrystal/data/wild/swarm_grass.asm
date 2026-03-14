@@ -1316,7 +1316,7 @@ SwarmGrassWildMons:
 	db 25, NIDORINO
 	db 25, NIDORINA
 	db 27, FARFETCH_D
-	db 29, HOPPIP
+	db 29, SKIPLOOM
 	db 31, CHANSEY
 	; day
 	db 25, FARFETCH_D
@@ -1324,7 +1324,7 @@ SwarmGrassWildMons:
 	db 25, NIDORINO
 	db 25, NIDORINA
 	db 27, FARFETCH_D
-	db 29, HOPPIP
+	db 29, SKIPLOOM
 	db 31, CHANSEY
 	; nite
 	db 25, FARFETCH_D

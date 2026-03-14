@@ -1289,7 +1289,7 @@ SwarmGrassWildMonsChallenge:
 	db 38, FARFETCH_D
 	db 35, FARFETCH_D
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; day
 	db 35, NIDORINO
@@ -1297,7 +1297,7 @@ SwarmGrassWildMonsChallenge:
 	db 38, FARFETCH_D
 	db 35, FARFETCH_D
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; nite
 	db 35, VENONAT

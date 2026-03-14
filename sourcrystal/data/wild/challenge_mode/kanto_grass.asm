@@ -850,7 +850,7 @@ KantoGrassWildMonsChallenge:
 	db 38, PIDGEOTTO
 	db 35, HOPPIP
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; day
 	db 35, NIDORINO
@@ -858,7 +858,7 @@ KantoGrassWildMonsChallenge:
 	db 38, PIDGEOTTO
 	db 35, HOPPIP
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; nite
 	db 35, VENONAT
@@ -878,7 +878,7 @@ KantoGrassWildMonsChallenge:
 	db 38, PIDGEOTTO
 	db 35, HOPPIP
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; day
 	db 35, NIDORINO
@@ -886,7 +886,7 @@ KantoGrassWildMonsChallenge:
 	db 38, PIDGEOTTO
 	db 35, HOPPIP
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; nite
 	db 35, VENONAT
@@ -933,7 +933,7 @@ KantoGrassWildMonsChallenge:
 	db 38, NIDORINA
 	db 42, PIDGEOTTO
 	db 38, HOPPIP
-	db 38, HOPPIP
+	db 38, SKIPLOOM
 	db 40, HOPPIP
 	db 40, CHANSEY
 	; day
@@ -941,7 +941,7 @@ KantoGrassWildMonsChallenge:
 	db 38, NIDORINA
 	db 42, PIDGEOTTO
 	db 38, HOPPIP
-	db 38, HOPPIP
+	db 38, SKIPLOOM
 	db 40, HOPPIP
 	db 40, CHANSEY
 	; nite
@@ -1288,6 +1288,62 @@ KantoGrassWildMonsChallenge:
 	db 52, WEEZING
 	db 42, DITTO
 	db 50, MAGMAR
+	end_grass_wildmons
+
+	def_grass_wildmons SAFARI_ZONE_KANTO_AREA_1 ; DUMMY
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, NIDORAN_F
+	db 5, NIDORAN_M
+	db 5, NIDORINA
+	db 5, NIDORINO
+	db 5, PARAS
+	db 5, PARASECT
+	db 5, PSYDUCK
+	; day
+	db 5, VENONAT
+	db 5, VENOMOTH
+	db 5, SLOWPOKE
+	db 5, DODUO
+	db 5, EXEGGCUTE
+	db 5, RHYHORN
+	db 5, KANGASKHAN
+	; nite
+	db 5, SCYTHER
+	db 5, PINSIR
+	db 5, TAUROS
+	db 5, QUAGSIRE
+	db 5, MANTINE
+	db 5, REMORAID
+	db 5, AZUMARILL
+	end_grass_wildmons
+
+	def_grass_wildmons SAFARI_ZONE_KANTO_AREA_2 ; DUMMY
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, MURKROW
+	db 5, GIRAFARIG
+	db 5, STANTLER
+	db 5, SKARMORY
+	db 5, HERACROSS
+	db 5, NATU
+	db 5, NATU
+	; day
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	; nite
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
+	db 5, NATU
 	end_grass_wildmons
 
 	db -1 ; end

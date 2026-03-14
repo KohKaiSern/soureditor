@@ -1372,7 +1372,7 @@ SwarmGrassWildMonsAltChallenge:
 	db 42, NIDORINA
 	db 38, EXEGGCUTE
 	db 38, HOPPIP
-	db 40, HOPPIP
+	db 40, SKIPLOOM
 	db 40, CHANSEY
 	; day
 	db 36, EXEGGCUTE
@@ -1380,7 +1380,7 @@ SwarmGrassWildMonsAltChallenge:
 	db 42, NIDORINA
 	db 38, EXEGGCUTE
 	db 38, HOPPIP
-	db 40, HOPPIP
+	db 40, SKIPLOOM
 	db 40, CHANSEY
 	; nite
 	db 36, EXEGGCUTE
@@ -1428,7 +1428,7 @@ SwarmGrassWildMonsAltChallenge:
 	db 38, CHANSEY
 	db 35, CHANSEY
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; day
 	db 35, NIDORINO
@@ -1436,7 +1436,7 @@ SwarmGrassWildMonsAltChallenge:
 	db 38, CHANSEY
 	db 35, CHANSEY
 	db 37, FARFETCH_D
-	db 39, HOPPIP
+	db 39, SKIPLOOM
 	db 41, CHANSEY
 	; nite
 	db 35, VENONAT

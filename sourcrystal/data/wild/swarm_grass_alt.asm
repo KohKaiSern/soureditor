@@ -1372,7 +1372,7 @@ SwarmGrassWildMonsAlt:
 	db 28, NIDORINO
 	db 28, NIDORINA
 	db 28, HOPPIP
-	db 30, HOPPIP
+	db 30, SKIPLOOM
 	db 30, CHANSEY
 	; day
 	db 26, EXEGGCUTE
@@ -1380,7 +1380,7 @@ SwarmGrassWildMonsAlt:
 	db 28, NIDORINO
 	db 28, NIDORINA
 	db 28, HOPPIP
-	db 30, HOPPIP
+	db 30, SKIPLOOM
 	db 30, CHANSEY
 	; nite
 	db 26, EXEGGCUTE
@@ -1428,7 +1428,7 @@ SwarmGrassWildMonsAlt:
 	db 25, NIDORINO
 	db 25, NIDORINA
 	db 27, FARFETCH_D
-	db 29, HOPPIP
+	db 29, SKIPLOOM
 	db 31, CHANSEY
 	; day
 	db 28, CHANSEY
@@ -1436,7 +1436,7 @@ SwarmGrassWildMonsAlt:
 	db 25, NIDORINO
 	db 25, NIDORINA
 	db 27, FARFETCH_D
-	db 29, HOPPIP
+	db 29, SKIPLOOM
 	db 31, CHANSEY
 	; nite
 	db 28, CHANSEY
