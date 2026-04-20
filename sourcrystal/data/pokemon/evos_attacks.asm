@@ -459,7 +459,7 @@ NidoqueenEvosAttacks:
 	db 1, POISON_STING
 	db 36, BODY_SLAM
 	db 45, EARTHQUAKE
-	db 58, SUBMISSION
+	db 58, CROSS_CHOP
 	db 0 ; no more level-up moves
 
 NidoranMEvosAttacks:
@@ -2093,8 +2093,8 @@ OmanyteEvosAttacks:
 	db 25, LEER
 	db 30, ANCIENTPOWER
 	db 37, PROTECT
-	db 42, ROCK_SLIDE
-	db 49, HYDRO_PUMP
+	db 43, ROCK_SLIDE
+	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 OmastarEvosAttacks:
@@ -2108,8 +2108,8 @@ OmastarEvosAttacks:
 	db 30, ANCIENTPOWER
 	db 37, PROTECT
 	db 40, SPIKE_CANNON
-	db 44, ROCK_SLIDE
-	db 53, HYDRO_PUMP
+	db 45, ROCK_SLIDE
+	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 KabutoEvosAttacks:
@@ -2122,9 +2122,9 @@ KabutoEvosAttacks:
 	db 18, LEER
 	db 25, SAND_ATTACK
 	db 30, ANCIENTPOWER
-	db 37, ENDURE
-	db 46, GIGA_DRAIN
-	db 55, ROCK_SLIDE
+	db 37, MEGA_DRAIN
+	db 43, ENDURE
+	db 50, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 KabutopsEvosAttacks:
@@ -2136,10 +2136,10 @@ KabutopsEvosAttacks:
 	db 18, LEER
 	db 25, SAND_ATTACK
 	db 30, ANCIENTPOWER
-	db 37, ENDURE
+	db 37, MEGA_DRAIN
 	db 40, SLASH
-	db 44, GIGA_DRAIN
-	db 53, ROCK_SLIDE
+	db 45, ENDURE
+	db 55, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 AerodactylEvosAttacks:
@@ -3357,10 +3357,11 @@ PiloswineEvosAttacks:
 CorsolaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 6, HARDEN
-	db 11, BUBBLE
-	db 15, RECOVER
-	db 20, ENDURE
+	db 1, HARDEN
+	db 6, BUBBLE
+	db 11, ENDURE
+	db 15, ROLLOUT
+	db 20, RECOVER
 	db 25, BUBBLEBEAM
 	db 29, BARRIER
 	db 34, ANCIENTPOWER

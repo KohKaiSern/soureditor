@@ -52,7 +52,6 @@ INCLUDE "engine/events/misc_scripts.asm"
 INCLUDE "engine/events/heal_machine_anim.asm"
 INCLUDE "engine/events/whiteout.asm"
 INCLUDE "engine/events/forced_movement.asm"
-INCLUDE "engine/events/itemfinder.asm"
 INCLUDE "engine/menus/start_menu.asm"
 INCLUDE "engine/pokemon/mon_menu.asm"
 INCLUDE "engine/overworld/select_menu.asm"
@@ -64,6 +63,9 @@ INCLUDE "engine/events/bug_contest/judging.asm"
 INCLUDE "engine/events/pokerus/apply_pokerus_tick.asm"
 INCLUDE "engine/pokemon/correct_party_errors.asm"
 INCLUDE "engine/events/bug_contest/contest_2.asm"
+
+SECTION "ItemFinder", ROMX
+INCLUDE "engine/events/itemfinder.asm"
 
 
 SECTION "Square Root", ROMX
@@ -82,6 +84,7 @@ INCLUDE "engine/rtc/rtc.asm"
 INCLUDE "engine/overworld/overworld.asm"
 INCLUDE "engine/overworld/tile_events.asm"
 INCLUDE "engine/menus/save.asm"
+INCLUDE "save_compat.asm"
 INCLUDE "engine/overworld/spawn_points.asm"
 INCLUDE "engine/overworld/map_setup.asm"
 INCLUDE "engine/events/pokecenter_pc.asm"
@@ -341,6 +344,7 @@ SECTION "bank24", ROMX
 INCLUDE "engine/phone/phone.asm"
 INCLUDE "engine/rtc/timeset.asm"
 INCLUDE "engine/pokegear/pokegear.asm"
+INCLUDE "engine/pokegear/pokegear_vwf.asm"
 INCLUDE "engine/events/fish.asm"
 
 

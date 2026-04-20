@@ -1996,12 +1996,14 @@ BattleCommand_MoveAnimNoSub:
 	cp EFFECT_BEAT_UP
 	jr z, .beat_up
 	cp EFFECT_TRIPLE_KICK
-	jr z, .triplekick
+	jr z, .continue
 	cp EFFECT_HIDDEN_POWER
 	jr z, .hidden_power
+	cp EFFECT_MAGNITUDE
+	jr z, .continue
 	xor a
 	ld [wBattleAnimParam], a
-	jr .triplekick
+	jr .continue
 
 .beat_up
 	ld a, [wBattleAnimParam]
@@ -2009,7 +2011,7 @@ BattleCommand_MoveAnimNoSub:
 	xor 1
 	ld [wBattleAnimParam], a
 
-.triplekick
+.continue
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
 	ld e, a
@@ -2031,13 +2033,13 @@ BattleCommand_MoveAnimNoSub:
 	ld [wBattleAnimParam], a
 	ld a, [wLinkMode]
 	and a
-	jr z, .triplekick
+	jr z, .continue
 	ldh a, [hBattleTurn]
 	and a
-	jr z, .triplekick
+	jr z, .continue
 	xor a
 	ld [wBattleAnimParam], a
-	jr .triplekick
+	jr .continue
 
 .alternate_anim
 	ld a, [wBattleAnimParam]
@@ -2678,11 +2680,14 @@ PlayerAttackDamage:
 	call ThickClubBoost
 
 .done
+	push hl
+	call DittoMetalPowder
+	pop hl
+
 	call TruncateHL_BC
 
 	ld a, [wBattleMonLevel]
 	ld e, a
-	call DittoMetalPowder
 
 	ld a, 1
 	and a
@@ -2909,11 +2914,14 @@ EnemyAttackDamage:
 	call ThickClubBoost
 
 .done
+	push hl
+	call DittoMetalPowder
+	pop hl
+
 	call TruncateHL_BC
 
 	ld a, [wEnemyMonLevel]
 	ld e, a
-	call DittoMetalPowder
 
 	ld a, 1
 	and a

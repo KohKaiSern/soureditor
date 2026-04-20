@@ -18,7 +18,9 @@ DEF BATTLEANIMSTRUCT_FRAME           rb ; 0d
 DEF BATTLEANIMSTRUCT_JUMPTABLE_INDEX rb ; 0e
 DEF BATTLEANIMSTRUCT_VAR1            rb ; 0f
 DEF BATTLEANIMSTRUCT_VAR2            rb ; 10
-                                     rb_skip 7
+DEF BATTLEANIMSTRUCT_VAR3            rb ; 11
+DEF BATTLEANIMSTRUCT_VAR4            rb ; 12
+                                     rb_skip 5
 DEF BATTLEANIMSTRUCT_LENGTH EQU _RS
 DEF NUM_BATTLE_ANIM_STRUCTS EQU 10 ; see wActiveAnimObjects
 
@@ -328,6 +330,7 @@ DEF NUM_BATTLE_ANIM_OBJS EQU const_value
 	const BATTLE_ANIM_FUNC_RADIAL_MOVE_OUT           ; 4f
 	const BATTLE_ANIM_FUNC_RADIAL_MOVE_OUT_SLOW      ; 50
 	const BATTLE_ANIM_FUNC_FALL_AND_STOP             ; 51
+	const BATTLE_ANIM_FUNC_FLAMETHROWER
 DEF NUM_BATTLE_ANIM_FUNCS EQU const_value
 
 ; BattleAnimFrameData indexes (see data/battle_anims/framesets.asm)
@@ -529,6 +532,7 @@ DEF NUM_BATTLE_ANIM_FUNCS EQU const_value
 	const BATTLE_ANIM_FRAMESET_GROWING_BALL               ; c2
 	const BATTLE_ANIM_FRAMESET_WATER_BALL                 ; c3
 	const BATTLE_ANIM_FRAMESET_GROWING_BUBBLE             ; c4
+	const BATTLE_ANIM_FRAMESET_FIRE_BLAST_IMPACT          ; c5
 DEF NUM_BATTLE_ANIM_FRAMESETS EQU const_value
 
 ; BattleAnimOAMData indexes (see data/battle_anims/oam.asm)

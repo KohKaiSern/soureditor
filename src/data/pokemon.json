@@ -5288,7 +5288,7 @@
           "level": 45
         },
         {
-          "name": "SUBMISSION",
+          "name": "CROSS CHOP",
           "level": 58
         }
       ],
@@ -7814,6 +7814,9 @@
       "egg": [
         {
           "name": "FLAIL"
+        },
+        {
+          "name": "LEECH SEED"
         },
         {
           "name": "RAZOR LEAF"
@@ -22015,6 +22018,9 @@
           "name": "FLAIL"
         },
         {
+          "name": "LEECH SEED"
+        },
+        {
           "name": "REFLECT"
         }
       ],
@@ -26470,11 +26476,11 @@
         },
         {
           "name": "ROCK SLIDE",
-          "level": 42
+          "level": 43
         },
         {
           "name": "HYDRO PUMP",
-          "level": 49
+          "level": 50
         }
       ],
       "egg": [
@@ -26669,11 +26675,11 @@
         },
         {
           "name": "ROCK SLIDE",
-          "level": 44
+          "level": 45
         },
         {
           "name": "HYDRO PUMP",
-          "level": 53
+          "level": 55
         }
       ],
       "egg": [],
@@ -26849,16 +26855,16 @@
           "level": 30
         },
         {
-          "name": "ENDURE",
+          "name": "MEGA DRAIN",
           "level": 37
         },
         {
-          "name": "GIGA DRAIN",
-          "level": 46
+          "name": "ENDURE",
+          "level": 43
         },
         {
           "name": "ROCK SLIDE",
-          "level": 55
+          "level": 50
         }
       ],
       "egg": [
@@ -27053,7 +27059,7 @@
           "level": 30
         },
         {
-          "name": "ENDURE",
+          "name": "MEGA DRAIN",
           "level": 37
         },
         {
@@ -27061,12 +27067,12 @@
           "level": 40
         },
         {
-          "name": "GIGA DRAIN",
-          "level": 44
+          "name": "ENDURE",
+          "level": 45
         },
         {
           "name": "ROCK SLIDE",
-          "level": 53
+          "level": 55
         }
       ],
       "egg": [],
@@ -43460,18 +43466,22 @@
         },
         {
           "name": "HARDEN",
-          "level": 6
+          "level": 1
         },
         {
           "name": "BUBBLE",
-          "level": 11
-        },
-        {
-          "name": "RECOVER",
-          "level": 15
+          "level": 6
         },
         {
           "name": "ENDURE",
+          "level": 11
+        },
+        {
+          "name": "ROLLOUT",
+          "level": 15
+        },
+        {
+          "name": "RECOVER",
           "level": 20
         },
         {
