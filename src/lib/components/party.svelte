@@ -22,7 +22,7 @@
 			PPUPs: [0, 0, 0, 0],
 			powerPoints: [35, 0, 0, 0],
 			happiness: 0,
-			pokerus: 'NONE',
+			pokerus: { strain: 'NONE' },
 			caughtTime: 'DAY',
 			caughtLevel: 1,
 			OTGender: 'MALE',

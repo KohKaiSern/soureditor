@@ -69,9 +69,11 @@ export function writeString(
     )!, 16);
     continue;
   }
-  //Once we finish the str, we should add the terminator,
+  //Once we finish the str, we should add the terminator(s),
   //...unless it's max length already.
   if (maxLen === str.length) return file;
-  file[address + str.length] = hasChecksum ? 0xC7 : 0x50;
+  for (let i = str.length; i < maxLen; i++) {
+    file[address + i] = hasChecksum ? 0xC7 : 0x50;
+  }
   return file
 }
