@@ -50,6 +50,12 @@ export async function applyShinyPalette(
   const image = sharp(import.meta.dirname + '/../../sourcrystal/' + inputPath);
   const metadata = await image.metadata();
 
+  if (inputPath === "gfx/pokemon/slowbro/front.png") {
+    let temp = shinyPal1
+    shinyPal1 = shinyPal2
+    shinyPal2 = temp
+  }
+
   const data = await image.raw().toBuffer();
 
   //Create new buffer for the shiny image
@@ -63,7 +69,6 @@ export async function applyShinyPalette(
       Math.abs(b - pal[2] * 8) <= tolerance;
   };
 
-  //For every pixel,
   for (let i = 0; i < data.length; i += channels) {
     const r = data[i];
     const g = data[i + 1];

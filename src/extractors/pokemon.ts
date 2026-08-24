@@ -276,6 +276,6 @@ pokemon = extractPalPaths(pokemon, files[9]);
 extractPNGs(pokemon);
 pokemon = extractAnimPaths(pokemon, files[10], files[11]);
 extractGIFs(pokemon);
-// extractUnown();
+extractUnown();
 
 export default pokemon;
