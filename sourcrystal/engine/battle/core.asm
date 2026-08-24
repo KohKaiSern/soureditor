@@ -124,6 +124,8 @@ StartAutomaticBattleWeather:
 	ld a, [wCurWeather]
 	and a
 	ret z
+	cp OW_WEATHER_SUNLIGHT
+	jr z, .sunlight
 	cp OW_WEATHER_RAIN
 	jr z, .raining
 	cp OW_WEATHER_THUNDERSTORM
@@ -131,11 +133,22 @@ StartAutomaticBattleWeather:
 .raining
 	ld a, WEATHER_RAIN
 	ld [wBattleWeather], a
-	ld de, RAIN_DANCE
+	ld de, ANIM_IN_RAIN
 	ld a, 255
 	ld [wWeatherCount], a
 	call Call_PlayBattleAnim
 	ld hl, StartedToRainText
+	call StdBattleTextbox
+	jp EmptyBattleTextbox
+
+.sunlight
+	ld a, WEATHER_SUN
+	ld [wBattleWeather], a
+	ld de, ANIM_IN_SUN
+	ld a, 255
+	ld [wWeatherCount], a
+	call Call_PlayBattleAnim
+	ld hl, SunTurnedHarshText
 	call StdBattleTextbox
 	jp EmptyBattleTextbox
 
@@ -6229,9 +6242,15 @@ LoadEnemyMon:
 ; In a wild battle, we pull from the item slots in BaseData
 
 ; Force Item1
-; Used for Ho-Oh, Lugia and Snorlax encounters
+; Used for Snorlax encounter
 	ld a, [wBattleType]
 	cp BATTLETYPE_FORCEITEM
+	ld a, [wBaseItem1]
+	jr z, .UpdateItem
+
+; Used for Ho-Oh encounter
+	ld a, [wBattleType]
+	cp BATTLETYPE_HO_OH
 	ld a, [wBaseItem1]
 	jr z, .UpdateItem
 
@@ -6291,7 +6310,7 @@ LoadEnemyMon:
 	ld b, [hl]
 	inc hl
 	ld c, [hl]
-	jr .UpdateDVs
+	jp .UpdateDVs
 
 .WildDVs:
 ; Wild DVs
@@ -6342,28 +6361,70 @@ LoadEnemyMon:
 ; Forced shiny battle type
 ; Used by Red Gyarados at Lake of Rage
 	cp BATTLETYPE_FORCESHINY
-	jr nz, .GenerateDVs
-
-	ld b, ATKDEFDV_SHINY ; $ea
-	ld c, SPDSPCDV_SHINY ; $aa
-	jr .UpdateDVs
+	jr z, .ForceShiny
 
 .GenerateDVs:
-;checkswarm
+; Swarms have their own shiny calculations, and so wants
+; to be prioritized.
 	ld hl, wDailyFlags1
 	bit DAILYFLAGS1_SWARM_F, [hl]
 	jr z, .check_alt_swarm
 	farcall GenerateSwarmShiny
+	; Got DVs here, must skip normal shiny roll and other calculations
 	jr .next
 
 .check_alt_swarm
 	ld hl, wSwarmFlags
 	bit SWARMFLAGS_ALT_SWARM_F, [hl]
-	jr z, .skipshine
+	jr z, .check_charm
 	farcall GenerateAltSwarmShiny
+	; Skip; same here
 	jr .next
 
-.skipshine:
+; Normal shiny calculations etc.
+.check_charm
+; See if a SHINY CHARM is in the bag.
+	call CheckShinyCharm
+	jr c, .IncreaseShiny
+	; go to normal shiny roll
+	jr .normalcalc
+
+.IncreaseShiny:
+if DEF(_DEBUG)
+; Hold down B during the battle transition to force a shiny
+; with SHINY CHARM present.
+	ldh a, [hJoypadDown]
+	bit B_BUTTON_F, a
+	jr nz, .ForceShiny
+endc
+
+; Try to roll a shiny thrice in succession.
+; If I understand probability correctly, this SHOULD triple
+; the chances of rolling a shiny.
+	call BattleRandom
+	ld b, a
+	call BattleRandom
+	ld c, a
+	newfarcall CheckShininess
+; Got a shiny, use that
+	jr c, .UpdateDVs
+
+; Roll once more
+	call BattleRandom
+	ld b, a
+	call BattleRandom
+	ld c, a
+	newfarcall CheckShininess
+	jr c, .UpdateDVs
+
+; Roll a final time
+	jr .normalcalc
+
+.ForceShiny:
+	lb bc, ATKDEFDV_SHINY, SPDSPCDV_SHINY
+	jr .UpdateDVs
+
+.normalcalc:
 ; Generate new random DVs
 	call BattleRandom
 	ld b, a
@@ -6428,7 +6489,7 @@ LoadEnemyMon:
 ; Try again if length >= 1616 mm (i.e. if LOW(length) >= 4 inches)
 	ld a, [wMagikarpLength + 1]
 	cp 4
-	jr nc, .GenerateDVs
+	jp nc, .GenerateDVs
 
 ; 20% chance of skipping this check
 	call Random
@@ -6437,7 +6498,7 @@ LoadEnemyMon:
 ; Try again if length >= 1600 mm (i.e. if LOW(length) >= 3 inches)
 	ld a, [wMagikarpLength + 1]
 	cp 3
-	jr nc, .GenerateDVs
+	jp nc, .GenerateDVs
 
 .CheckMagikarpArea:
 	ld a, [wMapGroup]

@@ -1208,52 +1208,108 @@ PrepareToPlaceMoveData:
 PlaceMoveData:
 	xor a
 	ldh [hBGMapMode], a
-	hlcoord 0, 10
-	ld de, String_MoveType_Top
-	call PlaceString
-	hlcoord 0, 11
+	hlcoord 1, 12
 	ld de, String_MoveType_Bottom
 	call PlaceString
 	hlcoord 12, 12
 	ld de, String_MoveAtk
 	call PlaceString
+	hlcoord 12, 13
+	ld de, String_MoveAcc
+	call PlaceString
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 2, 12
+	hlcoord 2, 13
 	predef PrintMoveType
 	ld a, [wCurSpecies]
 	dec a
+	ld hl, Moves + MOVE_ACC
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	and a
+	jr z, .no_accuracy
+	ld [wTextDecimalByte], a
+; convert 0-255 to 0-100 range
+; x * 100
+	ldh [hMultiplicand + 2], a
+	xor a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+; x / 255 (?)
+	ld b, 4
+	ld a, 254
+	ldh [hDivisor], a
+	assert hProduct == hDividend
+	call Divide
+	ld de, hQuotient + 3
+	hlcoord 16, 13
+	lb bc, 1, 3
+	call PrintNum
+	jr .power
+
+.no_accuracy
+	ld de, String_MoveNoAccuracy
+	hlcoord 16, 13
+	call PlaceString
+
+.power
+	ld a, [wCurSpecies]
+
+	; Specifically these shouldn't have POWER displays
+	; The other method would be to change the move data
+	; themselves but I don't feel like checking for side
+	; effects for that one
+	;   see also move_reminder.asm
+	cp SONICBOOM
+	jr z, .no_power
+	cp DRAGON_RAGE
+	jr z, .no_power
+
+	dec a
+
 	ld hl, Moves + MOVE_POWER
 	ld bc, MOVE_LENGTH
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
 	cp 2
 	jr c, .no_power
 	ld [wTextDecimalByte], a
+	hlcoord 16, 12
 	ld de, wTextDecimalByte
 	lb bc, 1, 3
 	call PrintNum
 	jr .description
 
 .no_power
+	hlcoord 16, 12
 	ld de, String_MoveNoPower
 	call PlaceString
 
 .description
-	hlcoord 1, 14
-	predef PrintMoveDescription
+	hlcoord 1, 15
+	predef PrintMoveDescriptionToScratch
+	call MonMenu_PlaceString
+	call CloseSRAM
 	ld a, $1
 	ldh [hBGMapMode], a
 	ret
 
-String_MoveType_Top:
-	db "┌─────┐@"
+MonMenu_PlaceString:
+INCLUDE "engine/move_menu_print_text.asm"
+
 String_MoveType_Bottom:
-	db "│TYPE/└@"
+	db "TYPE/@"
 String_MoveAtk:
 	db "ATK/@"
+String_MoveAcc:
+	db "ACC/@"
+String_MoveNoAccuracy:
 String_MoveNoPower:
 	db "---@"
 

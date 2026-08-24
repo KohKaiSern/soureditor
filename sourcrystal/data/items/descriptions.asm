@@ -25,7 +25,7 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw TeruSama2Desc
+	dw TeruSama11Desc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
@@ -137,7 +137,7 @@ ItemDescriptions:
 	dw PassDesc
 	dw SafariBallDesc
 	dw LinkingCordDesc
-	dw TeruSama11Desc
+	dw ShinyCharmDesc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
@@ -354,8 +354,9 @@ WaterStoneDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
 
-TeruSama2Desc:
-	db   "?@"
+ShinyCharmDesc:
+	db   "Makes Shiny #-"
+	next "MON appear more.@"
 
 HPUpDesc:
 	db   "Raises the HP of"

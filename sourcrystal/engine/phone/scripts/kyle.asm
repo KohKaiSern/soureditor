@@ -1,7 +1,7 @@
-KylePhoneCalleeScript: ; You call Kyle
+KylePhoneCalleeScript: ; You call
 	gettrainername STRING_BUFFER_3, FISHER, KYLE1
 	checkflag ENGINE_KYLE_READY_FOR_REMATCH
-	iftrue .WaitingForBattle
+	iftrue KyleBattleReminder
 	farscall PhoneScript_AnswerPhone_Male
 	checkcode VAR_WEEKDAY
 	ifnotequal WEDNESDAY, .NotWednesday
@@ -11,24 +11,19 @@ KylePhoneCalleeScript: ; You call Kyle
 	iftrue KyleWantsBattle
 
 .NotWednesday:
-	farjump KyleFishingTips
+	farjump KyleFishingTipsScript
 
-.WaitingForBattle:
+KyleBattleReminder:
 	getlandmarkname STRING_BUFFER_5, LANDMARK_ROUTE_12
 	farjump KyleReminderScript
 
 KylePhoneCallerScript: ; Calls you
 	gettrainername STRING_BUFFER_3, FISHER, KYLE1
+	checkflag ENGINE_KYLE_READY_FOR_REMATCH
+	iftrue KyleBattleReminder
 	farscall PhoneScript_GreetPhone_Male
-	checkcode VAR_WEEKDAY
-	ifnotequal WEDNESDAY, .GenericKyleCall
-	checktime DAY
-	iftrue KyleWantsBattle
-	checktime EVE
-	iftrue KyleWantsBattle
-	jump .GenericKyleCall
-
-.GenericKyleCall:
+	farscall PhoneScript_Random2
+	ifequal 0, KyleWantsBattle
 	farjump Phone_GenericCall_Male
 
 KyleWantsBattle:

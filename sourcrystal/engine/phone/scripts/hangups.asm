@@ -8,118 +8,97 @@ IanInShortsScript:
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-WaltTypesOfPokemon:
+WaltTypesOfPokemonScript:
 	farwritetext WaltTypesOfPokemonText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-WaltNewTechnique:
+WaltNewTechniqueScript:
 	farwritetext WaltNewTechniqueText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-KriseMiniSkirt:
+KriseMiniSkirtScript:
 	farwritetext KriseMiniSkirtText
 	promptbutton
 	sjump PhoneScript_HangUpText_Female
 
-AlfredNoctowlTrade:
-	farwritetext AlfredNoctowlTradeText
+AlfredExtraordinaryBeingsScript:
+	farwritetext AlfredExtraordinaryBeingsText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-AlfredPokemonBlurb:
-	farwritetext AlfredPokemonBlurbText
+DougDadStoryScript:
+	farwritetext DougDadStoryText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-DougStory:
-	farwritetext DougStoryText
+RobCutFingerScript:
+	farwritetext RobCutFingerText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-DougBerryReminderScript:
-	farwritetext DougBerryReminderText
-	promptbutton
-	sjump PhoneScript_HangUpText_Male
-
-RobStory:
-	farwritetext RobStoryText
-	promptbutton
-	sjump PhoneScript_HangUpText_Male
-
-RobBerryReminderScript:
-	farwritetext RobBerryReminderText
-	promptbutton
-	sjump PhoneScript_HangUpText_Male
-
-KyleFishingTips:
+KyleFishingTipsScript:
 	farwritetext KyleFishingTipsText
 	promptbutton
 	sjump PhoneScript_KyleConnectionLostText
 
-TannerCamping:
-	farwritetext TannerCampingText
+KylerFishingTipsScript:
+	farwritetext KylerHookLegendaryTipsText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-TannerGiftReminderScript:
-	farwritetext TannerGiftReminderText
+TannerCampingDifferenceScript:
+	farwritetext TannerCampingDifferenceText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-KennyBaths:
+KennyBathsScript:
 	farwritetext KennyBathsText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-TimAndSueWildMon:
-	special RandomPhoneWildMon
-	farwritetext TimAndSueWildMonText
+TimAndSueThatsHowItIsScript:
+	farwritetext TimAndSueThatsHowItIsText
 	promptbutton
 	sjump PhoneScript_HangUpText_Female
 
-JamieSneezing:
+JamieSneezingScript:
 	farwritetext JamieSneezingText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-JamieGiftReminderScript:
-	farwritetext JamieGiftReminderText
-	promptbutton
-	sjump PhoneScript_HangUpText_Male
-
-TorinSchool:
+TorinSchoolScript:
 	farwritetext TorinSchoolText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-BillyResearch:
+BillyResearchScript:
 	farwritetext BillyResearchText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-HillaryCutestThing:
+HillaryCutestThingScript:
 	farwritetext HillaryCutestThingText
 	promptbutton
 	sjump PhoneScript_HangUpText_Female
 
-KayAndTiaQuiz:
+KayAndTiaQuizScript:
 	farwritetext KayAndTiaQuizText
 	promptbutton
 	sjump PhoneScript_HangUpText_Female
 
-AidenTalkOnBike:
+AidenTalkOnBikeScript:
 	farwritetext AidenTalkOnBikeText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-EoinBikerMons:
+EoinBikerMonsScript:
 	farwritetext EoinBikerMonsText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-ReeseBikers:
+ReeseBikersScript:
 	farwritetext ReeseBikersText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
@@ -161,6 +140,11 @@ JoeyHangUpScript:
 
 WadeNoBerriesScript:
 	farwritetext WadeNoBerriesText
+	promptbutton
+	sjump PhoneScript_HangUpText_Male
+
+RalphWonderfulFishingScript:
+	farwritetext RalphWonderfulFishingText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 

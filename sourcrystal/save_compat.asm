@@ -9,21 +9,15 @@
 ; 00 = v6.1
 ; 01 = v6.2
 ;      * Add the save file version.
+; 02 = vX.Y
+;      * wPhoneList is now a bit flag array.
 
-DEF GAME_VERSION EQU 1
+; When making a breaking change to the save format, the following
+; should be updated:
+DEF GAME_VERSION EQU 2
+INCLUDE "save_migrations/02.asm"
 
-; Anything between these lines should be the ones updated when making a breaking
-; change to the save format.
-; ------------------------------------------------------------------------------
-; version 00 -> 01: simply update the save version
-
-MigrateSaveFile:
-	jp ApplySaveVersion
-
-MigrateBackupSaveFile:
-	jp ApplyBackupSaveVersion
-
-;-------------------------------------------------------------------------------
+;------------------------------------------------------------------------------
 
 ApplySaveVersion:
 	ld a, BANK(sGameVersion)
@@ -53,6 +47,26 @@ ApplyBackupSaveVersion:
 ;    a = MIGRATION_*
 ;    f = may be affected
 SaveCanBeMigrated::
+; Saves that have not been tagged yet MAY have another value already written on it, due
+; to not being explicitly written.
+
+; If the save file has a random value written on it, AND the player is sure they are
+; updating from a version prior to the save tagging, the player may force a migration
+; to happen, like so:
+	push af
+		ldh a, [hJoypadDown] ; press RIGHT while selecting "CONTINUE"
+		and D_RIGHT
+		cp D_RIGHT
+		jr z, .force_migration
+	pop af
+
+; On some emulators, this value will be $ff. Assuming that's the majority of cases,
+; we can simply detect that here:
+	assert GAME_VERSION < $ff
+	cp -1
+	jr z, .yes
+
+; Otherwise, the check can proceed as normal.
 	sub a, GAME_VERSION
 	jr z, .no
 	jr nc, .unknown
@@ -70,6 +84,9 @@ SaveCanBeMigrated::
 .unknown ; save file version is greater, don't know what to do
 	ld a, MIGRATION_UNKNOWN
 	ret
+.force_migration
+	pop af
+	jr .yes
 
 InitiateBackupMigration:
 	ld a, BANK(sBackupGameVersion)
@@ -81,7 +98,7 @@ InitiateBackupMigration:
 	cp MIGRATION_CANNOT_MIGRATE
 	jr z, MigrationCannotMigrate
 	cp MIGRATION_SHOULD_MIGRATE
-	jr z, MigrateBackupSaveFile
+	jp z, MigrateBackupSaveFile
 	jr MigrationUnknown
 .done
 	call CloseSRAM
@@ -97,7 +114,7 @@ InitiateMigration:
 	cp MIGRATION_CANNOT_MIGRATE
 	jr z, MigrationCannotMigrate
 	cp MIGRATION_SHOULD_MIGRATE
-	jr z, MigrateSaveFile
+	jp z, MigrateSaveFile
 	jr MigrationUnknown
 .done
 	call CloseSRAM

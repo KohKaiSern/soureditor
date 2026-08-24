@@ -1,26 +1,56 @@
-IanReminderText:
-	text "Hey, <PLAY_G>!"
-	line "You comming over?"
+IanLearnedALotText:
+	text "You know, I've"
+	line "learned a lot from"
 
-	para "I'm itching to get"
-	line "better at battles!"
+	para "seeing you battle,"
+	line "and I've been"
 
-	para "Don't forget,"
+	para "practicing with my"
 	line "@"
-	text_from_ram wStringBuffer5
-	text "!"
+	text_ram wStringBuffer4 
+	text "."
 	done
 
-IanInShortsText:
-	text "Hey, you know why"
-	line "I'm always in"
-	cont "shorts?"
-	
-	para "It's because"
-	line "shorts are cool!"
+IanImprovedALotText:
+	text "Thanks to you,"
+	line "we've improved a"
+	cont "whole lot!"
 
-	para "Anyway, we should" 
-	line "battle again soon!"
+	para "But even though"
+	line "we are getting"
+
+	para "stronger, you"
+	line "probably are too…"
+	done
+
+IanLostAMonText:
+	text "I tried to catch a"
+	line "wild @"
+	text_ram wStringBuffer4
+	text "…"
+
+	para "We went down to"
+	line "the wire, but it"
+
+	para "ended up getting"
+	line "away!"
+
+	para "I should have had"
+	line "more # BALLS…"
+	done
+
+IanDefeatedMonText:
+	text "I used the tips I"
+	line "learned from you"
+
+	para "to take down a"
+	line "wild @"
+	text_ram wStringBuffer4
+	text "!"
+
+	para "Thanks to you, my"
+	line "#MON are much"
+	cont "stronger!"
 	done
 
 IanBattleRematchText:

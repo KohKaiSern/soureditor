@@ -600,7 +600,7 @@
     "description": "Prevents stat reduction.",
     "basePower": 0,
     "type": "ICE",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -820,7 +820,7 @@
     "description": "Raises the user's ATK and SP.ATK.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1062,7 +1062,7 @@
     "description": "Raises the user's ATTACK.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 40,
     "effectChance": 0
   },
@@ -1073,7 +1073,7 @@
     "description": "Sharply increases the user's SPEED.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1106,7 +1106,7 @@
     "description": "Switches POKéMON. Flees from wild.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1128,7 +1128,7 @@
     "description": "Copies a move used by the foe.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1150,7 +1150,7 @@
     "description": "Heightens evasiveness.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 15,
     "effectChance": 0
   },
@@ -1172,7 +1172,7 @@
     "description": "Raises the user's DEFENSE.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1183,7 +1183,7 @@
     "description": "Heightens evasiveness.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1216,7 +1216,7 @@
     "description": "Heightens the user's DEFENSE.",
     "basePower": 0,
     "type": "WATER",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 40,
     "effectChance": 0
   },
@@ -1227,7 +1227,7 @@
     "description": "Heightens the user's DEFENSE.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 40,
     "effectChance": 0
   },
@@ -1238,7 +1238,7 @@
     "description": "Sharply increases user's DEFENSE.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1249,7 +1249,7 @@
     "description": "Ups SP.DEF with a wall of light.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1260,7 +1260,7 @@
     "description": "Eliminates all stat changes.",
     "basePower": 0,
     "type": "ICE",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1271,7 +1271,7 @@
     "description": "Raises DEFENSE with a barrier.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1282,7 +1282,7 @@
     "description": "Raises the critical hit ratio.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1293,7 +1293,7 @@
     "description": "Waits 2-3 turns & hits back double.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1304,7 +1304,7 @@
     "description": "Randomly uses any POKéMON move.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1315,7 +1315,7 @@
     "description": "Counters with the same move.",
     "basePower": 0,
     "type": "FLYING",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1425,7 +1425,7 @@
     "description": "An attack that never misses.",
     "basePower": 60,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1469,7 +1469,7 @@
     "description": "Sharply raises the user's SP.DEF.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1491,7 +1491,7 @@
     "description": "Restores HP by 1/2 the user's max HP.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1590,7 +1590,7 @@
     "description": "The user assumes the foe's guise.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1656,7 +1656,7 @@
     "description": "Has no effect whatsoever.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 40,
     "effectChance": 0
   },
@@ -1667,7 +1667,7 @@
     "description": "Sharply raises the user's DEFENSE.",
     "basePower": 0,
     "type": "POISON",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -1722,7 +1722,7 @@
     "description": "Sleep for 2 turns to fully recover.",
     "basePower": 0,
     "type": "PSYCHIC",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1755,7 +1755,7 @@
     "description": "A move that raises the user's ATTACK.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1766,7 +1766,7 @@
     "description": "Change user's type to a move's type.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -1810,7 +1810,7 @@
     "description": "Makes a decoy with 1/4 user's max HP.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1821,7 +1821,7 @@
     "description": "Used only if all PP are exhausted.",
     "basePower": 50,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 1,
     "effectChance": 0
   },
@@ -1876,7 +1876,7 @@
     "description": "Ensures the next attack will hit.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -1920,7 +1920,7 @@
     "description": "Works differently for ghost-types.",
     "basePower": 0,
     "type": "CURSE_TYPE",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -1942,7 +1942,7 @@
     "description": "The user's type is made resistant.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 30,
     "effectChance": 0
   },
@@ -2008,7 +2008,7 @@
     "description": "Foils attack that turn. It may fail.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2041,7 +2041,7 @@
     "description": "An attack that never misses.",
     "basePower": 60,
     "type": "DARK",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -2063,7 +2063,7 @@
     "description": "Reduces own HP to maximize ATTACK.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2107,7 +2107,7 @@
     "description": "Hurts foes when they switch out.",
     "basePower": 0,
     "type": "GROUND",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -2129,7 +2129,7 @@
     "description": "Negates accuracy reduction moves.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 40,
     "effectChance": 0
   },
@@ -2140,7 +2140,7 @@
     "description": "The foe faints if the user does.",
     "basePower": 0,
     "type": "GHOST",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2151,7 +2151,7 @@
     "description": "Both user and foe faint in 3 turns.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2173,7 +2173,7 @@
     "description": "Evades attack that turn. It may fail.",
     "basePower": 0,
     "type": "FIGHTING",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2195,7 +2195,7 @@
     "description": "Ensures the next attack will hit.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2217,7 +2217,7 @@
     "description": "Inflicts damage every turn.",
     "basePower": 0,
     "type": "ROCK",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2239,7 +2239,7 @@
     "description": "Always leaves at least 1HP.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2294,7 +2294,7 @@
     "description": "Restores HP by 1/2 the max HP.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2338,7 +2338,7 @@
     "description": "Prevents fleeing or switching.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2360,7 +2360,7 @@
     "description": "Randomly attacks while asleep.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2371,7 +2371,7 @@
     "description": "Eliminates all status problems.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2415,7 +2415,7 @@
     "description": "Prevents all status problems.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 25,
     "effectChance": 0
   },
@@ -2426,7 +2426,7 @@
     "description": "Adds user & foe's HPs. Shares total.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 20,
     "effectChance": 0
   },
@@ -2492,7 +2492,7 @@
     "description": "Switches while keeping effects.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 40,
     "effectChance": 0
   },
@@ -2569,7 +2569,7 @@
     "description": "A 2nd-strike move that never misses.",
     "basePower": 70,
     "type": "FIGHTING",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },
@@ -2580,7 +2580,7 @@
     "description": "Restores HP (varies by time).",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2591,7 +2591,7 @@
     "description": "Restores HP (varies by time).",
     "basePower": 0,
     "type": "GRASS",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2602,7 +2602,7 @@
     "description": "Restores HP (varies by time).",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2646,7 +2646,7 @@
     "description": "Boosts water-type moves for 5 turns.",
     "basePower": 0,
     "type": "WATER",
-    "accuracy": 90,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2657,7 +2657,7 @@
     "description": "Boosts fire-type moves for 5 turns.",
     "basePower": 0,
     "type": "FIRE",
-    "accuracy": 90,
+    "accuracy": 0,
     "powerPoints": 5,
     "effectChance": 0
   },
@@ -2690,7 +2690,7 @@
     "description": "Copies the foe's stat changes.",
     "basePower": 0,
     "type": "NORMAL",
-    "accuracy": 100,
+    "accuracy": 0,
     "powerPoints": 10,
     "effectChance": 0
   },

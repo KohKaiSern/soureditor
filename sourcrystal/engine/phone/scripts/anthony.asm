@@ -1,7 +1,7 @@
 AnthonyPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, HIKER, ANTHONY2
 	checkflag ENGINE_ANTHONY_READY_FOR_REMATCH
-	iftrue .WantsBattle
+	iftrue AnthonyBattleReminder
 	farscall PhoneScript_AnswerPhone_Male
 	checkcode VAR_WEEKDAY
 	ifnotequal FRIDAY, .NotFriday
@@ -11,15 +11,17 @@ AnthonyPhoneCalleeScript:
 .NotFriday:
 	farsjump AnthonyHangUpScript
 
-.WantsBattle:
+AnthonyBattleReminder:
 	getlandmarkname STRING_BUFFER_5, LANDMARK_ROUTE_33
 	farsjump AnthonyReminderScript
 
 AnthonyPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, HIKER, ANTHONY2
+	checkflag ENGINE_ANTHONY_READY_FOR_REMATCH
+	iftrue AnthonyBattleReminder
 	farscall PhoneScript_GreetPhone_Male
 	farscall PhoneScript_Random2
-	ifequal 0, AnthonyWantsBattle
+	ifequal 0, AnthonyWantsBattle ; 33% chance for a rematch
 	farsjump Phone_GenericCall_Male
 
 AnthonyWantsBattle:

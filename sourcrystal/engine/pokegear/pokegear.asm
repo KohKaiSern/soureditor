@@ -1614,7 +1614,9 @@ PokegearPhone_Joypad:
 	ret
 
 .a
-	ld hl, wPhoneList
+	; This assumes we're still on the phone page, where sSortedPhoneContacts
+	; had already been populated
+	ld hl, sSortedPhoneContacts
 	ld a, [wPokegearPhoneScrollPosition]
 	ld e, a
 	ld d, 0
@@ -1623,9 +1625,14 @@ PokegearPhone_Joypad:
 	ld e, a
 	ld d, 0
 	add hl, de
+	xor a ; ld a, BANK(sSortedPhoneContacts)
+	call OpenSRAM
 	ld a, [hl]
+	; CloseSRAM saves flags so should be safe to use here.
+	call CloseSRAM
 	and a
 	ret z
+	; Index stored here starts with PHONE_00.
 	ld [wPokegearPhoneSelectedPerson], a
 	hlcoord 1, 4
 	ld a, [wPokegearPhoneCursorPosition]
@@ -1661,8 +1668,10 @@ PokegearPhone_MakePhoneCall:
 	ld hl, .GearEllipseText
 	call PrintText
 	call WaitSFX
+	; Index stored here starts with PHONE_00...
 	ld a, [wPokegearPhoneSelectedPerson]
 	ld b, a
+	; ...and this function assumes the index that starts with PHONE_00. All good
 	call MakePhoneCallFromPokegear
 	ld c, 10
 	call DelayFrames
@@ -1741,7 +1750,7 @@ PokegearPhone_GetDPad:
 .scroll_page_down
 	ld hl, wPokegearPhoneScrollPosition
 	ld a, [hl]
-	cp CONTACT_LIST_SIZE - PHONE_DISPLAY_HEIGHT
+	cp NUM_PHONE_CONTACTS - PHONE_DISPLAY_HEIGHT
 	ret nc
 	inc [hl]
 	jr .done_joypad_update_page
@@ -1787,10 +1796,13 @@ PokegearPhone_UpdateDisplayList:
 	inc hl
 	dec b
 	jr nz, .row
+	ld a, BANK(sSortedPhoneContacts)
+	call OpenSRAM
+	call SortPhoneContacts
 	ld a, [wPokegearPhoneScrollPosition]
 	ld e, a
 	ld d, 0
-	ld hl, wPhoneList
+	ld hl, sSortedPhoneContacts
 	add hl, de
 	xor a
 	ld [wPokegearPhoneDisplayPosition], a
@@ -1814,44 +1826,91 @@ PokegearPhone_UpdateDisplayList:
 	cp PHONE_DISPLAY_HEIGHT
 	jr c, .loop
 	call PokegearPhone_UpdateCursor
+	call CloseSRAM
 	ret
+
+; wPhoneList is now a bitflag to essentially allow for every phone contact
+; to be obtained. However, if we use it directly, it would end up being like
+; the Pokedex where there'd be gaps in between each contact.
+;
+; What this does is sort whatever is in there to sSortedPhoneContacts so that
+; the phone display can use it to display contacts without any gaps.
+;
+; SRAM must already be opened to BANK(sSortedPhoneContacts).
+SortPhoneContacts:
+	; First, clear the sorted phone contact list
+	ld hl, sSortedPhoneContacts
+	ld c, NUM_PHONE_CONTACTS
+	xor a ; PHONE_00
+.clear
+	ld [hli], a
+	dec c
+	jr nz, .clear
+	; Seems better to just reload `hl` than doing a push/pop ?
+	ld hl, sSortedPhoneContacts
+	
+	; Now we can start filling it in.
+	; `de` = phone contact index
+	ld de, 0
+	; The sorted list will be output beginning at `hl`.
+.keep_going
+	push de
+	push hl
+		ld hl, wPhoneList
+		ld b, CHECK_FLAG
+		call FlagAction
+	pop hl
+	pop de
+	; After FlagAction `c` will either be zero or some bitmasked
+	; flag which I don't really care about.
+	ld a, c
+	and a
+	; Since everything has been cleared to 00 prior, it should be safe
+	; for display. And there'll be no gaps in the contact list.
+	jr z, .skip
+	; `de` contains the phone contact index because
+	; we restored it.
+	assert NUM_PHONE_CONTACTS < $100
+
+	ld a, e
+	; in wPhoneList, flag 0 is the first phone constant after PHONE_00.
+	; However in sSortedPhoneContacts, PHONE_00 remains the "empty" signifier,
+	; so we need to adjust.
+	inc a
+	ld [hli], a
+.skip
+	inc e
+	ld a, e
+	cp NUM_PHONE_CONTACTS
+	; After this, `hl` will contain the last address of the sorted phone
+	; contacts list (plus 1) which can be used to count the number of contacts
+	; that we have?
+	ret z
+	jr .keep_going
 
 PokegearPhone_DeletePhoneNumber:
-	ld hl, wPhoneList
-	ld a, [wPokegearPhoneScrollPosition]
+	; Rather than calculating the contact's position again, we just
+	; use what's been selected instead.
+	ld a, [wPokegearPhoneSelectedPerson]
+	; Index here starts from PHONE_00, while bit flags does not start from
+	; PHONE_00, so adjust.
+	dec a
+	; Assuming this is called from a valid contact selection, no
+	; zero check is done here.
 	ld e, a
 	ld d, 0
-	add hl, de
-	ld a, [wPokegearPhoneCursorPosition]
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld [hl], 0
+	ld b, RESET_FLAG
 	ld hl, wPhoneList
-	ld c, CONTACT_LIST_SIZE
-.loop
-	ld a, [hli]
-	and a
-	jr nz, .skip
-	ld a, [hld]
-	ld [hli], a
-	ld [hl], 0
-.skip
-	dec c
-	jr nz, .loop
-	ret
+	jp FlagAction
+	; No need to re-sort the contact list here, the display update function
+	; should handle that
 
 PokegearPhoneContactSubmenu:
-	ld hl, wPhoneList
-	ld a, [wPokegearPhoneScrollPosition]
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld a, [wPokegearPhoneCursorPosition]
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld c, [hl]
+	; Index here starts with PHONE_00
+	ld a, [wPokegearPhoneSelectedPerson]
+	ld c, a
+	; This function assumes an index starting from PHONE_00
+	; so again, all good
 	farcall CheckCanDeletePhoneNumber
 	ld a, c
 	and a

@@ -136,7 +136,7 @@ ItemNames::
 	li "PASS"
 	li "SAFARI BALL"
 	li "LINKING CORD"
-	li "TERU-SAMA"
+	li "SHINY CHARM"
 	li "CHARCOAL"
 	li "BERRY JUICE"
 	li "SCOPE LENS"

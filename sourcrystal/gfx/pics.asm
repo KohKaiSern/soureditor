@@ -34,6 +34,7 @@ ChinchouFrontpic:    INCBIN "gfx/pokemon/chinchou/front.animated.2bpp.lz"
 PoliwrathFrontpic:   INCBIN "gfx/pokemon/poliwrath/front.animated.2bpp.lz"
 UnownDBackpic:       INCBIN "gfx/pokemon/unown_d/back.2bpp.lz"
 PiloswineBackpic:    INCBIN "gfx/pokemon/piloswine/back.2bpp.lz"
+ArbokBackpic:        INCBIN "gfx/pokemon/arbok/back.2bpp.lz"
 
 
 SECTION "Pics 2", ROMX
@@ -113,7 +114,6 @@ ElectabuzzFrontpic:  INCBIN "gfx/pokemon/electabuzz/front.animated.2bpp.lz"
 MantineFrontpic:     INCBIN "gfx/pokemon/mantine/front.animated.2bpp.lz"
 LickitungFrontpic:   INCBIN "gfx/pokemon/lickitung/front.animated.2bpp.lz"
 KingdraFrontpic:     INCBIN "gfx/pokemon/kingdra/front.animated.2bpp.lz"
-CharmeleonFrontpic:  INCBIN "gfx/pokemon/charmeleon/front.animated.2bpp.lz"
 KadabraFrontpic:     INCBIN "gfx/pokemon/kadabra/front.animated.2bpp.lz"
 ExeggutorFrontpic:   INCBIN "gfx/pokemon/exeggutor/front.animated.2bpp.lz"
 GastlyFrontpic:      INCBIN "gfx/pokemon/gastly/front.animated.2bpp.lz"
@@ -575,7 +575,6 @@ LugiaBackpic:        INCBIN "gfx/pokemon/lugia/back.2bpp.lz"
 PrycePic:            INCBIN "gfx/trainers/pryce.2bpp.lz"
 BrockPic:            INCBIN "gfx/trainers/brock.2bpp.lz"
 UnownGFrontpic:      INCBIN "gfx/pokemon/unown_g/front.animated.2bpp.lz"
-ArbokBackpic:        INCBIN "gfx/pokemon/arbok/back.2bpp.lz"
 PolitoedBackpic:     INCBIN "gfx/pokemon/politoed/back.2bpp.lz"
 DragoniteBackpic:    INCBIN "gfx/pokemon/dragonite/back.2bpp.lz"
 HitmonleeBackpic:    INCBIN "gfx/pokemon/hitmonlee/back.2bpp.lz"
@@ -685,8 +684,6 @@ GrimerFrontpic:      INCBIN "gfx/pokemon/grimer/front.animated.2bpp.lz"
 
 SECTION "Pics 19", ROMX
 
-; Seems to be an accidental copy of the previous bank
-
 PidgeottoFrontpic:   INCBIN "gfx/pokemon/pidgeotto/front.animated.2bpp.lz"
 MagnetonBackpic:     INCBIN "gfx/pokemon/magneton/back.2bpp.lz"
 OctilleryBackpic:    INCBIN "gfx/pokemon/octillery/back.2bpp.lz"
@@ -722,6 +719,7 @@ HoundoomFrontpic:    INCBIN "gfx/pokemon/houndoom/front.animated.2bpp.lz"
 HoOhFrontpic:        INCBIN "gfx/pokemon/ho_oh/front.animated.2bpp.lz"
 SlowbroFrontpic:     INCBIN "gfx/pokemon/slowbro/front.animated.2bpp.lz"
 JynxFrontpic:        INCBIN "gfx/pokemon/jynx/front.animated.2bpp.lz"
+CharmeleonFrontpic:  INCBIN "gfx/pokemon/charmeleon/front.animated.2bpp.lz"
 
 
 SECTION "Pics 21", ROMX

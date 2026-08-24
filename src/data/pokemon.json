@@ -2014,15 +2014,15 @@
     "learnsets": {
       "level": [
         {
-          "name": "GUST",
+          "name": "CONFUSION",
           "level": 1
         },
         {
-          "name": "GUST",
+          "name": "CONFUSION",
           "level": 10
         },
         {
-          "name": "CONFUSION",
+          "name": "SUPERSONIC",
           "level": 11
         },
         {
@@ -2038,23 +2038,23 @@
           "level": 13
         },
         {
-          "name": "PSYBEAM",
+          "name": "GUST",
           "level": 16
         },
         {
-          "name": "SUPERSONIC",
+          "name": "WHIRLWIND",
           "level": 20
         },
         {
-          "name": "WHIRLWIND",
+          "name": "PSYBEAM",
           "level": 24
         },
         {
-          "name": "CHARM",
+          "name": "WING ATTACK",
           "level": 29
         },
         {
-          "name": "WING ATTACK",
+          "name": "CHARM",
           "level": 34
         },
         {
@@ -2293,15 +2293,15 @@
     "learnsets": {
       "level": [
         {
-          "name": "TWINEEDLE",
+          "name": "FURY ATTACK",
           "level": 1
         },
         {
-          "name": "TWINEEDLE",
+          "name": "FURY ATTACK",
           "level": 10
         },
         {
-          "name": "FURY ATTACK",
+          "name": "FOCUS ENERGY",
           "level": 11
         },
         {
@@ -2309,27 +2309,27 @@
           "level": 13
         },
         {
-          "name": "PURSUIT",
+          "name": "TWINEEDLE",
           "level": 16
         },
         {
-          "name": "FOCUS ENERGY",
+          "name": "PURSUIT",
           "level": 20
         },
         {
-          "name": "PIN MISSILE",
+          "name": "AGILITY",
           "level": 25
         },
         {
-          "name": "FEINT ATTACK",
+          "name": "PIN MISSILE",
           "level": 30
         },
         {
-          "name": "SLUDGE BOMB",
+          "name": "FEINT ATTACK",
           "level": 35
         },
         {
-          "name": "AGILITY",
+          "name": "SLUDGE BOMB",
           "level": 40
         },
         {
@@ -13380,44 +13380,44 @@
           "level": 1
         },
         {
-          "name": "WATER GUN",
+          "name": "CONSTRICT",
           "level": 1
         },
         {
-          "name": "CONSTRICT",
+          "name": "WATER GUN",
           "level": 6
         },
         {
           "name": "SUPERSONIC",
-          "level": 12
+          "level": 10
         },
         {
           "name": "ACID",
-          "level": 17
-        },
-        {
-          "name": "BUBBLEBEAM",
-          "level": 23
+          "level": 16
         },
         {
           "name": "WRAP",
-          "level": 28
+          "level": 21
+        },
+        {
+          "name": "BUBBLEBEAM",
+          "level": 25
         },
         {
           "name": "BARRIER",
-          "level": 34
+          "level": 31
         },
         {
           "name": "SLUDGE BOMB",
-          "level": 39
+          "level": 36
         },
         {
           "name": "SCREECH",
-          "level": 45
+          "level": 40
         },
         {
           "name": "HYDRO PUMP",
-          "level": 50
+          "level": 46
         }
       ],
       "egg": [
@@ -13573,11 +13573,11 @@
           "level": 1
         },
         {
-          "name": "WATER GUN",
+          "name": "CONSTRICT",
           "level": 1
         },
         {
-          "name": "CONSTRICT",
+          "name": "WATER GUN",
           "level": 1
         },
         {
@@ -13586,31 +13586,31 @@
         },
         {
           "name": "ACID",
-          "level": 17
-        },
-        {
-          "name": "BUBBLEBEAM",
-          "level": 23
+          "level": 16
         },
         {
           "name": "WRAP",
-          "level": 28
+          "level": 21
+        },
+        {
+          "name": "BUBBLEBEAM",
+          "level": 25
         },
         {
           "name": "BARRIER",
-          "level": 37
+          "level": 33
         },
         {
           "name": "SLUDGE BOMB",
-          "level": 43
+          "level": 40
         },
         {
           "name": "SCREECH",
-          "level": 50
+          "level": 46
         },
         {
           "name": "HYDRO PUMP",
-          "level": 56
+          "level": 54
         }
       ],
       "egg": [],
@@ -20825,7 +20825,7 @@
         },
         {
           "name": "SMOG",
-          "level": 5
+          "level": 6
         },
         {
           "name": "SMOKESCREEN",
@@ -20833,7 +20833,7 @@
         },
         {
           "name": "FEINT ATTACK",
-          "level": 14
+          "level": 15
         },
         {
           "name": "SLUDGE",
@@ -20841,7 +20841,7 @@
         },
         {
           "name": "SELFDESTRUCT",
-          "level": 23
+          "level": 24
         },
         {
           "name": "HAZE",
@@ -20849,7 +20849,7 @@
         },
         {
           "name": "TOXIC",
-          "level": 32
+          "level": 33
         },
         {
           "name": "SLUDGE BOMB",
@@ -20857,7 +20857,7 @@
         },
         {
           "name": "EXPLOSION",
-          "level": 41
+          "level": 42
         },
         {
           "name": "DESTINY BOND",
@@ -21026,7 +21026,7 @@
         },
         {
           "name": "FEINT ATTACK",
-          "level": 14
+          "level": 15
         },
         {
           "name": "SLUDGE",
@@ -21034,7 +21034,7 @@
         },
         {
           "name": "SELFDESTRUCT",
-          "level": 23
+          "level": 24
         },
         {
           "name": "HAZE",
@@ -21042,7 +21042,7 @@
         },
         {
           "name": "TOXIC",
-          "level": 32
+          "level": 33
         },
         {
           "name": "SLUDGE BOMB",
@@ -32607,11 +32607,11 @@
           "level": 27
         },
         {
-          "name": "AGILITY",
+          "name": "PIN MISSILE",
           "level": 31
         },
         {
-          "name": "PIN MISSILE",
+          "name": "AGILITY",
           "level": 34
         },
         {
@@ -32759,6 +32759,10 @@
     "learnsets": {
       "level": [
         {
+          "name": "FOCUS ENERGY",
+          "level": 1
+        },
+        {
           "name": "POISON STING",
           "level": 1
         },
@@ -32799,11 +32803,11 @@
           "level": 30
         },
         {
-          "name": "AGILITY",
+          "name": "PIN MISSILE",
           "level": 34
         },
         {
-          "name": "PIN MISSILE",
+          "name": "AGILITY",
           "level": 39
         },
         {
@@ -33110,48 +33114,44 @@
           "level": 1
         },
         {
-          "name": "SUPERSONIC",
+          "name": "THUNDER WAVE",
           "level": 1
         },
         {
-          "name": "THUNDER WAVE",
+          "name": "SUPERSONIC",
           "level": 6
         },
         {
-          "name": "THUNDERSHOCK",
-          "level": 10
-        },
-        {
           "name": "WATER GUN",
-          "level": 14
-        },
-        {
-          "name": "CONFUSE RAY",
-          "level": 19
-        },
-        {
-          "name": "SPARK",
-          "level": 23
-        },
-        {
-          "name": "BUBBLEBEAM",
-          "level": 27
+          "level": 12
         },
         {
           "name": "FLAIL",
-          "level": 32
+          "level": 17
+        },
+        {
+          "name": "SPARK",
+          "level": 22
+        },
+        {
+          "name": "BUBBLEBEAM",
+          "level": 28
+        },
+        {
+          "name": "CONFUSE RAY",
+          "level": 33
         },
         {
           "name": "TAKE DOWN",
-          "level": 36
+          "level": 38
         },
         {
           "name": "THUNDERBOLT",
-          "level": 40
+          "level": 44
         },
         {
           "name": "HYDRO PUMP",
-          "level": 45
+          "level": 49
         }
       ],
       "egg": [
@@ -33301,48 +33301,44 @@
           "level": 1
         },
         {
-          "name": "SUPERSONIC",
-          "level": 1
-        },
-        {
           "name": "THUNDER WAVE",
           "level": 1
         },
         {
-          "name": "THUNDERSHOCK",
-          "level": 10
+          "name": "SUPERSONIC",
+          "level": 1
         },
         {
           "name": "WATER GUN",
-          "level": 14
+          "level": 1
         },
         {
-          "name": "CONFUSE RAY",
-          "level": 19
+          "name": "FLAIL",
+          "level": 17
         },
         {
           "name": "SPARK",
-          "level": 23
+          "level": 22
         },
         {
           "name": "BUBBLEBEAM",
           "level": 29
         },
         {
-          "name": "FLAIL",
-          "level": 35
+          "name": "CONFUSE RAY",
+          "level": 36
         },
         {
           "name": "TAKE DOWN",
-          "level": 41
+          "level": 43
         },
         {
           "name": "THUNDERBOLT",
-          "level": 47
+          "level": 50
         },
         {
           "name": "HYDRO PUMP",
-          "level": 53
+          "level": 57
         }
       ],
       "egg": [],
@@ -37866,27 +37862,31 @@
         },
         {
           "name": "SLAM",
-          "level": 15
+          "level": 16
         },
         {
-          "name": "RAIN DANCE",
+          "name": "WHIRLPOOL",
           "level": 21
         },
         {
+          "name": "RAIN DANCE",
+          "level": 25
+        },
+        {
           "name": "AMNESIA",
-          "level": 26
-        },
-        {
-          "name": "SURF",
-          "level": 29
-        },
-        {
-          "name": "TOXIC",
-          "level": 35
+          "level": 30
         },
         {
           "name": "EARTHQUAKE",
-          "level": 40
+          "level": 34
+        },
+        {
+          "name": "TOXIC",
+          "level": 39
+        },
+        {
+          "name": "HYDRO PUMP",
+          "level": 43
         }
       ],
       "egg": [
@@ -38086,27 +38086,31 @@
         },
         {
           "name": "SLAM",
-          "level": 15
+          "level": 16
+        },
+        {
+          "name": "WHIRLPOOL",
+          "level": 22
         },
         {
           "name": "RAIN DANCE",
-          "level": 21
-        },
-        {
-          "name": "AMNESIA",
           "level": 27
         },
         {
-          "name": "SURF",
-          "level": 32
-        },
-        {
-          "name": "TOXIC",
-          "level": 39
+          "name": "AMNESIA",
+          "level": 33
         },
         {
           "name": "EARTHQUAKE",
-          "level": 47
+          "level": 38
+        },
+        {
+          "name": "TOXIC",
+          "level": 44
+        },
+        {
+          "name": "HYDRO PUMP",
+          "level": 49
         }
       ],
       "egg": [],
@@ -38707,11 +38711,11 @@
           "level": 21
         },
         {
-          "name": "MEAN LOOK",
+          "name": "FEINT ATTACK",
           "level": 25
         },
         {
-          "name": "FEINT ATTACK",
+          "name": "MEAN LOOK",
           "level": 31
         },
         {
@@ -38723,8 +38727,12 @@
           "level": 41
         },
         {
-          "name": "PERISH SONG",
+          "name": "BEAT UP",
           "level": 45
+        },
+        {
+          "name": "PERISH SONG",
+          "level": 51
         }
       ],
       "egg": [
@@ -44672,9 +44680,6 @@
         }
       ],
       "egg": [
-        {
-          "name": "BEAT UP"
-        },
         {
           "name": "COUNTER"
         },

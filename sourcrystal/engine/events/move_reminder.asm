@@ -207,6 +207,13 @@ ChooseMoveToLearn:
 	lb bc,  9, 18
 	call TextboxBorder
 
+	hlcoord 2, 1
+	ld [hl], " "
+	inc hl
+	ld [hl], " "
+	inc hl
+	ld [hl], " "
+
 	ld de, FontBattleExtra + 14 tiles
 	ld hl, vTiles2 tile $6e
 	lb bc, BANK(FontBattleExtra), 1
@@ -221,10 +228,23 @@ ChooseMoveToLearn:
 	hlcoord  5, 1
 	call PlaceString
 
+	farcall ClearSpriteAnims2
+	ld a, [wCurPartyMon]
+	ld e, a
+	ld d, 0
+	ld hl, wPartySpecies
+	add hl, de
+	ld a, [hl]
+	ld [wTempIconSpecies], a
+	ld e, MONICON_MOVES
+	farcall LoadMenuMonIcon
+
 	push bc
 	farcall CopyMonToTempMon
 	pop hl
 	call PrintLevel
+
+	farcall PlaySpriteAnimations
 
 	call ScrollingMenu
 	ld a, [wMenuJoypad]
@@ -326,28 +346,37 @@ ChooseMoveToLearn:
 	ret z
 	dec a
 	ld [wCurSpecies], a
-	hlcoord 1, 14
-	predef PrintMoveDescription
+	hlcoord 1, 15
+	predef PrintMoveDescriptionToScratch
+	call MoveReminder_PlaceString
+	call CloseSRAM
 
 .print_move_type
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 2, 12
+	hlcoord 2, 13
 	predef PrintMoveType
 
 .print_move_stat_strings
-	hlcoord 0, 10
-	ld de, MoveTypeTop
-	call PlaceString
-	hlcoord 0, 11
+	hlcoord 1, 12
 	ld de, MoveType
 	call PlaceString
 	hlcoord 12, 12
 	ld de, MoveAttack
 	call PlaceString
+	hlcoord 12, 13
+	ld de, MoveAccuracy
+	call PlaceString
 
 .print_move_attack
 	ld a, [wMenuSelection]
+
+	; see also mon_menu.asm
+	cp SONICBOOM
+	jr z, .print_move_no_attack
+	cp DRAGON_RAGE
+	jr z, .print_move_no_attack
+
 	ld bc, MOVE_LENGTH
 	ld hl, (Moves + MOVE_POWER) - MOVE_LENGTH
 	call AddNTimes
@@ -359,23 +388,60 @@ ChooseMoveToLearn:
 	ld de, wBuffer1
 	lb bc, 1, 3
 	hlcoord 16, 12
-	jp PrintNum
+	call PrintNum
+	jr .print_move_accuracy
 
 .print_move_no_attack
 	hlcoord 16, 12
 	ld de, MoveNoAttack
 	ld bc, 3
+	call PlaceString
+
+.print_move_accuracy
+	ld a, [wMenuSelection]
+	ld bc, MOVE_LENGTH
+	ld hl, (Moves + MOVE_ACC) - MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	and a
+	jr z, .no_accuracy
+; see also mon_menu.asm
+	ldh [hMultiplicand + 2], a
+	xor a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+	ld b, 4
+	ld a, 254
+	ldh [hDivisor], a
+	assert hProduct == hDividend
+	call Divide
+	ld de, hQuotient + 3
+	hlcoord 16, 13
+	lb bc, 1, 3
+	jp PrintNum
+
+.no_accuracy
+	ld de, MoveNoAccuracy
+	hlcoord 16, 13
 	jp PlaceString
 
-MoveTypeTop:
-	db "┌─────┐@"
+MoveReminder_PlaceString:
+INCLUDE "engine/move_menu_print_text.asm"
 
 MoveType:
-	db "│TYPE/└@"
+	db "TYPE/@"
 
 MoveAttack:
 	db "ATK/@"
 
+MoveAccuracy:
+	db "ACC/@"
+
+MoveNoAccuracy:
 MoveNoAttack:
 	db "---@"
 

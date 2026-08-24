@@ -959,11 +959,11 @@
     "category": "ITEM"
   },
   {
-    "id": "ITEM_89",
+    "id": "SHINY_CHARM",
     "index": 137,
-    "name": "TERU-SAMA",
-    "description": "?",
-    "category": "ITEM"
+    "name": "SHINY CHARM",
+    "description": "Makes Shiny POKéMON appear more.",
+    "category": "KEY_ITEM"
   },
   {
     "id": "CHARCOAL",

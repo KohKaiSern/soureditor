@@ -27,7 +27,7 @@ Route13Fruittree:
 	endcallback
 
 TrainerCoupleTimandSue1:
-	trainer COUPLE, TIMANDSUE1, EVENT_BEAT_COUPLE_TIMANDSUE, CoupleTimandSueSeenText, CoupleTimandSueBeatenText, 0, .Script
+	trainer COUPLE, TIMANDSUE1, EVENT_BEAT_COUPLE_TIMANDSUE, CoupleTimandSueSeenText1, CoupleTimandSueBeatenText, 0, .Script
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_COUPLE_TIM_AND_SUE
@@ -68,7 +68,7 @@ TimAndSueWantsBattle:
 	end
 
 TrainerCoupleTimandSue2:
-	trainer COUPLE, TIMANDSUE1, EVENT_BEAT_COUPLE_TIMANDSUE, CoupleTimandSueSeenText, CoupleTimandSueBeatenText, 0, .Script
+	trainer COUPLE, TIMANDSUE1, EVENT_BEAT_COUPLE_TIMANDSUE, CoupleTimandSueSeenText2, CoupleTimandSueBeatenText, 0, .Script
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_COUPLE_TIM_AND_SUE
@@ -169,8 +169,6 @@ TrainerCamperTanner:
 	opentext
 	checkflag ENGINE_TANNER_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkflag ENGINE_TANNER_HAS_SUN_STONE
-	iftrue .GiveSunStone
 	checkcellnum PHONE_CAMPER_TANNER
 	iftrue .TannerDefeated
 	checkevent EVENT_TANNER_ASKED_FOR_PHONE_NUMBER
@@ -216,25 +214,6 @@ TrainerCamperTanner:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_TANNER_READY_FOR_REMATCH
-	end
-
-.GiveSunStone:
-	scall .Gift
-	verbosegiveitem SUN_STONE
-	iffalse .BagFull
-	clearflag ENGINE_TANNER_HAS_SUN_STONE
-	setevent ENGINE_TANNER_GAVE_SUN_STONE
-	jump Route13NumberAccepted
-
-.BagFull:
-	jump .PackFull
-
-.Gift:
-	jumpstd GiftMScript
-	end
-
-.PackFull:
-	jumpstd PackFullMScript
 	end
 
 .TannerDefeated:
@@ -478,7 +457,7 @@ PicnickerGingerAfterBattleText:
 	cont "through whistling!"
 	done
 
-CoupleTimandSueSeenText:
+CoupleTimandSueSeenText1:
 	text "TIM: I'll give you"
 	line "a little hint."
 
@@ -487,8 +466,10 @@ CoupleTimandSueSeenText:
 
 	para "stronger than"
 	line "I am?"
+	done
 
-	para "SUE: Women who"
+CoupleTimandSueSeenText2:
+	text "SUE: Women who"
 	line "don't take love"
 
 	para "seriously and who"

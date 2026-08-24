@@ -51,6 +51,7 @@
 	const PHONE_BIKER_AIDEN
 	const PHONE_BIKER_EOIN
 	const PHONE_BIKER_REESE
+	const PHONE_FISHER_KYLER
 	const PHONE_BUENA
 DEF NUM_PHONE_CONTACTS EQU const_value - 1
 
@@ -82,5 +83,5 @@ DEF PHONE_CONTACT_SCRIPT2_BANK   rb
 DEF PHONE_CONTACT_SCRIPT2_ADDR   rw
 DEF PHONE_CONTACT_SIZE EQU _RS
 
-; maximum number of pokegear contacts
-DEF CONTACT_LIST_SIZE EQU 10
+; SC: max pokegear contacts are now just NUM_PHONE_CONTACTS
+;     due to the phone list being a bit flag now.

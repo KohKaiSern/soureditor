@@ -56,6 +56,7 @@ CGBLayoutJumptable:
 	dw _CGB_TradeTube
 	dw _CGB_TrainerOrMonFrontpicPals
 	dw _CGB_MysteryGift
+	dw _CGB_PokedexFormPage
 	assert_table_length NUM_SCGB_LAYOUTS
 
 _CGB_BattleGrayscale:
@@ -339,6 +340,11 @@ _CGB_Pokedex:
 	ldh [hCGBPalUpdate], a
 	ret
 
+_CGB_PokedexFormPage:
+	; Section 'bank2' grew too big
+	newfarcall __CGB_PokedexFormPage
+	ret
+
 PokedexQuestionMarkPalette:
 INCLUDE "gfx/pokedex/question_mark.pal"
 
@@ -453,11 +459,11 @@ _CGB_PokedexUnownMode:
 	ld a, PREDEFPAL_POKEDEX
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
-	ld a, [wCurPartySpecies]
+	ld a, UNOWN
 	call GetMonPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
 	call WipeAttrmap
-	hlcoord 7, 5, wAttrmap
+	hlcoord 1, 2, wAttrmap
 	lb bc, 7, 7
 	ld a, $1 ; mon palette
 	call FillBoxCGB

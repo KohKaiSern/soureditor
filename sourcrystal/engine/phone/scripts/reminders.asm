@@ -70,6 +70,10 @@ IanReminderScript:
 	farwritetext IanReminderText
 	end
 
+DougRematchAndBerryReminderScript:
+	farwritetext DougRematchAndBerryReminderText
+	end
+
 JackReminderScript:
 	farwritetext JackReminderText
 	end
@@ -102,6 +106,10 @@ KyleReminderScript:
 	farwritetext KyleReminderText
 	end
 
+KylerReminderScript:
+	farwritetext KylerReminderText
+	end
+
 LizReminderScript:
 	farwritetext LizReminderText
 	end
@@ -122,8 +130,8 @@ ReeseReminderScript:
 	farwritetext ReeseReminderText
 	end
 
-RobReminderScript:
-	farwritetext RobReminderText
+RobRematchAndBerryReminderScript:
+	farwritetext RobRematchAndBerryReminderText
 	end
 
 TannerReminderScript:

@@ -1,94 +1,70 @@
+; `c` = Which contact to add. Index starts with PHONE_00.
 AddPhoneNumber::
-	call _CheckCellNum
-	jr c, .cant_add
-	call Phone_FindOpenSlot
-	jr nc, .cant_add
-	ld [hl], c
+	push bc
+		call _CheckCellNum
+	pop bc
+	jr c, .already_exists
+	push de
+		ld e, c
+		dec e
+		ld d, 0
+		ld b, SET_FLAG
+		push hl
+			ld hl, wPhoneList
+			call FlagAction
+		pop hl
+	pop de
 	xor a
 	ret
 
-.cant_add
+.already_exists
 	scf
 	ret
 
+; `c` = Which contact to delete. Index starts with PHONE_00.
 DelCellNum::
-	call _CheckCellNum
+	push bc
+		call _CheckCellNum
+	pop bc
 	jr nc, .not_in_list
+	push de
+		ld e, c
+		dec e
+		ld d, 0
+		ld b, RESET_FLAG
+		push hl
+			ld hl, wPhoneList
+			call FlagAction
+		pop hl
+	pop de
 	xor a
-	ld [hl], a
 	ret
 
 .not_in_list
 	scf
 	ret
 
+; `c` = Which contact to check
+; It's using the index that starts with PHONE_00, I think.
+;
+; Returns carry if the contact is in your list.
 CheckCellNum::
-	jp _CheckCellNum ; useless
-
 _CheckCellNum:
-	ld hl, wPhoneList
-	ld b, CONTACT_LIST_SIZE
-.loop
-	ld a, [hli]
-	cp c
-	jr z, .got_it
-	dec b
-	jr nz, .loop
-	xor a
-	ret
-
-.got_it
-	dec hl
-	scf
-	ret
-
-Phone_FindOpenSlot:
-	call GetRemainingSpaceInPhoneList
-	ld b, a
-	ld hl, wPhoneList
-.loop
-	ld a, [hli]
-	and a
-	jr z, .FoundOpenSpace
-	dec b
-	jr nz, .loop
-	xor a
-	ret
-
-.FoundOpenSpace:
-	dec hl
-	scf
-	ret
-
-GetRemainingSpaceInPhoneList:
-	xor a
-	ld [wRegisteredPhoneNumbers], a
-	ld hl, PermanentNumbers
-.loop
-	ld a, [hli]
-	cp -1
-	jr z, .done
-	cp c
-	jr z, .continue
-
-	push bc
+	push de
 	push hl
-	ld c, a
-	call _CheckCellNum
-	jr c, .permanent
-	ld hl, wRegisteredPhoneNumbers
-	inc [hl]
-.permanent
+		ld hl, wPhoneList
+		ld e, c
+		dec e
+		ld d, 0
+		ld b, CHECK_FLAG
+		call FlagAction
 	pop hl
-	pop bc
-
-.continue
-	jr .loop
-
-.done
-	ld a, CONTACT_LIST_SIZE
-	ld hl, wRegisteredPhoneNumbers
-	sub [hl]
+	pop de
+	ld a, c
+	and a
+; not found, so carry is not set
+	ret z
+	scf
 	ret
 
 INCLUDE "data/phone/permanent_numbers.asm"
@@ -126,7 +102,6 @@ CheckPhoneCall::
 	and a
 	jr nz, .no_call
 
-	call GetAvailableCallers
 	call ChooseRandomCaller
 	jr nc, .no_call
 
@@ -162,80 +137,78 @@ CheckPhoneContactTimeOfDay:
 	pop hl
 	ret
 
+; Sets carry if we have someone calling us.
 ChooseRandomCaller:
-; If no one is available to call, don't return anything.
-	ld a, [wNumAvailableCallers]
-	and a
-	jr z, .NothingToSample
-
-; Store the number of available callers in c.
-	ld c, a
-; Sample a random number between 0 and 31.
-	call Random
-	ldh a, [hRandomAdd]
-	swap a
-	and $1f
-; Compute that number modulo the number of available callers.
-	call SimpleDivide
-; Return the caller ID you just sampled.
-	ld c, a
-	ld b, 0
-	ld hl, wAvailableCallers
-	add hl, bc
-	ld a, [hl]
-	scf
-	ret
-
-.NothingToSample:
-	xor a
-	ret
-
-GetAvailableCallers:
+; Check the time and save it for the "should call" check
+; later on.
 	farcall CheckTime
 	ld a, c
 	ld [wCheckedTime], a
-	ld hl, wNumAvailableCallers
-	ld bc, CONTACT_LIST_SIZE + 1
-	xor a
-	call ByteFill
-	ld de, wPhoneList
-	ld a, CONTACT_LIST_SIZE
 
-.loop
-	ld [wPhoneListIndex], a
-	ld a, [de]
-	and a
-	jr z, .not_good_for_call
+; Get the list of all contacts we have.
+	ld a, BANK(sSortedPhoneContacts)
+	call OpenSRAM
+	call SortPhoneContacts
+; Right now sSortedPhoneContacts starts at 00 so we can use this to avoid
+; subtracting 16 bit numbers or whatever. `hl` is at the end of the list plus one.
+	assert LOW(sSortedPhoneContacts) == $00
+; So getting the length is as simple as:
+	ld c, l
+
+; Sample a random number.
+	call Random
+; Get the modulo (at `a`) of this over how many contacts we actually have
+; (already loaded at `c`).
+	ldh a, [hRandomAdd]
+	call SimpleDivide
+
+	assert LOW(sSortedPhoneContacts) == $00
+	ld l, a
+	ld h, HIGH(sSortedPhoneContacts)
+
+; Well we got a contact ID...
+; and one that starts with PHONE_00 too
+; Received phone contact will be in `e` because that's what the vanilla code
+; asks for or something.
+	ld e, [hl]
+
+; ...So we're done with accessing SRAM
+	call CloseSRAM
+
+; Check if it's the right time of day for them to be calling us
 	ld hl, PhoneContacts + PHONE_CONTACT_SCRIPT2_TIME
 	ld bc, PHONE_CONTACT_SIZE
+	ld a, e
 	call AddNTimes
 	ld a, [wCheckedTime]
 	and [hl]
-	jr z, .not_good_for_call
+; Not the right time
+	ret z
+
+; Check the map group
 	ld bc, PHONE_CONTACT_MAP_GROUP - PHONE_CONTACT_SCRIPT2_TIME
 	add hl, bc
 	ld a, [wMapGroup]
 	cp [hl]
-	jr nz, .different_map
-	inc hl
+; If the contact is in a different map group, there isn't a chance they can be
+; in the same map as us...
+	jr nz, .different_group
+
+; If the contact is in the exact same map as us, don't call.
+	inc hl ; PHONE_CONTACT_MAP_NUMBER
 	ld a, [wMapNumber]
 	cp [hl]
-	jr z, .not_good_for_call
-.different_map
-	ld a, [wNumAvailableCallers]
-	ld c, a
-	ld b, 0
-	inc a
-	ld [wNumAvailableCallers], a
-	ld hl, wAvailableCallers
-	add hl, bc
-	ld a, [de]
-	ld [hl], a
-.not_good_for_call
-	inc de
-	ld a, [wPhoneListIndex]
-	dec a
-	jr nz, .loop
+	jr z, .no_call
+
+; ...so they should always be able to call us.
+.different_group
+; `e` should remain intact here, which is the caller ID we got.
+	ld a, e
+	scf
+	ret
+
+.no_call
+	and a
 	ret
 
 CheckSpecialPhoneCall::
@@ -418,12 +391,24 @@ WrongNumber:
 	text_far _PhoneWrongNumberText
 	text_end
 
+	const_def
+	const CALL_DEFAULT_ACTION ; hangup
+	const CALL_EXPLICITLY_PICKUP ; A pressed
+	const CALL_EXPLICITLY_HANGUP ; B pressed
 Script_ReceivePhoneCall:
 	reanchormap
+	setval CALL_DEFAULT_ACTION
 	callasm RingTwice_StartCall
+	ifequal CALL_DEFAULT_ACTION, .hangup
+	ifequal CALL_EXPLICITLY_HANGUP, .hangup
 	memcall wCallerContact + PHONE_CONTACT_SCRIPT2_BANK
 	waitbutton
 	callasm HangUp
+	closetext
+	callasm InitCallReceiveDelay
+	end
+.hangup
+	callasm HangUp_ShutDown
 	closetext
 	callasm InitCallReceiveDelay
 	end
@@ -436,29 +421,93 @@ Script_SpecialBillCall::
 	ld e, PHONE_BILL
 	jp LoadCallerScript
 
-Script_SpecialElmCall: ; unreferenced
-	callasm .LoadElmScript
-	pause 30
-	sjump Script_ReceivePhoneCall
-
-.LoadElmScript:
-	ld e, PHONE_ELM
-	jp LoadCallerScript
-
+; As this is used by ScriptReceivePhoneCall--and the actual
+; jump to the phone dialog is governed by said script--this
+; means the script has to access something that this function
+; can manipulate. Well that happens to be [wScriptVar].
+;
+; Depending on the player's actions, that variable changes
+; to one of the CALL_* constants to be read by the script.
 RingTwice_StartCall:
-	call .Ring
-	call .Ring
+; A slightly cleaner solution would be to add whether/not the player
+; could even shut off these contacts *in* the phone contact data.
+; But then I realize that'd mess with WRAM and I'd need to build up
+; another save migration routine for version 02 on top of the one
+; already in place. So no.
+	call .IsForcedCaller
+	jp c, PhoneCall
+
+; For "regular" phone contacts however, we give the option for
+; the player to shut it off.
+	call WaitSFX
+	call Phone_StartRinging
+
+; Load the A/B button graphics
+	ld de, .ABButtonGFX
+	ld hl, vTiles0 tile $C0
+	lb bc, BANK(.ABButtonGFX), 2
+	call Get1bpp
+
+	ld c, 30
+	call DelayFrames
+
+	ld c, 10 ; how many times to ring
+	push bc
+; Keep ringing the phone until the player presses a button,
+; or the number of times it's ringing have been exhausted.
+; Whichever comes first.
+.loop
+		call .CallerTextboxWithName
+		call Phone_PickupHangupIndicator
+		call .AcceptInputWhileWaiting
+		jr c, .done_pop 
+		call Phone_StartRinging
+		call Phone_CallerTextbox
+		call .AcceptInputWhileWaiting
+		jr c, .done_pop
+	pop bc
+	dec c
+	jr z, .done
+	push bc
+	jr .loop
+; early exit if a button is pressed
+.done_pop
+	pop bc
+.done
+	call .CallerTextboxWithName
+	call WaitSFX
 	farcall StubbedTrainerRankings_PhoneCalls
 	ret
 
-.Ring:
-	call Phone_StartRinging
-	call Phone_Wait20Frames
-	call .CallerTextboxWithName
-	call Phone_Wait20Frames
-	call Phone_CallerTextbox
-	call Phone_Wait20Frames
-	call .CallerTextboxWithName
+; Set carry when a button is pressed.
+; Also set wScriptVar, since this is where the input is read.
+.AcceptInputWhileWaiting:
+	farcall PhoneRing_CopyTilemapAtOnce
+	ld c, 30
+.accept_input_loop
+	call DelayFrame
+	push bc
+		call JoyTextDelay
+		ldh a, [hJoyPressed]
+		bit B_BUTTON_F, a
+		jr nz, .b_pressed
+		bit A_BUTTON_F, a
+		jr nz, .a_pressed
+	pop bc
+	dec c
+	ret z
+	jr .accept_input_loop
+.a_pressed
+	pop bc
+	ld a, CALL_EXPLICITLY_PICKUP
+	ld [wScriptVar], a
+	scf
+	ret
+.b_pressed
+	pop bc
+	ld a, CALL_EXPLICITLY_HANGUP
+	ld [wScriptVar], a
+	scf
 	ret
 
 .CallerTextboxWithName:
@@ -467,19 +516,55 @@ RingTwice_StartCall:
 	call Phone_TextboxWithName
 	ret
 
+; Sets carry flag if the current caller is indeed a "forced" one
+.IsForcedCaller:
+	ld a, [wCurCaller]
+	ld hl, .ForcedCallerList
+	ld c, NUM_FORCED_CALLERS
+.compare
+	cp [hl]
+	jr z, .yes
+	inc hl
+	dec c
+	jr z, .no
+	jr .compare
+.yes
+; Set the ScriptVar to automatically *pick up* the phone here
+; just to avoid any pains later
+	ld a, CALL_EXPLICITLY_PICKUP
+	ld [wScriptVar], a
+	scf
+	ret
+.no
+	and a
+	ret
+
+.ForcedCallerList:
+	db PHONE_MOM
+	db PHONE_OAK
+	db PHONE_BILL
+	db PHONE_ELM
+	DEF NUM_FORCED_CALLERS EQU @-.ForcedCallerList
+
+.ABButtonGFX: INCBIN "gfx/font/ab_button.1bpp"
+
+; In the original this appears to be unused. Since 99% of it's like the
+; same thing anyway, wouldn't hurt to reuse it for the case where you
+; *couldn't* shut the phone off :p
 PhoneCall::
-	ld a, b
-	ld [wPhoneScriptBank], a
-	ld a, e
-	ld [wPhoneCaller], a
-	ld a, d
-	ld [wPhoneCaller + 1], a
+	; ld a, b
+	; ld [wPhoneScriptBank], a
+	; ld a, e
+	; ld [wPhoneCaller], a
+	; ld a, d
+	; ld [wPhoneCaller + 1], a
 	call .Ring
 	call .Ring
 	farcall StubbedTrainerRankings_PhoneCalls
 	ret
 
 .Ring:
+	call WaitSFX
 	call Phone_StartRinging
 	call Phone_Wait20Frames
 	call .CallerTextboxWithName
@@ -490,20 +575,20 @@ PhoneCall::
 	ret
 
 .CallerTextboxWithName:
-	call Phone_CallerTextbox
-	hlcoord 1, 2
-	ld [hl], "☎"
-	inc hl
-	inc hl
-; BUG: The unused phonecall script command may crash (see docs/bugs_and_glitches.md)
-	ld a, [wPhoneScriptBank]
+	; call Phone_CallerTextbox
+	; hlcoord 1, 2
+	; ld [hl], "☎"
+	; inc hl
+	; inc hl
+	; ld a, [wPhoneCaller]
+	; ld e, a
+	; ld a, [wPhoneCaller + 1]
+	; ld d, a
+	; ld a, [wPhoneScriptBank]
+	; call PlaceFarString
+	ld a, [wCurCaller]
 	ld b, a
-	ld a, [wPhoneCaller]
-	ld e, a
-	ld a, [wPhoneCaller + 1]
-	ld d, a
-	call BrokenPlaceFarString
-	ret
+	jp Phone_TextboxWithName
 
 Phone_NoSignal:
 	ld de, SFX_NO_SIGNAL
@@ -528,7 +613,7 @@ Phone_CallEnd:
 	call HangUp_Wait20Frames
 	ret
 
-HangUp_ShutDown: ; unreferenced
+HangUp_ShutDown:
 	ld de, SFX_SHUT_DOWN_PC
 	call PlaySFX
 	ret
@@ -558,7 +643,6 @@ HangUp_BoopOff:
 	ret
 
 Phone_StartRinging:
-	call WaitSFX
 	ld de, SFX_CALL
 	call PlaySFX
 	call Phone_CallerTextbox
@@ -595,6 +679,43 @@ Phone_CallerTextbox:
 	ld c, SCREEN_WIDTH - 2
 	call Textbox
 	ret
+
+Phone_PickupHangupIndicator:
+	hlcoord 0, SCREEN_HEIGHT-3
+	lb bc, 1, SCREEN_WIDTH-2
+	call Textbox
+	hlcoord 1, SCREEN_HEIGHT-2
+	ld de, .PressAText
+	call PlaceString
+; ClearSpritesUnderPhoneCallIndicator
+	ld de, wShadowOAM
+	ld h, d
+	ld l, e
+	ld c, NUM_SPRITE_OAM_STRUCTS
+.loop
+	ld a, [hl]
+	cp (SCREEN_HEIGHT-3) * TILE_WIDTH
+	jr nc, .clear_sprite
+.next
+	ld hl, SPRITEOAMSTRUCT_LENGTH
+	add hl, de
+	ld e, l
+	dec c
+	jr nz, .loop
+	ldh a, [hOAMUpdate]
+	push af
+	ld a, TRUE
+	ldh [hOAMUpdate], a
+	call DelayFrame
+	pop af
+	ldh [hOAMUpdate], a
+	ret
+.clear_sprite
+	ld [hl], OAM_YCOORD_HIDDEN
+	jr .next
+
+.PressAText:
+	db "<A><COLON>ANSWER <B><COLON>DECLINE@"
 
 GetCallerClassAndName:
 	ld h, d

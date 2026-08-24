@@ -348,6 +348,12 @@ Pokedex_InitDexEntryScreen:
 	call Pokedex_IncrementDexPointer
 	ret
 
+Pokedex_DoDexEntryScreenAction:
+	ld a, [wDexArrowCursorPosIndex]
+	ld hl, DexEntryScreen_MenuActionJumptable
+	call Pokedex_LoadPointer
+	jp hl
+
 Pokedex_UpdateDexEntryScreen:
 	ld de, DexEntryScreen_ArrowCursorData
 	call Pokedex_MoveArrowCursor
@@ -358,17 +364,11 @@ Pokedex_UpdateDexEntryScreen:
 	vc_hook Forbid_printing_Pokedex
 	ld a, [hl]
 	and A_BUTTON
-	jr nz, .do_menu_action
+	jr nz, Pokedex_DoDexEntryScreenAction
 	call Pokedex_NextOrPreviousDexEntry
 	ret nc
 	call Pokedex_IncrementDexPointer
 	ret
-
-.do_menu_action
-	ld a, [wDexArrowCursorPosIndex]
-	ld hl, DexEntryScreen_MenuActionJumptable
-	call Pokedex_LoadPointer
-	jp hl
 
 .return_to_prev_screen
 	ld a, [wLastVolume]
@@ -426,6 +426,28 @@ DexEntryScreen_ArrowCursorData:
 	dwcoord 11, 17 ; CRY
 	dwcoord 15, 17 ; PRNT
 
+Pokedex_DoFormScreenAction:
+	ld a, [wDexArrowCursorPosIndex]
+	ld hl, FormScreen_MenuActionJumptable
+	call Pokedex_LoadPointer
+	jp hl
+
+FormScreen_MenuActionJumptable:
+	dw 0      ; PAGE (same as pressing B, shouldn't be reached)
+	dw .Area
+	dw .Cry
+	dw 0      ; FORM (shouldn't be reached)
+
+.Area:
+	call Pokedex_ShowAreaCommon
+	call DelayFrame
+	newfarjp Pokedex_FormMode
+
+.Cry:
+	ld a, [wCurPartySpecies]
+	call PlayMonCry
+	newfarjp Pokedex_FormMode.wait_input
+
 DexEntryScreen_MenuActionJumptable:
 	dw Pokedex_Page
 	dw .Area
@@ -433,6 +455,23 @@ DexEntryScreen_MenuActionJumptable:
 	dw .Print
 
 .Area:
+	call Pokedex_ShowAreaCommon
+	call WaitBGMap
+	call Pokedex_GetSelectedMon
+	ld [wCurPartySpecies], a
+	ld a, SCGB_POKEDEX
+	call Pokedex_GetSGBLayout
+	ret
+
+.Cry:
+	ld a, [wCurPartySpecies]
+	call PlayMonCry
+	ret
+
+.Print:
+	newfarjp Pokedex_FormMode
+
+Pokedex_ShowAreaCommon:
 	call Pokedex_BlackOutBG
 	xor a
 	ldh [hSCX], a
@@ -455,46 +494,7 @@ DexEntryScreen_MenuActionJumptable:
 	ldh [hSCX], a
 	call DelayFrame
 	call Pokedex_RedisplayDexEntry
-	call Pokedex_LoadSelectedMonTiles
-	call WaitBGMap
-	call Pokedex_GetSelectedMon
-	ld [wCurPartySpecies], a
-	ld a, SCGB_POKEDEX
-	call Pokedex_GetSGBLayout
-	ret
-
-.Cry:
-	ld a, [wCurPartySpecies]
-	call PlayMonCry
-	ret
-
-.Print:
-	call Pokedex_ApplyPrintPals
-	xor a
-	ldh [hSCX], a
-	ld a, [wPrevDexEntryBackup]
-	push af
-	ld a, [wPrevDexEntryJumptableIndex]
-	push af
-	ld a, [wJumptableIndex]
-	push af
-	farcall PrintDexEntry
-	pop af
-	ld [wJumptableIndex], a
-	pop af
-	ld [wPrevDexEntryJumptableIndex], a
-	pop af
-	ld [wPrevDexEntryBackup], a
-	call ClearBGPalettes
-	call DisableLCD
-	call Pokedex_LoadInvertedFont
-	call Pokedex_RedisplayDexEntry
-	call EnableLCD
-	call WaitBGMap
-	ld a, POKEDEX_SCX
-	ldh [hSCX], a
-	call Pokedex_ApplyUsualPals
-	ret
+	jp Pokedex_LoadSelectedMonTiles
 
 Pokedex_RedisplayDexEntry:
 	call Pokedex_DrawDexEntryScreenBG
@@ -806,6 +806,12 @@ Pokedex_InitUnownMode:
 	call Pokedex_IncrementDexPointer
 	ret
 
+; DexCurUnownIndex previously points to UnownDex + [DexCurUnownIndex]
+; now repurposed as an alphabetical index starting at A=00
+
+Pokedex_IsUnownCaught:
+INCLUDE "engine/pokedex/is_unown_caught.asm"
+
 Pokedex_UpdateUnownMode:
 	ld hl, hJoyPressed
 	ld a, [hl]
@@ -836,20 +842,47 @@ Pokedex_UpdateUnownMode:
 Pokedex_UnownModeHandleDPadInput:
 	ld hl, hJoyLast
 	ld a, [hl]
-	and D_RIGHT
+	bit D_RIGHT_F, a
 	jr nz, .right
-	ld a, [hl]
-	and D_LEFT
+	bit D_LEFT_F, a
 	jr nz, .left
+	bit D_DOWN_F, a
+	jr nz, .down
+	bit D_UP_F, a
+	jr nz, .up
 	ret
 
+.up
+	ld hl, wDexCurUnownIndex
+	ld a, [hl]
+	push af
+	sub 5
+	jr nc, .apply_cur_unown_index
+	xor a
+	jr .apply_cur_unown_index
+
+.down
+	ld hl, wDexCurUnownIndex
+	ld a, [hl]
+	push af
+	add 5
+	cp 25
+	jr nc, .maxed
+	jr .apply_cur_unown_index
+
+.maxed
+	ld a, 25
+
+.apply_cur_unown_index
+	ld [hl], a
+	pop af
+	jr .update
+
 .right
-	ld a, [wDexUnownCount]
-	ld e, a
 	ld hl, wDexCurUnownIndex
 	ld a, [hl]
 	inc a
-	cp e
+	cp 26
 	ret nc
 	ld a, [hl]
 	inc [hl]
@@ -1104,18 +1137,18 @@ Pokedex_DrawMainScreenBG:
 	call Pokedex_PlaceString
 	hlcoord 8, 1
 	ld b, 7
-	ld a, $5a
+	ld a, $65
 	call Pokedex_FillColumn
 	hlcoord 8, 10
 	ld b, 6
-	ld a, $5a
+	ld a, $65
 	call Pokedex_FillColumn
 	hlcoord 8, 0
-	ld [hl], $59
+	ld [hl], $64
 	hlcoord 8, 8
-	ld [hl], $53
+	ld [hl], $62
 	hlcoord 8, 9
-	ld [hl], $54
+	ld [hl], $63
 	hlcoord 8, 16
 	ld [hl], $5b
 	call Pokedex_PlaceFrontpicTopLeftCorner
@@ -1130,6 +1163,10 @@ String_SELECT_OPTION:
 	; fallthrough
 String_START_SEARCH:
 	db $3c, $3b, $41, $42, $43, $4b, $4c, $4d, $4e, $3c, -1 ; START > SEARCH
+String_UNOWN:
+	db "UNOWN", -1
+String_OutOf26:
+	db "/26", -1
 
 Pokedex_DrawDexEntryScreenBG:
 	call Pokedex_FillBackgroundColor2
@@ -1170,7 +1207,7 @@ Pokedex_DrawDexEntryScreenBG:
 .Weight:
 	db "WT   ???lb", -1
 .MenuItems:
-	db $3b, " PAGE AREA CRY PRNT", -1
+	db $3b, " PAGE AREA CRY FORM", -1
 
 Pokedex_DrawOptionScreenBG:
 	call Pokedex_FillBackgroundColor2
@@ -1260,13 +1297,13 @@ Pokedex_DrawSearchResultsScreenBG:
 	lb bc, 1, 3
 	call PrintNum
 	hlcoord 8, 0
-	ld [hl], $59
+	ld [hl], $64
 	hlcoord 8, 1
 	ld b, 7
-	ld a, $5a
+	ld a, $65
 	call Pokedex_FillColumn
 	hlcoord 8, 8
-	ld [hl], $53
+	ld [hl], $62
 	hlcoord 8, 9
 	ld [hl], $69
 	hlcoord 8, 10
@@ -1300,27 +1337,76 @@ Pokedex_PlaceSearchResultsTypeStrings:
 
 Pokedex_DrawUnownModeBG:
 	call Pokedex_FillBackgroundColor2
-	hlcoord 2, 1
-	lb bc, 10, 13
+	hlcoord 8, 1
+	lb bc, 11, 10
+	call Pokedex_PlaceBorder
+	hlcoord 0, 1
+	lb bc, 7, 7
 	call Pokedex_PlaceBorder
 	hlcoord 2, 14
 	lb bc, 1, 13
 	call Pokedex_PlaceBorder
+	hlcoord 0, 10
+	lb bc, 2, 7
+	call Pokedex_PlaceBorder
+	hlcoord 8, 2
+	ld b, 7
+	ld a, $65
+	call Pokedex_FillColumn
+	hlcoord 8, 1
+	ld [hl], $64
+	hlcoord 8, 9
+	ld [hl], $62
 	hlcoord 2, 15
 	ld [hl], $3d
 	hlcoord 16, 15
 	ld [hl], $3e
-	hlcoord 6, 5
+	hlcoord 8, 10
+	ld [hl], $63
+	hlcoord 8, 13
+	ld [hl], $5b
+	hlcoord 8, 11
+	ld b, 2
+	ld a, $65
+	call Pokedex_FillColumn
+	hlcoord 1, 11
+	ld de, String_UNOWN
+	call Pokedex_PlaceString
+	hlcoord 5, 12
+	ld de, String_OutOf26
+	call Pokedex_PlaceString
+	call PrintUnownCaught
+	hlcoord 1, 2
 	call PlaceFrontpicAtHL
-	ld de, 0
-	ld b, 0
+; print dashes
 	ld c, NUM_UNOWN
-.loop
+	ld hl, UnownModeLetterAndCursorCoords
+.loop_dashes
+	push hl
+		ld a, [hli]
+		ld h, [hl]
+		ld l, a
+		; got position at hl
+		ld [hl], "-"
+	pop hl
+	rept 4
+		inc hl
+	endr
+	dec c
+	jr nz, .loop_dashes
+; print letter
+	; b = count of unown
+	; c = loop bound
+	lb bc, 0, NUM_UNOWN
 	ld hl, wUnownDex
-	add hl, de
-	ld a, [hl]
+.loop
+	ld a, [hli]
 	and a
 	jr z, .done
+	dec a
+	ld e, a
+	ld d, 0
+	push hl
 	push af
 	ld hl, UnownModeLetterAndCursorCoords
 rept 4
@@ -1329,10 +1415,11 @@ endr
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
+	; got position at hl
 	pop af
-	add FIRST_UNOWN_CHAR - 1 ; Unown A
+	add FIRST_UNOWN_CHAR ; Unown A
 	ld [hl], a
-	inc de
+	pop hl
 	inc b
 	dec c
 	jr nz, .loop
@@ -1341,35 +1428,55 @@ endr
 	ld [wDexUnownCount], a
 	ret
 
+PrintUnownCaught:
+	ld hl, wUnownDex
+	ld b, 0
+.loop
+	ld a, [hli]
+	and a
+	jr z, .print
+	inc b
+	ld a, b
+	cp NUM_UNOWN
+	jr c, .loop
+.print
+	hlcoord 3, 12
+	ld de, wStringBuffer2
+	ld a, b
+	ld [de], a
+	ld b, 1
+	ld c, 2
+	jp PrintNum
+
 UnownModeLetterAndCursorCoords:
 ; entries correspond to Unown forms
 ;           letter, cursor
-	dwcoord   4,11,   3,11 ; A
-	dwcoord   4,10,   3,10 ; B
-	dwcoord   4, 9,   3, 9 ; C
-	dwcoord   4, 8,   3, 8 ; D
-	dwcoord   4, 7,   3, 7 ; E
-	dwcoord   4, 6,   3, 6 ; F
-	dwcoord   4, 5,   3, 5 ; G
-	dwcoord   4, 4,   3, 4 ; H
-	dwcoord   4, 3,   3, 2 ; I
-	dwcoord   5, 3,   5, 2 ; J
-	dwcoord   6, 3,   6, 2 ; K
-	dwcoord   7, 3,   7, 2 ; L
-	dwcoord   8, 3,   8, 2 ; M
-	dwcoord   9, 3,   9, 2 ; N
-	dwcoord  10, 3,  10, 2 ; O
-	dwcoord  11, 3,  11, 2 ; P
-	dwcoord  12, 3,  12, 2 ; Q
-	dwcoord  13, 3,  13, 2 ; R
-	dwcoord  14, 3,  15, 2 ; S
-	dwcoord  14, 4,  15, 4 ; T
-	dwcoord  14, 5,  15, 5 ; U
-	dwcoord  14, 6,  15, 6 ; V
-	dwcoord  14, 7,  15, 7 ; W
-	dwcoord  14, 8,  15, 8 ; X
-	dwcoord  14, 9,  15, 9 ; Y
-	dwcoord  14,10,  15,10 ; Z
+	dwcoord  10, 2,  9, 2; A
+	dwcoord  12, 2, 11, 2; B
+	dwcoord  14, 2, 13, 2; C
+	dwcoord  16, 2, 15, 2; D
+	dwcoord  18, 2, 17, 2; E
+	dwcoord  10, 4,  9, 4; F
+	dwcoord  12, 4, 11, 4; G
+	dwcoord  14, 4, 13, 4; H
+	dwcoord  16, 4, 15, 4; I
+	dwcoord  18, 4, 17, 4; J
+	dwcoord  10, 6,  9, 6; K
+	dwcoord  12, 6, 11, 6; L
+	dwcoord  14, 6, 13, 6; M
+	dwcoord  16, 6, 15, 6; N
+	dwcoord  18, 6, 17, 6; O
+	dwcoord  10, 8,  9, 8; P
+	dwcoord  12, 8, 11, 8; Q
+	dwcoord  14, 8, 13, 8; R
+	dwcoord  16, 8, 15, 8; S
+	dwcoord  18, 8, 17, 8; T
+	dwcoord  10,10,  9,10; U
+	dwcoord  12,10, 11,10; V
+	dwcoord  14,10, 13,10; W
+	dwcoord  16,10, 15,10; X
+	dwcoord  18,10, 17,10; Y
+	dwcoord  10,12,  9,12; Z
 
 Pokedex_FillBackgroundColor2:
 	hlcoord 0, 0
@@ -1560,12 +1667,12 @@ Pokedex_PlaceDefaultStringIfNotSeen:
 
 Pokedex_DrawFootprint:
 	hlcoord 18, 1
-	ld a, $62
+	ld a, $53
 	ld [hli], a
 	inc a
 	ld [hl], a
 	hlcoord 18, 2
-	ld a, $64
+	ld a, $59
 	ld [hli], a
 	inc a
 	ld [hl], a
@@ -1740,7 +1847,7 @@ Pokedex_DisplayModeDescription:
 
 .UnownMode:
 	db   "UNOWN are listed"
-	next "in catching order.@"
+	next "by forms.@"
 
 Pokedex_DisplayChangingModesMessage:
 	xor a
@@ -2190,7 +2297,7 @@ Pokedex_MoveArrowCursor:
 	inc de
 	call Pokedex_BlinkArrowCursor
 
-	ld hl, hJoyPressed
+	ld hl, hJoypadPressed
 	ld a, [hl]
 	and D_LEFT | D_UP
 	and b
@@ -2313,14 +2420,11 @@ Pokedex_BlackOutBG:
 	call ByteFill
 	pop af
 	ldh [rSVBK], a
-
-Pokedex_ApplyPrintPals:
 	ld a, $ff
 	call DmgToCgbBGPals
 	ld a, $ff
 	call DmgToCgbObjPal0
-	call DelayFrame
-	ret
+	jp DelayFrame
 
 Pokedex_GetSGBLayout:
 	ld b, a
@@ -2396,7 +2500,7 @@ Pokedex_LoadAnyFootprint:
 	push hl
 	ld e, l
 	ld d, h
-	ld hl, vTiles2 tile $62
+	ld hl, vTiles2 tile $53 ; upper half of foot
 	lb bc, BANK(Footprints), 2
 	call Request1bpp
 	pop hl
@@ -2408,7 +2512,7 @@ Pokedex_LoadAnyFootprint:
 
 	ld e, l
 	ld d, h
-	ld hl, vTiles2 tile $64
+	ld hl, vTiles2 tile $59 ; lower half of foot
 	lb bc, BANK(Footprints), 2
 	call Request1bpp
 
@@ -2497,17 +2601,21 @@ Pokedex_LoadUnownFrontpicTiles:
 	ld a, [wUnownLetter]
 	push af
 	ld a, [wDexCurUnownIndex]
-	ld e, a
-	ld d, 0
-	ld hl, wUnownDex
-	add hl, de
-	ld a, [hl]
+	ld b, a
+	call Pokedex_IsUnownCaught
+	jr nc, .no_show
+	ld a, b
+	inc a
 	ld [wUnownLetter], a
 	ld a, UNOWN
 	ld [wCurPartySpecies], a
 	call GetBaseData
 	ld de, vTiles2 tile $00
 	predef GetMonFrontpic
+	jr .done
+.no_show
+	call Pokedex_LoadSelectedMonTiles.QuestionMark
+.done
 	pop af
 	ld [wUnownLetter], a
 	ret

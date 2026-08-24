@@ -1,7 +1,7 @@
-ReesePhoneCalleeScript: ; You call Reese
+ReesePhoneCalleeScript: ; You call
 	gettrainername STRING_BUFFER_3, BIKER, REESE1
 	checkflag ENGINE_REESE_READY_FOR_REMATCH
-	iftrue .WaitingForBattle
+	iftrue ReeseBattleReminder
 	farscall PhoneScript_AnswerPhone_Male
 	checkcode VAR_WEEKDAY
 	ifnotequal SUNDAY, .NotSunday
@@ -9,22 +9,19 @@ ReesePhoneCalleeScript: ; You call Reese
 	iftrue ReeseWantsBattle
 
 .NotSunday:
-	farjump ReeseBikers
+	farjump ReeseBikersScript
 
-.WaitingForBattle:
+ReeseBattleReminder:
 	getlandmarkname STRING_BUFFER_5, LANDMARK_ROUTE_17
 	farjump ReeseReminderScript
 
 ReesePhoneCallerScript: ; Calls you
 	gettrainername STRING_BUFFER_3, BIKER, REESE1
+	checkflag ENGINE_REESE_READY_FOR_REMATCH
+	iftrue ReeseBattleReminder
 	farscall PhoneScript_GreetPhone_Male
-	checkcode VAR_WEEKDAY
-	ifnotequal SUNDAY, .GenericReeseCall
-	checktime NITE
-	iftrue ReeseWantsBattle
-	jump .GenericReeseCall
-
-.GenericReeseCall:
+	farscall PhoneScript_Random2
+	ifequal 0, ReeseWantsBattle ; 33% chance for a rematch
 	farjump Phone_GenericCall_Male
 
 ReeseWantsBattle:
